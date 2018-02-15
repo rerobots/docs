@@ -1,0 +1,115 @@
+body {
+  margin: 0 0 10em 0;
+}
+
+h1 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p#pitch {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0;
+}
+
+.prefix-re {
+  font-weight: bold;
+  color: #003A00;
+}
+
+a,
+a:hover,
+a:focus {
+  color: #003A00;
+}
+
+.btn-select {
+  background-color: #F5F5F5;
+}
+
+form div {
+  display: inline-block;
+  margin: 0 0 0 1.5em;
+}
+
+.form-signin {
+  max-width: 300px;
+}
+
+.form-control {
+  margin: 5px 0;
+}
+
+.upload-new-public-key {
+  display: block;
+}
+
+.form-special div {
+  margin: 0;
+  display: block;
+}
+
+.panel {
+  margin: 1em 0;
+}
+
+.form-special .panel {
+  margin: 1em 0;
+}
+
+footer a,
+footer a:hover,
+footer a:focus {
+  color: #777;
+}
+
+footer a {
+  margin: 0 .5em;
+}
+
+footer a#commons-license {
+  margin: 0;
+}
+
+.footer {
+  height: auto;
+}
+
+.control-btn {
+  margin: 0.1em;
+}
+
+.console-header {
+  margin: 0.25em;
+}
+
+code {
+  color: #003A00;
+  background: #FFF;
+}
+
+.pagination li a,
+.pagination li a:hover,
+.pagination li a:focus {
+  color: #003A00;
+}
+
+.pagination li.active a,
+.pagination li.active a:hover,
+.pagination li.active a:focus {
+  background: #306A30;
+  border-color: #306A30;
+}
+
+.pagination-nav {
+  text-align: center;
+}
+
+img {
+  border: 1px solid #000;
+  max-width: 600px;
+}
