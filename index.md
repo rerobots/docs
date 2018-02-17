@@ -17,7 +17,8 @@ feedback during this early stage.
 
 This section is work-in-progress.
 If you think that something is missing, or if you find errors, please [contact
-us](https://rerobots.net/contact).
+us](https://rerobots.net/contact) or [open a
+ticket](https://github.com/rerobots/doc-help/issues).
 
 1. Beyond Webcams: An Introduction to Online Robots. Nov 2001. Eds. Ken Goldberg and Roland Siegwart. MIT Press. ISBN: 9780262072250. <https://mitpress.mit.edu/books/beyond-webcams>
 
