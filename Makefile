@@ -12,6 +12,7 @@ all:
 	tools/gen.py prelim.md > $(BUILDDIR)prelim.html
 	tools/gen.py tutorials.md > $(BUILDDIR)tutorials.html
 	tools/gen.py tutorial_vpn_brunelhand.md > $(BUILDDIR)tutorial_vpn_brunelhand.html
+	tools/gen.py tutorial_vpn_lcm.md > $(BUILDDIR)tutorial_vpn_lcm.html
 	tools/gen.py web_guide.md > $(BUILDDIR)web_guide.html
 	cp -r -f extern $(BUILDDIR)
 	cp -r -f css $(BUILDDIR)

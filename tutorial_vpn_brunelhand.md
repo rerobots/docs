@@ -1,4 +1,4 @@
-# VPN-based instance with Brunel Hand
+# VPN-based instance with ROS and Brunel Hand
 
 ## Summary
 
