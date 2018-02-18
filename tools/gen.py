@@ -57,7 +57,7 @@ PREFIX="""<!DOCTYPE html>
   </div>
 </nav>
 
-<div class="container id="main-content">"""
+<div class="container" id="main-content">"""
 
 SUFFIX="""</div>
 
