@@ -12,6 +12,30 @@ A [Git LFS](https://git-lfs.github.com/) client is required to clone this
 repository. Note that `git clone` will succeed without `git lfs` available, but
 some large files will not be fetched.
 
+Provided the dependencies (next section), you can get a local view of this
+website via
+
+    make && ./local-staging.sh
+
+where the first command populates a build/ directory and the latter uses
+[http.server in the Python 3 standard library](
+https://docs.python.org/3.5/library/http.server.html)
+to serve requests. (Python versions < 3 are not supported.)
+
+Now, direct your Web browser at http://127.0.0.1:8000/
+
+
+Dependencies
+------------
+
+This site depends on [Bootstrap](https://getbootstrap.com/) and
+[jQuery](http://jquery.com/). The expected layout for `make` to work is:
+
+* extern/css/bootstrap.min.css
+* extern/css/sticky-footer.css
+* extern/js/bootstrap.min.js
+* extern/js/jquery.min.js
+
 
 Licenses
 --------
