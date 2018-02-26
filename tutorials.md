@@ -19,3 +19,9 @@ only one computer.
 In [this tutorial](tutorial_vpn_lcm.html), the user is shown how to instantiate
 a workspace and use LCM for messaging. The configuration process of LCM here is
 general and can be applied to any workspace type.
+
+## SSH-tunnel-based instance with fixed Crazyflie
+
+In [this tutorial](tutorial_sshtunnel_fixedcrazyflie.html), the user is shown
+how to instantiate a workspace that is accessed over an SSH tunnel to a single
+Linux host and that has a non-mobile Crazyflie quadrotor.
