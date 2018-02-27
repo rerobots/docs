@@ -59,7 +59,7 @@ top of the page:
 
 In this case, when you are ready, select the link "Download private key." to
 download a file named `key.pem`. Be careful to only click the link when you are
-ready for the download.If you selected to use one of [the SSH keys already
+ready for the download. If you selected to use one of [the SSH keys already
 associated with your account](https://rerobots.net/sshkeys), then there is no
 link to "download private key" because it is assumed that you already have the
 corresponding private key.
