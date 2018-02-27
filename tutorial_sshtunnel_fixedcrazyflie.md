@@ -78,7 +78,7 @@ In the details panel, an IP address and port number are listed. On this address
 and port there is an SSH server listening for incoming connections to the main
 host of your instance.  Also, notice the subsection titled "firewall rules". It
 contains a table of rules that determine which hosts can send packets to the
-port on which an SSH server is listening for your instance. To be clear, even if
+SSH server that is listening for your instance. Note that even if
 packets are allowed to reach the SSH server, it is necessary to have the correct
 private key to log-in, independently of the firewall rules.
 
@@ -114,8 +114,8 @@ the details panel (example is shown in screenshot earlier in this tutorial).
 
 To visualize the space, we will start a ROS node that streams images from the
 webcam. The instance already has the "desktop" installation of [ROS
-Kinetic](http://wiki.ros.org/kinetic), but for this tutorial, the following
-packags must also be installed: [cv_camera](http://wiki.ros.org/cv_camera). To
+Kinetic](http://wiki.ros.org/kinetic), but for this tutorial, the
+package [cv_camera](http://wiki.ros.org/cv_camera) must also be installed. To
 do so,
 
     apt-get update
@@ -141,7 +141,7 @@ Finally, create a minimal configuration by creating the file
 
 This can be achieved in one command,
 
-    mkdir -p .config/cfclient && echo '{"enable_zmq_input": true}' > /root/.config/cfclient/config.json
+    mkdir -p /root/.config/cfclient && echo '{"enable_zmq_input": true}' > /root/.config/cfclient/config.json
 
 Finally, start `cfheadless` to connect to a Crazyflie that is attached to the
 host via USB:
