@@ -7,6 +7,9 @@ through an SSH tunnel. As an example, the workspace type demonstrated here is
 `fixed_crazyflie`, but the basic steps can be applied to any type for which SSH
 tunneling is an option.
 
+If you want to see an example video that you can reproduce, skip to the section
+[Reviewing results](#reviewing-results).
+
 If you think that something is missing, or if you find errors, please [contact
 us](https://rerobots.net/contact) or [open a
 ticket](https://github.com/rerobots/doc-help/issues).
@@ -97,10 +100,144 @@ instance accepting traffic from anywhere is usually not desirable, you can use
 `0.0.0.0/0` to do so.
 There should now be a row in the table of firewall rules: `0.0.0.0/0 ACCEPT`.
 
-To log-in, open a terminal, and suppose that your private key is in the local
-directory in the file key.pem. Then,
+To log-in, open a terminal. Assuming that your private key is in the local
+directory in the file key.pem, then,
 
     ssh -i key.pem -p 2211 root@147.75.69.207
 
+If you selected an SSH key that is uploaded to your rerobots account, then the
+switch `-i key.pem` can be omitted or changed as needed.
 The hostkey presented by the SSH server can be compared with the one listed in
 the details panel (example is shown in screenshot earlier in this tutorial).
+
+## Installing required packages
+
+To visualize the space, we will start a ROS node that streams images from the
+webcam. The instance already has the "desktop" installation of [ROS
+Kinetic](http://wiki.ros.org/kinetic), but for this tutorial, the following
+packags must also be installed: [cv_camera](http://wiki.ros.org/cv_camera). To
+do so,
+
+    apt-get update
+    apt-get install -y ros-kinetic-cv-camera
+
+To send thrust commands to the [Crazyflie
+quadrotor](https://www.bitcraze.io/crazyflie-2/) in this tutorial, `cfheadless`
+must be installed. It is part of the [Crazyflie client
+software](https://github.com/bitcraze/crazyflie-clients-python).
+The current release can be installed from
+
+    apt-get update
+    apt-get install -y python3 python3-pip python3-pyqt5
+    pip3 install -U pip
+    pip install cfclient
+
+Finally, create a minimal configuration by creating the file
+/root/.config/cfclient/config.json with the contents
+
+    {
+      "enable_zmq_input": true
+    }
+
+This can be achieved in one command,
+
+    mkdir -p .config/cfclient && echo '{"enable_zmq_input": true}' > /root/.config/cfclient/config.json
+
+Finally, start `cfheadless` to connect to a Crazyflie that is attached to the
+host via USB:
+
+    cfheadless -u usb://0
+
+## Running an open-loop controller and recording a video
+
+Now that `cfheadless` is using the terminal for output, open a new terminal and
+log-in again to the instance host via SSH. Create a file named demo.py with the
+following contents:
+
+    import time
+    import zmq
+
+    sender = zmq.Context().socket(zmq.PUSH)
+    sender.connect('tcp://127.0.0.1:1212')
+
+    sender.send_json({
+	'version': 1,
+	'ctrl': {
+	    'roll': 0.0,
+	    'pitch': 0.0,
+	    'yaw': 0.0,
+	    'thrust': 0.0
+	}
+    })
+
+    time.sleep(1)
+
+    sender.send_json({
+	'version': 1,
+	'ctrl': {
+	    'roll': 0.0,
+	    'pitch': 0.0,
+	    'yaw': 0.0,
+	    'thrust': 35.0
+	}
+    })
+
+    time.sleep(2)
+
+    sender.send_json({
+	'version': 1,
+	'ctrl': {
+	    'roll': 0.0,
+	    'pitch': 0.0,
+	    'yaw': 0.0,
+	    'thrust': 0.0
+	}
+    })
+
+This Python program commands zero thrust, small positive thrust, and after 2
+seconds, zero thrust again.
+
+To create a demo log file, we will run the ROS node `cv_camera_node`, `rosbag
+record`, and `demo.py` (the file defined above), each of which requires its own
+terminal. To do so, start as many new SSH log-ins as needed, or use a terminal
+multiplexing tool like `screen` or `tmux`, and run each of
+
+    roscore
+    rosrun cv_camera cv_camera_node
+    rosbag record -a
+    python3 demo.py
+
+After demo.py finishes, kill the `rosbag record` process and compress the log
+file:
+
+    rosbag compress *bag
+
+Then, download the compressed log file to your local storage. There are several
+tools available to copy files via an SSH connection, such as `scp`. For example,
+you might use a command like the following:
+
+    scp -i ~/.ssh/unodist -P 2210 root@147.75.69.207:/root/2018-02-27-00-05-15.bag .
+
+Notice that to specify the port number used by `scp`, the switch is uppercase
+`-P`.
+
+## Reviewing results
+
+Assuming that you have ROS installed locally, the
+[rosbag](http://wiki.ros.org/rosbag) file can be played back at a slower speed
+and visually reviewed in [rqt](http://wiki.ros.org/rqt). After starting
+`roscore`, run a `rosbag play` process by a command like
+
+    rosbag play -r 0.25 2018-02-27-00-05-15.bag
+
+Open the `rqt` GUI, select the drop-down menu "Plugins", then "Visualization",
+and "Image View". The Image View plugin can display images from the
+`/cv_camera/image_raw` ROS topic, which corresponds to the webcam in the
+workspace of this tutorial.
+
+![example video sequence showing the rotor blades spin](/fig/tutorial_sshtunnel_fixedcrazyflie_demovideo.gif)
+
+## Conclusion
+
+When you are done, return to <https://rerobots.net/instances>, find the instance
+that you created in the table, and push the `terminate` button.
