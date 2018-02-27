@@ -232,7 +232,7 @@ and visually reviewed in [rqt](http://wiki.ros.org/rqt). After starting
 
 Open the `rqt` GUI, select the drop-down menu "Plugins", then "Visualization",
 and "Image View". The Image View plugin can display images from the
-`/cv_camera/image_raw` ROS topic, which corresponds to the webcam in the
+`/cv_camera/image_raw` ROS topic, which contains data from the webcam in the
 workspace of this tutorial.
 
 ![example video sequence showing the rotor blades spin](/fig/tutorial_sshtunnel_fixedcrazyflie_demovideo.gif)
