@@ -8,6 +8,7 @@ BUILDDIR=build/
 
 all:
 	mkdir -p $(BUILDDIR)
+	mkdir -p $(BUILDDIR)/workspaces
 	tools/gen.py index.md > $(BUILDDIR)index.html
 	tools/gen.py prelim.md > $(BUILDDIR)prelim.html
 	tools/gen.py tutorials.md > $(BUILDDIR)tutorials.html
@@ -15,6 +16,7 @@ all:
 	tools/gen.py tutorial_vpn_lcm.md > $(BUILDDIR)tutorial_vpn_lcm.html
 	tools/gen.py tutorial_sshtunnel_fixedcrazyflie.md > $(BUILDDIR)tutorial_sshtunnel_fixedcrazyflie.html
 	tools/gen.py web_guide.md > $(BUILDDIR)web_guide.html
+	tools/collect-wtypes.py $(BUILDDIR)/workspaces
 	cp -r -f extern $(BUILDDIR)
 	cp -r -f css $(BUILDDIR)
 	cp -r -f fig $(BUILDDIR)

@@ -52,6 +52,7 @@ PREFIX="""<!DOCTYPE html>
       <li><a href="/prelim.html">preliminaries</a></li>
       <li><a href="/tutorials.html">tutorials</a></li>
       <li><a href="/web_guide.html">web guide</a></li>
+      <li><a href="/workspaces/">workspaces</a></li>
       </ul>
     </div>
   </div>
@@ -80,11 +81,9 @@ SUFFIX="""</div>
 """
 
 
-def main(path):
+def from_template(body):
     tstamp = datetime.utcnow().strftime('%Y-%m-%d')
     out = PREFIX
-    with open(path) as fp:
-        body = fp.read()
     out += markdown(body, output_format='html5', extensions=[TocExtension(), 'markdown.extensions.tables'])
     if '$$' in body:
         endblock = '<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>'
@@ -92,6 +91,11 @@ def main(path):
         endblock = ''
     out += SUFFIX.format(DATESTAMP=tstamp, ENDBLOCK=endblock)
     return out
+
+
+def main(path):
+    with open(path) as fp:
+        return from_template(fp.read())
 
 
 if __name__ == '__main__':
