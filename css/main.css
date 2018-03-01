@@ -142,3 +142,7 @@ img {
   border: 1px solid #000;
   max-width: 600px;
 }
+
+ul.list-wtypes {
+  margin: 1em 0;
+}

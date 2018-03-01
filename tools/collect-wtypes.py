@@ -21,12 +21,14 @@ for p in Path(wtypes_path).iterdir():
 
 wtypes.sort()
 
-list_wtypes = ''
+list_wtypes = '<ul class="list-group list-wtypes">\n'
 for wtype in wtypes:
-    list_wtypes += '- <a href="{WTYPE}.html">{WTYPE}</a>\n'.format(WTYPE=wtype)
+    list_wtypes += '<li class="list-group-item"><a href="{WTYPE}.html">{WTYPE}</a></li>\n'.format(WTYPE=wtype)
     with open(os.path.join(sys.argv[1], wtype + '.html'), 'wt') as fp:
         with open(os.path.join(wtypes_path, wtype + '.md'), 'rt') as fpmd:
             fp.write(gen.from_template(fpmd.read()))
+
+list_wtypes += '</ul>'
 
 with open(os.path.join(sys.argv[1], 'index.html'), 'wt') as fp:
     fp.write(gen.from_template('''
