@@ -80,14 +80,19 @@ SUFFIX="""</div>
 """
 
 
-if __name__ == '__main__':
+def main(path):
     tstamp = datetime.utcnow().strftime('%Y-%m-%d')
-    with open(sys.argv[1]) as fp:
-        print(PREFIX)
+    out = PREFIX
+    with open(path) as fp:
         body = fp.read()
-    print(markdown(body, output_format='html5', extensions=[TocExtension(), 'markdown.extensions.tables']))
+    out += markdown(body, output_format='html5', extensions=[TocExtension(), 'markdown.extensions.tables'])
     if '$$' in body:
         endblock = '<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>'
     else:
         endblock = ''
-    print(SUFFIX.format(DATESTAMP=tstamp, ENDBLOCK=endblock))
+    out += SUFFIX.format(DATESTAMP=tstamp, ENDBLOCK=endblock)
+    return out
+
+
+if __name__ == '__main__':
+    print(main(sys.argv[1]))
