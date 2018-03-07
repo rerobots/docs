@@ -18,7 +18,7 @@ page](https://rerobots.net/search). It should look like the following:
 ![screenshot of the search page](/fig/tutorial_vpn_brunelhand_search.png)
 
 For this tutorial, we want to use a workspace deployment that has the type
-`fixed_brunelhand`. If one is not already listed, enter "brunel" into the search
+[`fixed_brunelhand`](/workspaces/fixed_brunelhand.html). If one is not already listed, enter "brunel" into the search
 field, or try the following URL: <https://rerobots.net/search?q=fixed_brunelhand>
 
 Click on the photo or the "deployment id" of one of the items in the search
@@ -105,7 +105,7 @@ When connected to the VPN, open a terminal, and try
     ping rrc.local
 
 Possibly after some delay, you should get successful pings. `rrc.local` is the
-one and only Linux host that is part of your instance of the `fixed_brunelhand`
+one and only Linux host that is part of your instance of the [`fixed_brunelhand`](/workspaces/fixed_brunelhand.html)
 workspace type.
 
 Recall earlier in the tutorial that you downloaded key.pem, which you must use
