@@ -9,6 +9,7 @@ BUILDDIR=build/
 all:
 	mkdir -p $(BUILDDIR)
 	mkdir -p $(BUILDDIR)/workspaces
+	mkdir -p $(BUILDDIR)/workspaces/figures
 	tools/gen.py index.md > $(BUILDDIR)index.html
 	tools/gen.py prelim.md > $(BUILDDIR)prelim.html
 	tools/gen.py tutorials.md > $(BUILDDIR)tutorials.html
