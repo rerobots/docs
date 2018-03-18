@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 """Static site generation for help.rerobots.net
 
+Images are collected according to two rules:
+
+1. the file is named in Markdown visual image syntax (of the form ![...](...)),
+
+2. for any file selected via rule 1, if its name begins with a width
+   prefix (e.g., `480px-`), then the prefix is removed to obtain a new
+   selected file name.
+
 
 SCL <scott@rerobots.net>
 Copyright (C) 2018 rerobots, Inc.
@@ -38,11 +46,19 @@ for wtype in wtypes:
             typedef = fpmd.read()
             image_paths = get_image_paths(typedef)
             for image_path in image_paths:
-                origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')), image_path)
-                assert os.path.exists(origpath)
-                with open(origpath, 'rb') as in_img:
-                    with open(os.path.join(sys.argv[1], image_path), 'wb') as out_img:
-                        out_img.write(in_img.read())
+                basename = os.path.basename(image_path)
+                dirname = os.path.dirname(image_path)
+                filenames = [basename]
+                if basename.startswith('480px-'):
+                    filenames.append(basename[6:])
+                for filename in filenames:
+                    rebuilt_path = os.path.join(dirname, filename)
+                    origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')),
+                                            rebuilt_path)
+                    assert os.path.exists(origpath), 'file not found: {}'.format(origpath)
+                    with open(origpath, 'rb') as in_img:
+                        with open(os.path.join(sys.argv[1], rebuilt_path), 'wb') as out_img:
+                            out_img.write(in_img.read())
             fp.write(gen.from_template(typedef))
 
 list_wtypes += '</ul>'
