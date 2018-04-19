@@ -53,6 +53,7 @@ PREFIX="""<!DOCTYPE html>
       <li><a href="/tutorials.html">tutorials</a></li>
       <li><a href="/web_guide.html">web guide</a></li>
       <li><a href="/workspaces/">workspaces</a></li>
+      <li><a href="/references.html">references</a></li>
       </ul>
     </div>
   </div>
