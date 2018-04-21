@@ -50,8 +50,7 @@ PREFIX="""<!DOCTYPE html>
       <ul class="nav navbar-nav navbar-right">
       <li><a href="/index.html">introduction</a></li>
       <li><a href="/prelim.html">preliminaries</a></li>
-      <li><a href="/tutorials.html">tutorials</a></li>
-      <li><a href="/web_guide.html">web guide</a></li>
+      <li><a href="/guides.html">guides</a></li>
       <li><a href="/workspaces/">workspaces</a></li>
       <li><a href="/references.html">references</a></li>
       </ul>

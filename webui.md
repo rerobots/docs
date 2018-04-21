@@ -1,4 +1,4 @@
-# Web guide
+# Guide to the Web UI
 
 ## Summary
 
