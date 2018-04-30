@@ -38,9 +38,8 @@ VPN client credentials.
 
 This section presents terms that are not required if you only use the Web UI.
 
-The core of rerobots is its <abbr title="application programming
-interface">API</abbr>, which is built around tokens for authentication. An **API
-token** is a string that demonstrates authentication for the purpose of handling
-an API request. rerobots API tokens follow the JSON Web Token standard, [RFC
-7519](https://tools.ietf.org/html/rfc7519), which is introduced at
-<https://jwt.io/>.
+The core interface of rerobots is its <abbr title="application programming
+interface">API</abbr>. An **API token** is a string provides authentication and
+authorization for API requests. rerobots API tokens follow the JSON Web Token
+standard, [RFC 7519](https://tools.ietf.org/html/rfc7519), which is introduced
+at <https://jwt.io/>.
