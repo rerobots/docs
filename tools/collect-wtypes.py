@@ -50,7 +50,18 @@ for wtype in wtypes:
                 dirname = os.path.dirname(image_path)
                 filenames = [basename]
                 if basename.startswith('480px-'):
-                    filenames.append(basename[6:])
+                    filename_fullsize = basename[6:]
+                    rebuilt_path = os.path.join(dirname, filename_fullsize)
+                    origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')),
+                                            rebuilt_path)
+                    if not os.path.exists(origpath):
+                        # Attempt to switch file format,
+                        # but do not check exists() again here
+                        if filename_fullsize.endswith('.jpg'):
+                            filename_fullsize = filename_fullsize[:-4] + '.png'
+                        elif filename_fullsize.endswith('.png'):
+                            filename_fullsize = filename_fullsize[:-4] + '.jpg'
+                    filenames.append(filename_fullsize)
                 for filename in filenames:
                     rebuilt_path = os.path.join(dirname, filename)
                     origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')),
