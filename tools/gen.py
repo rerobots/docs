@@ -19,6 +19,14 @@ PREFIX="""<!DOCTYPE html>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111751205-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111751205-3');
+</script>
 
 <title>documentation - rerobots (beta)</title>
 
