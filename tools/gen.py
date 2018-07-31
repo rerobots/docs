@@ -60,6 +60,7 @@ PREFIX="""<!DOCTYPE html>
       <li><a href="/prelim.html">preliminaries</a></li>
       <li><a href="/guides.html">guides</a></li>
       <li><a href="/workspaces/">workspaces</a></li>
+      <li><a href="/api.html">API</a></li>
       <li><a href="/references.html">references</a></li>
       </ul>
     </div>

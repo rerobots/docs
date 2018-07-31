@@ -11,6 +11,7 @@ all:
 	mkdir -p $(BUILDDIR)/workspaces
 	mkdir -p $(BUILDDIR)/workspaces/figures
 	tools/gen.py index.md > $(BUILDDIR)index.html
+	tools/gen.py api.md > $(BUILDDIR)api.html
 	tools/gen.py references.md > $(BUILDDIR)references.html
 	tools/gen.py prelim.md > $(BUILDDIR)prelim.html
 	tools/gen.py guides.md > $(BUILDDIR)guides.html
