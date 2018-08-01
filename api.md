@@ -252,13 +252,12 @@ one. Response is a JSON object with some or all of the following:
 * `status`: one of the following {`"preparing"`, `"ready"`, `"nil"`}.
 
 If there is no VPN for this instance (but the instance otherwise exists), then
-the response is ::
+the response is
 
-  {"status": "nil"}
+    {"status": "nil"}
 
 
-POST /vpn/:instanceID
-~~~~~~~~~~~~~~~~~~~~~
+### POST /vpn/:instanceID
 
 Get credentials for a new client to join the VPN associated with this
 instance. The response has two parts:
@@ -267,8 +266,7 @@ instance. The response has two parts:
 * `ovpn`: contents of an OVPN file that can be used to connect via [OpenVPN](https://openvpn.net/).
 
 
-GET /reservations
-~~~~~~~~~~~~~~~~~
+### GET /reservations
 
 Get list of active reservations associated with the user's account.
 
@@ -284,15 +282,13 @@ Each item in the list `reservations` is a JSON object with:
   `deployment 909cbe2d-eb85-4b8c-9a76-e7bffe880152`.
 
 
-DELETE /reservation/:reservationID
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### DELETE /reservation/:reservationID
 
 Delete a reservation. This process cannot be undone. In particular, any progress
 toward using one of the matching workspace deployments will be lost.
 
 
-POST /ci/new
-~~~~~~~~~~~~
+### POST /ci/new
 
 Start new CI build. Body data in the request should be JSON containing:
 
