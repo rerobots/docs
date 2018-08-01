@@ -24,12 +24,12 @@ no more requests will be accepted until the current time passes `T`.
 authentication
 --------------
 
-Not all commands require authentication. The details of user access control are
-still under development. In the text below, commands for which authentication is
-provided are with respect to the username in the given token. In the API
-description, this user is called "the user".
+Not all commands require authentication.  In the text below, commands for which
+authentication is provided are with respect to the username in the given
+token. In the API description, this user is called "the user".
 
-To get an API token, use [the Web UI](https://rerobots.net/).
+[Get API tokens through the Web UI](https://rerobots.net/tokens).
+([Read instructions about how to do so.](/webui.html#making-and-revoking-api-tokens))
 
 
 commands
