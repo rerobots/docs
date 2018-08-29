@@ -22,7 +22,7 @@ where the first command populates a build/ directory and the latter uses
 https://docs.python.org/3.5/library/http.server.html)
 to serve requests. (Python versions < 3 are not supported.)
 
-Now, direct your Web browser at http://127.0.0.1:8000/
+Now, direct your Web browser at http://127.0.0.1:8001/
 
 
 Dependencies
