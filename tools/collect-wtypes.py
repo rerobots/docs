@@ -28,6 +28,24 @@ def get_image_paths(x):
         image_paths.append(match[start_index:-1])
     return image_paths
 
+def strip_emailaddr(x):
+    for match in re.findall('<.*@.*>', x):
+        x = x.replace(match, '<(hidden)>')
+    return x
+
+def rm_version_prefix(x):
+    y = ''
+    for line in x.split('\n'):
+        if line.startswith('###'):
+            ind = line.find('version')
+            if ind < 0:
+                y += line + '\n'
+            else:
+                y += '### ' + line[ind:] + '\n'
+        else:
+            y += line + '\n'
+    return y
+
 
 wtypes_path = 'workspaces/types/'
 
@@ -44,33 +62,42 @@ for wtype in wtypes:
     with open(os.path.join(sys.argv[1], wtype + '.html'), 'wt') as fp:
         with open(os.path.join(wtypes_path, wtype + '.md'), 'rt') as fpmd:
             typedef = fpmd.read()
-            image_paths = get_image_paths(typedef)
-            for image_path in image_paths:
-                basename = os.path.basename(image_path)
-                dirname = os.path.dirname(image_path)
-                filenames = [basename]
-                if basename.startswith('480px-'):
-                    filename_fullsize = basename[6:]
-                    rebuilt_path = os.path.join(dirname, filename_fullsize)
-                    origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')),
-                                            rebuilt_path)
-                    if not os.path.exists(origpath):
-                        # Attempt to switch file format,
-                        # but do not check exists() again here
-                        if filename_fullsize.endswith('.jpg'):
-                            filename_fullsize = filename_fullsize[:-4] + '.png'
-                        elif filename_fullsize.endswith('.png'):
-                            filename_fullsize = filename_fullsize[:-4] + '.jpg'
-                    filenames.append(filename_fullsize)
-                for filename in filenames:
-                    rebuilt_path = os.path.join(dirname, filename)
-                    origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')),
-                                            rebuilt_path)
-                    assert os.path.exists(origpath), 'file not found: {}'.format(origpath)
-                    with open(origpath, 'rb') as in_img:
-                        with open(os.path.join(sys.argv[1], rebuilt_path), 'wb') as out_img:
-                            out_img.write(in_img.read())
-            fp.write(gen.from_template(typedef))
+        with open(os.path.join(wtypes_path, 'changelogs', wtype + '.changelog.md'), 'rt') as fpcl:
+            typedef_changelog = fpcl.read()
+        image_paths = get_image_paths(typedef)
+        for image_path in image_paths:
+            basename = os.path.basename(image_path)
+            dirname = os.path.dirname(image_path)
+            filenames = [basename]
+            if basename.startswith('480px-'):
+                filename_fullsize = basename[6:]
+                rebuilt_path = os.path.join(dirname, filename_fullsize)
+                origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')),
+                                        rebuilt_path)
+                if not os.path.exists(origpath):
+                    # Attempt to switch file format,
+                    # but do not check exists() again here
+                    if filename_fullsize.endswith('.jpg'):
+                        filename_fullsize = filename_fullsize[:-4] + '.png'
+                    elif filename_fullsize.endswith('.png'):
+                        filename_fullsize = filename_fullsize[:-4] + '.jpg'
+                filenames.append(filename_fullsize)
+            for filename in filenames:
+                rebuilt_path = os.path.join(dirname, filename)
+                origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')),
+                                        rebuilt_path)
+                assert os.path.exists(origpath), 'file not found: {}'.format(origpath)
+                with open(origpath, 'rb') as in_img:
+                    with open(os.path.join(sys.argv[1], rebuilt_path), 'wb') as out_img:
+                        out_img.write(in_img.read())
+        typedef_changelog = strip_emailaddr(typedef_changelog)
+        typedef_changelog = rm_version_prefix(typedef_changelog)
+        typedef += '''
+Changelog
+---------
+{}
+'''.format(typedef_changelog)
+        fp.write(gen.from_template(typedef))
 
 list_wtypes += '</ul>'
 
