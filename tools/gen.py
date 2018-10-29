@@ -28,7 +28,7 @@ PREFIX="""<!DOCTYPE html>
   gtag('config', 'UA-111751205-3');
 </script>
 
-<title>documentation - rerobots (beta)</title>
+<title>documentation - rerobots</title>
 
 <link href="/extern/css/bootstrap.min.css" rel="stylesheet">
 <link href="/extern/css/sticky-footer.css" rel="stylesheet">
@@ -51,7 +51,7 @@ PREFIX="""<!DOCTYPE html>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="https://rerobots.net/">
-        <span class="prefix-re">re</span>robots <small>(beta)</small>
+        <span class="prefix-re">re</span>robots
       </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
