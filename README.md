@@ -36,6 +36,9 @@ This site depends on [Bootstrap](https://getbootstrap.com/) and
 * extern/js/bootstrap.min.js
 * extern/js/jquery.min.js
 
+Building requires the Python package [Markdown](
+https://pypi.org/project/Markdown/).
+
 
 Licenses
 --------
