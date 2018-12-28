@@ -76,9 +76,11 @@ To view the robot, select the link "start camera stream" in the panel titled
 "camera streams". This will start the camera stream and generate a URL for
 viewing it.
 
-Find the link with text "open camera stream". Open this link in a new browser window.
-
-
+Find the link with text "open camera stream". Open this link in a new browser
+window. Try arranging the camera stream window on one side of your desktop and
+the Misty API Explorer window on the other side, as shown in this screenshot:
+![screenshot of the camera stream and Misty API Explorer
+side-by-side](/fig/tutorial_proxy_fixedmisty_finalarrange.png)
 
 
 ## Conclusion
