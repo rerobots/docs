@@ -82,6 +82,10 @@ the Misty API Explorer window on the other side, as shown in this screenshot:
 ![screenshot of the camera stream and Misty API Explorer
 side-by-side](/fig/tutorial_proxy_fixedmisty_finalarrange.png)
 
+This arrangement is also shown in [the following video](https://vimeo.com/308490117):
+<iframe src="https://player.vimeo.com/video/308490117" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
 
 ## Conclusion
 
