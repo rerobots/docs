@@ -24,6 +24,8 @@ all:
 	cp -r -f extern $(BUILDDIR)
 	cp -r -f css $(BUILDDIR)
 	cp -r -f fig $(BUILDDIR)
+	cp logo.png $(BUILDDIR)/
+	cp favicon.ico $(BUILDDIR)/
 
 clean:
 	rm -rf $(BUILDDIR)
