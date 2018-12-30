@@ -22,12 +22,12 @@ PREFIX="""<!DOCTYPE html>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111751205-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){{dataLayer.push(arguments);}}
   gtag('js', new Date());
 
   gtag('config', 'UA-111751205-3');
 </script>
-
+{OPENGRAPHBLOB}
 <title>documentation - rerobots</title>
 
 <link href="/extern/css/bootstrap.min.css" rel="stylesheet">
@@ -90,9 +90,84 @@ SUFFIX="""</div>
 """
 
 
-def from_template(body):
+def get_ogheader(blob, url=None):
+    """extract Open Graph markup into a dict
+
+    The OG header section is delimited by a line of only `---`.
+
+    Note that the page title is not provided as Open Graph metadata if
+    the image metadata is not specified.
+    """
+    found = False
+    ogheader = dict()
+    for line in blob.split('\n'):
+        if line == '---':
+            found = True
+            break
+        if line.startswith('image: '):
+            toks = line.split()
+            assert len(toks) == 2
+            ogheader['image'] = toks[1]
+    if not found:
+        ogheader = dict()  # Ignore any matches as false positives
+        return ogheader
+    if url is not None:
+        assert 'url' not in ogheader
+        ogheader['url'] = url
+    for line in blob.split('\n'):
+        if line.startswith('# '):
+            ogheader['title'] = line[2:]
+    return ogheader
+
+
+def create_ogblob(ogheader):
+    """create <meta> tags from Open Graph dict
+
+    if ogheader is empty dict, then return empty string.
+    if ogheader has some values but not the minimum, then raise ValueError.
+
+    if og:image is a path, not a URL of http or https scheme, then
+    'https://help.rerobots.net/' is prepended to it.
+    """
+    if len(ogheader) == 0:
+        return ''
+    if not ('title' in ogheader and 'url' in ogheader and 'image' in ogheader):
+        raise ValueError('some but not all required metadata provided for Open Graph')
+
+    if not (ogheader['image'].startswith('http://') or ogheader['image'].startswith('https://')):
+        ogheader['image'] = 'https://help.rerobots.net/' + ogheader['image']
+
+    blob = """
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{URL}" />
+<meta property="og:title" content="{TITLE}" />
+<meta property="og:image" content="{IMAGE}" />
+""".format(URL=ogheader['url'], TITLE=ogheader['title'], IMAGE=ogheader['image'])
+
+    return blob
+
+
+def strip_header(blob):
+    ind = blob.find('\n---\n')
+    if ind == -1:
+        return blob
+    return blob[(ind+5):]
+
+
+def from_template(body, path, baseurl=None):
+    if baseurl is None:
+        baseurl = 'https://help.rerobots.net/'
     tstamp = datetime.utcnow().strftime('%Y-%m-%d')
-    out = PREFIX
+    if path.endswith('.md'):
+        path = path[:-2] + 'html'
+    if path == 'index.html' or path.endswith('/index.html'):
+        path = path[:-len('index.html')]
+    url = baseurl + path
+    ogheader = get_ogheader(body, url=url)
+    if len(ogheader) > 0:
+        body = strip_header(body)
+    ogblob = create_ogblob(ogheader)
+    out = PREFIX.format(OPENGRAPHBLOB=ogblob)
     out += markdown(body, output_format='html5', extensions=[TocExtension(), 'markdown.extensions.tables'])
     if '$$' in body:
         endblock = '<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>'
@@ -102,10 +177,16 @@ def from_template(body):
     return out
 
 
-def main(path):
-    with open(path) as fp:
-        return from_template(fp.read())
+def main(argv):
+    assert len(argv) == 2 or len(argv) == 3
+    path = argv[1]
+    if len(argv) == 3:
+        baseurl = argv[2]
+    else:
+        baseurl = None
+    with open(path, 'rt') as fp:
+        return from_template(fp.read(), path, baseurl)
 
 
 if __name__ == '__main__':
-    print(main(sys.argv[1]))
+    print(main(sys.argv))

@@ -97,7 +97,7 @@ Changelog
 ---------
 {}
 '''.format(typedef_changelog)
-        fp.write(gen.from_template(typedef))
+        fp.write(gen.from_template(typedef, os.path.join(sys.argv[1], wtype + '.html')))
 
 list_wtypes += '</ul>'
 
@@ -105,4 +105,4 @@ with open(os.path.join(sys.argv[1], 'index.html'), 'wt') as fp:
     fp.write(gen.from_template('''
 # Index of workspace types
 
-''' + list_wtypes))
+''' + list_wtypes, os.path.join(sys.argv[1], 'index.html')))
