@@ -24,8 +24,8 @@ all:
 	cp -r -f extern $(BUILDDIR)
 	cp -r -f css $(BUILDDIR)
 	cp -r -f fig $(BUILDDIR)
-	cp smaller-logo.png $(BUILDDIR)/
-	cp favicon.ico $(BUILDDIR)/
+	cp smaller-logo.png $(BUILDDIR)
+	cp favicon.ico $(BUILDDIR)
 
 shipit:
 	test -d $(BUILDDIR)
