@@ -1,3 +1,6 @@
+image: smaller-logo.png
+---
+
 # Preliminary concepts
 
 ## Summary
