@@ -27,5 +27,9 @@ all:
 	cp logo.png $(BUILDDIR)/
 	cp favicon.ico $(BUILDDIR)/
 
+shipit:
+	test -d $(BUILDDIR)
+	tar -c $(BUILDDIR) | gzip -9 > rrdocs-`date -u +%Y%m%d-%H%M%S`.tgz
+
 clean:
 	rm -rf $(BUILDDIR)
