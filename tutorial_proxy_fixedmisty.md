@@ -1,3 +1,6 @@
+image: fig/smaller-tutorial_proxy_fixedmisty_finalarrange.png
+---
+
 # Try the Misty API Explorer with a proxy
 
 ## Summary
