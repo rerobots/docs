@@ -1,13 +1,16 @@
 image: fig/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 ---
 
-# Try the Misty API Explorer with a proxy
+# Try the Misty API with a proxy
 
 ## Summary
 
 In this tutorial, you are shown how to instantiate a [`fixed_misty1devel`](
-/workspaces/fixed_misty1devel.html) workspace and control the robot through the
-[Misty API Explorer](http://api-explorer.mistyrobotics.com/). (Note that the Misty API Explorer is a product of [Misty Robotics](https://www.mistyrobotics.com/), Inc., and NOT A PART OF rerobots.)
+/workspaces/fixed_misty1devel.html) workspace, to control the robot through the
+[Misty API Explorer](http://api-explorer.mistyrobotics.com/), to directly make
+[Misty REST API](https://docs.mistyrobotics.com/apis/api-reference/rest/) calls
+through a secure proxy. (Note that the Misty API Explorer is a product of [Misty
+Robotics](https://www.mistyrobotics.com/), Inc., and NOT A PART OF rerobots.)
 
 If you think that something is missing, or if you find errors, please [contact
 us](https://rerobots.net/contact) or [open a ticket](
@@ -88,6 +91,28 @@ side-by-side](/fig/tutorial_proxy_fixedmisty_finalarrange.png)
 This arrangement is also shown in [the following video](https://vimeo.com/308490117):
 <iframe src="https://player.vimeo.com/video/308490117" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+
+## The general case
+
+The `mistyproxy` add-on provides another URL prefix that has the scheme HTTPS
+and provides a secure connection from your computer to the Misty robot. (The
+Explorer website only accepts HTTP.) If you are developing your own code, then
+you should use this one.
+
+For example, if the URL prefix is
+`https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3`,
+then you can make [Misty API](
+https://docs.mistyrobotics.com/apis/api-reference/rest/) calls from the
+command-line with [cURL](https://curl.haxx.se/):
+
+    export MISTYPREFIX=https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3
+
+    curl $MISTYPREFIX/api/info/device
+
+which demonstrates [GET /api/info/device](
+https://docs.mistyrobotics.com/apis/api-reference/rest/#getdeviceinformation). Notice
+that we save the URL prefix to the shell variable `$MISTYPREFIX`, which makes
+the `curl` command concise.
 
 
 ## Conclusion
