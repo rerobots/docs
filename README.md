@@ -29,7 +29,7 @@ Dependencies
 ------------
 
 This site depends on [Bootstrap](https://getbootstrap.com/) and
-[jQuery](http://jquery.com/). The expected layout for `make` to work is:
+[jQuery](https://jquery.com/). The expected layout for `make` to work is:
 
 * extern/css/bootstrap.min.css
 * extern/css/sticky-footer.css
