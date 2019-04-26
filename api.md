@@ -26,12 +26,8 @@ no more requests will be accepted until the current time passes `T`.
 authentication
 --------------
 
-Not all commands require authentication.  In the text below, commands for which
-authentication is provided are with respect to the username in the given
-token. In the API description, this user is called "the user".
-
-[Get API tokens through the Web UI](https://rerobots.net/tokens).
-([Read instructions about how to do so.](/webui.html#making-and-revoking-api-tokens))
+<div class="alert alert-danger" role="alert">Authentication is not available yet through the HTTP API. Instead, <a href="https://rerobots.net/tokens">Get API tokens through the Web UI</a>.
+(<a href="/webui.html#making-and-revoking-api-tokens">Read instructions about how to do so.</a>)</div>
 
 
 commands
