@@ -34,8 +34,12 @@ differences, which motivates introducing a new term.
 
 ## Kinds of connection
 
-Remote access to instances is achieved through some combination of SSH keys and
-VPN client credentials.
+To connect to an instance, there are several options available now, and more are
+under development. The best choice depends on a variety of factors, including
+some that rerobots cannot control; e.g., your geographic location relative to
+workspace deployments, which whether you will operate the robots interactively
+(in real-time) or upload tests and run them in batch, the kind of communications
+middleware you use on the robots.
 
 ## API tokens
 
