@@ -41,6 +41,11 @@ workspace deployments, which whether you will operate the robots interactively
 (in real-time) or upload tests and run them in batch, the kind of communications
 middleware you use on the robots.
 
+Available kinds of connection:
+
+1. `sshtun`: ssh to a public IP address and port number.
+2. `openvpn`: create OpenVPN server and install client certificates on instance hosts.
+
 ## API tokens
 
 This section presents terms that are not required if you only use the Web UI.
