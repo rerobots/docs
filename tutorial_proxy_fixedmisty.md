@@ -8,7 +8,7 @@ image: fig/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 In this tutorial, you are shown how to instantiate a [`fixed_misty1devel`](
 /workspaces/fixed_misty1devel.html) workspace, to control the robot through the
 [Misty API Explorer](http://api-explorer.mistyrobotics.com/), to directly make
-[Misty REST API](https://docs.mistyrobotics.com/coding/using-remote-commands/rest/) calls
+[Misty REST API](https://docs.mistyrobotics.com/docs/reference/rest/) calls
 through a secure proxy. (Note that the Misty API Explorer is a product of [Misty
 Robotics](https://www.mistyrobotics.com/), Inc., and NOT A PART OF rerobots.)
 
@@ -102,7 +102,7 @@ you should use this one.
 For example, if the URL prefix is
 `https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3`,
 then you can make [Misty API](
-https://docs.mistyrobotics.com/coding/using-remote-commands/rest/) calls from the
+https://docs.mistyrobotics.com/docs/reference/rest/) calls from the
 command-line with [cURL](https://curl.haxx.se/):
 
     export MISTYPREFIX=https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3
@@ -110,7 +110,7 @@ command-line with [cURL](https://curl.haxx.se/):
     curl $MISTYPREFIX/api/info/device
 
 which demonstrates [GET /api/info/device](
-https://docs.mistyrobotics.com/coding/using-remote-commands/rest/#getdeviceinformation). Notice
+https://docs.mistyrobotics.com/docs/reference/rest/#getdeviceinformation). Notice
 that we save the URL prefix to the shell variable `$MISTYPREFIX`, which makes
 the `curl` command concise.
 
