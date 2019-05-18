@@ -5,8 +5,8 @@ image: fig/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 
 ## Summary
 
-In this tutorial, you are shown how to instantiate a [`fixed_misty1devel`](
-/workspaces/fixed_misty1devel.html) workspace, to control the robot through the
+In this tutorial, you are shown how to instantiate a [`fixed_misty2fieldtrial`](
+/workspaces/fixed_misty2fieldtrial.html) workspace, to control the robot through the
 [Misty API Explorer](http://api-explorer.mistyrobotics.com/), to directly make
 [Misty REST API](https://docs.mistyrobotics.com/docs/reference/rest/) calls
 through a secure proxy. (Note that the Misty API Explorer is a product of [Misty
@@ -24,9 +24,9 @@ page](https://rerobots.net/search). It should look like the following:
 ![screenshot of the search page](/fig/tutorial_proxy_fixedmisty_search.png)
 
 For this tutorial, we want to use a workspace deployment that has the type
-[`fixed_misty1devel`](/workspaces/fixed_misty1devel.html). If one is not
+[`fixed_misty2fieldtrial`](/workspaces/fixed_misty2fieldtrial.html). If one is not
 already listed, enter "misty" into the search field, or try the following URL:
-<https://rerobots.net/search?q=fixed_misty1devel>
+<https://rerobots.net/search?q=fixed_misty2fieldtrial>
 
 Click on the photo or the "deployment id" of one of the items in the search
 results. You will get a brief description of the workspace, which should look
@@ -61,7 +61,7 @@ listed later in the "alerts" panel.
 ## Starting the Misty proxy
 
 [Go to your rerobots instances list.](https://rerobots.net/instances) There
-should be a `fixed_misty1devel` instance that you just created. After several
+should be a `fixed_misty2fieldtrial` instance that you just created. After several
 minutes of initializing, during which the robot and other parts of the workspace
 are prepared, the instance status will be `READY`. Select it from the list to
 get instance details, resulting in a page like the following:
@@ -107,9 +107,9 @@ command-line with [cURL](https://curl.haxx.se/):
 
     export MISTYPREFIX=https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3
 
-    curl $MISTYPREFIX/api/info/device
+    curl $MISTYPREFIX/api/device
 
-which demonstrates [GET /api/info/device](
+which demonstrates [GET /api/device](
 https://docs.mistyrobotics.com/docs/reference/rest/#getdeviceinformation). Notice
 that we save the URL prefix to the shell variable `$MISTYPREFIX`, which makes
 the `curl` command concise.
