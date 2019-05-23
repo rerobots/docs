@@ -74,9 +74,9 @@ Misty robot.
 
 ![screenshot of the Misty proxy panel](/fig/tutorial_proxy_fixedmisty_proxypanel.png)
 
-In this example, you would copy-and-paste
-`proxy.rerobots.net:32777/6e44d1530bd35cbe5089521d375aa8ca08b4a5eaa2f5e6328af255abe242ee6e`
-into the "Robot IP Address" box at <http://api-explorer.mistyrobotics.com/>.
+In this example, you would copy-and-paste the first address
+(`proxy.rerobots.net:32912/61ab371e4`...) into the "Robot IP Address" box at
+<http://api-explorer.mistyrobotics.com/>.
 
 To view the robot, select the link "start camera stream" in the panel titled
 "camera streams". This will start the camera stream and generate a URL for
@@ -88,7 +88,7 @@ the Misty API Explorer window on the other side, as shown in this screenshot:
 ![screenshot of the camera stream and Misty API Explorer
 side-by-side](/fig/tutorial_proxy_fixedmisty_finalarrange.png)
 
-This arrangement is also shown in [the following video](https://vimeo.com/308490117):
+A similar arrangement is shown in [the following video](https://vimeo.com/308490117):
 <iframe src="https://player.vimeo.com/video/308490117" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
