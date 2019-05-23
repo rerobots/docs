@@ -119,8 +119,3 @@ the `curl` command concise.
 
 When you are done, return to <https://rerobots.net/instances>, find the instance
 that you created in the table, and push the `terminate` button.
-
-
-## References
-
-The basic idea of Misty API proxy URLs is first presented in the article [URL injection for fun and profit](https://community.mistyrobotics.com/t/url-injection-for-fun-and-profit/1110).
