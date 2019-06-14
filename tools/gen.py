@@ -37,6 +37,7 @@ PREFIX="""<!DOCTYPE html>
 <script src="/extern/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 <a class="sr-only sr-only-focusable" href="#main-content">Skip to main content</a>
@@ -168,7 +169,7 @@ def from_template(body, path, baseurl=None):
         body = strip_header(body)
     ogblob = create_ogblob(ogheader)
     out = PREFIX.format(OPENGRAPHBLOB=ogblob)
-    out += markdown(body, output_format='html5', extensions=[TocExtension(), 'markdown.extensions.tables'])
+    out += markdown(body, output_format='html5', extensions=[TocExtension(), 'markdown.extensions.tables', 'markdown.extensions.codehilite'])
     if '$$' in body:
         endblock = '<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>'
     else:

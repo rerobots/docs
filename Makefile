@@ -24,6 +24,7 @@ all:
 	tools/collect-wtypes.py $(BUILDDIR)/workspaces
 	cp -r -f extern $(BUILDDIR)
 	cp -r -f css $(BUILDDIR)
+	pygmentize -S default -f html -a .codehilite > $(BUILDDIR)css/styles.css
 	cp -r -f fig $(BUILDDIR)
 	cp smaller-logo.png $(BUILDDIR)
 	cp favicon.ico $(BUILDDIR)
