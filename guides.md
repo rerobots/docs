@@ -12,6 +12,7 @@ ticket](https://github.com/rerobots/doc-help/issues).
 ### Table of contents
 
 * [Try the Misty API with a proxy](tutorial_proxy_fixedmisty.html)
+* [Develop skills for Misty robots](tutorial_mistyskills.html)
 * [VPN-based instance with ROS and Brunel Hand](tutorial_vpn_brunelhand.html)
 * [VPN-based instance with LCM](tutorial_vpn_lcm.html)
 * [SSH-tunnel-based instance with fixed Crazyflie](tutorial_sshtunnel_fixedcrazyflie.html)

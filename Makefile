@@ -17,6 +17,7 @@ all:
 	tools/gen.py guides.md > $(BUILDDIR)guides.html
 	tools/gen.py webui.md > $(BUILDDIR)webui.html
 	tools/gen.py tutorial_proxy_fixedmisty.md > $(BUILDDIR)tutorial_proxy_fixedmisty.html
+	tools/gen.py tutorial_mistyskills.md > $(BUILDDIR)tutorial_mistyskills.html
 	tools/gen.py tutorial_vpn_brunelhand.md > $(BUILDDIR)tutorial_vpn_brunelhand.html
 	tools/gen.py tutorial_vpn_lcm.md > $(BUILDDIR)tutorial_vpn_lcm.html
 	tools/gen.py tutorial_sshtunnel_fixedcrazyflie.md > $(BUILDDIR)tutorial_sshtunnel_fixedcrazyflie.html
