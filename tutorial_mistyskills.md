@@ -55,6 +55,7 @@ Each basic action of the example Python code is little more than HTTP GET or
 POST. Consider the command to change the LED color ([lines 29 - 33](
 https://github.com/rerobots/examples/blob/a25067f0b5b666dcb7cf9fd6fa6a4232c9e8fec9/mistyrest.py#L29-L33)):
 
+    :::python
     # Change the color of the chest LED to green
     # https://docs.mistyrobotics.com/docs/reference/rest/#changeled
     res = requests.post(MPURL + '/api/led', json={
@@ -67,6 +68,7 @@ It follows the [official Misty reference documentation](
 https://docs.mistyrobotics.com/docs/reference/rest/#changeled).
 This call is followed by
 
+    :::python
     assert res.ok, 'response from POST /api/led: {} {}'.format(res.status_code, res.reason)
 
 to verify that the HTTP response indicates success. If it is not, then some
