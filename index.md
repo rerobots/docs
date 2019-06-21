@@ -10,8 +10,8 @@ robotics equipment.
 
 ## How do I begin?
 
-rerobots is not yet generally available. If you want early access, then send an
-email to <q@rerobots.net> or [tweet at us](https://twitter.com/rerobots).
+rerobots is not yet generally available. If you want early access, then [contact
+us](https://rerobots.net/contact).
 
 Some of the features are demonstrated in [this
 video](https://vimeo.com/295230120) and [this Jupyter notebook](
