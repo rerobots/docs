@@ -23,20 +23,20 @@ p#pitch {
 
 .prefix-re {
   font-weight: bold;
-  color: #003A00;
+  color: #284328;
 }
 
 a,
 a:hover,
 a:focus {
-  color: #003A00;
+  color: #284328;
   text-decoration: underline;
   border: 1px solid #FFF;
 }
 
 a:hover,
 a:focus {
-  border: 1px solid #003A00;
+  border: 1px solid #284328;
 }
 
 nav a,
@@ -45,7 +45,7 @@ nav a:focus,
 footer a,
 footer a:hover,
 footer a:focus {
-  color: #003A00;
+  color: #284328;
   text-decoration: none;
   border: 0;
 }
@@ -122,14 +122,14 @@ footer a#commons-license {
 }
 
 code {
-  color: #003A00;
+  color: #284328;
   background: #FFF;
 }
 
 .pagination li a,
 .pagination li a:hover,
 .pagination li a:focus {
-  color: #003A00;
+  color: #284328;
 }
 
 .pagination li.active a,
