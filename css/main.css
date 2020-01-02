@@ -29,14 +29,12 @@ p#pitch {
 a,
 a:hover,
 a:focus {
-  color: #284328;
-  text-decoration: underline;
-  border: 1px solid #FFF;
+  color: #4040BF;
 }
 
 a:hover,
 a:focus {
-  border: 1px solid #284328;
+  text-decoration: underline;
 }
 
 nav a,
