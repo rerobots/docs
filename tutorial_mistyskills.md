@@ -3,7 +3,7 @@
 ## Summary
 
 In this tutorial, you are shown how to use rerobots as a platform for developing
-[Misty robot skills](https://docs.mistyrobotics.com/docs/skills/introduction/).
+[Misty robot skills](https://docs.mistyrobotics.com/).
 
 If you think that something is missing, or if you find errors, please [contact
 us](https://rerobots.net/contact) or [open a ticket](
