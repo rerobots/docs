@@ -72,6 +72,7 @@ SUFFIX="""</div>
     </div>
     <div class="col-md-6 col-sm-6 text-muted">
       <span id="update-date">updated {DATESTAMP}</span>
+      <a href="https://github.com/rerobots/doc-help/">contribute</a>
       <a href="https://rerobots.net/site/terms-of-service">terms of service</a>
     </div>
   </div></div>
