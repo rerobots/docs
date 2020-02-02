@@ -3,3 +3,4 @@
 /extern/
 *.pyc
 shipit.sh
+node_modules/
