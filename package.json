@@ -1,0 +1,12 @@
+{
+  "name": "rerorobots-help",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rerobots/doc-help",
+  "author": "Scott C. Livingston <scott@rerobots.net>",
+  "license": "Apache 2.0",
+  "private": true,
+  "dependencies": {
+    "lunr": "^2.3.8"
+  }
+}
