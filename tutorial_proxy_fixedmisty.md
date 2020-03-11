@@ -5,11 +5,11 @@ image: fig/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 
 ## Summary
 
-In this tutorial, you are shown how to instantiate a [`fixed_misty2fieldtrial`](
-/workspaces/fixed_misty2fieldtrial.html) workspace, to control the robot through the
-[Misty API Explorer](http://api-explorer.mistyrobotics.com/), to directly make
-[Misty REST API](https://docs.mistyrobotics.com/docs/reference/rest/) calls
-through a secure proxy. (Note that the Misty API Explorer is a product of [Misty
+In this tutorial, you are shown how to instantiate a workspace with a Misty robot
+(for example, [`fixed_misty2`](/workspaces/fixed_misty2.html)) to control the robot through the
+[Misty Command Center](http://sdk.mistyrobotics.com/command-center/index.html), to directly make
+[Misty REST API](https://docs.mistyrobotics.com/misty-ii/rest-api/api-reference/) calls
+through a secure proxy. (Note that the Misty Command Center is a product of [Misty
 Robotics](https://www.mistyrobotics.com/), Inc., and NOT A PART OF rerobots.)
 
 If you think that something is missing, or if you find errors, please [contact
@@ -18,15 +18,15 @@ https://github.com/rerobots/doc-help/issues).
 
 ## Searching
 
-To begin, sign-in to <https://rerobots.net>, and go to to [the search
+To begin, sign-in to <https://rerobots.net>, and go to [the search
 page](https://rerobots.net/search). It should look like the following:
 
 ![screenshot of the search page](/fig/tutorial_proxy_fixedmisty_search.png)
 
 For this tutorial, we want to use a workspace deployment that has the type
-[`fixed_misty2fieldtrial`](/workspaces/fixed_misty2fieldtrial.html). If one is not
+[`fixed_misty2`](/workspaces/fixed_misty2.html). If one is not
 already listed, enter "misty" into the search field, or try the following URL:
-<https://rerobots.net/search?q=fixed_misty2fieldtrial>
+<https://rerobots.net/search?q=fixed_misty2>
 
 Click on the photo or the "deployment id" of one of the items in the search
 results. You will get a brief description of the workspace, which should look
@@ -61,7 +61,7 @@ listed later in the "alerts" panel.
 ## Starting the Misty proxy
 
 [Go to your rerobots instances list.](https://rerobots.net/instances) There
-should be a `fixed_misty2fieldtrial` instance that you just created. After several
+should be a `fixed_misty2` instance that you just created. After several
 minutes of initializing, during which the robot and other parts of the workspace
 are prepared, the instance status will be `READY`. Select it from the list to
 get instance details, resulting in a page like the following:
@@ -84,7 +84,7 @@ viewing it.
 
 Find the link with text "open camera stream". Open this link in a new browser
 window. Try arranging the camera stream window on one side of your desktop and
-the Misty API Explorer window on the other side, as shown in this screenshot:
+the Misty Command Center window on the other side, as shown in this screenshot:
 ![screenshot of the camera stream and Misty API Explorer
 side-by-side](/fig/tutorial_proxy_fixedmisty_finalarrange.png)
 
