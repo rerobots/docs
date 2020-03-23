@@ -16,3 +16,4 @@ us](https://rerobots.net/contact).
 Some of the features are demonstrated in [this
 video](https://vimeo.com/295230120) and [this Jupyter notebook](
 https://github.com/rerobots/examples/blob/master/handmotion.ipynb) (try it [on Colab](https://colab.research.google.com/github/rerobots/examples/blob/master/handmotion.ipynb)).
+You can also [try a sandbox](https://rerobots.net/sandbox/random).
