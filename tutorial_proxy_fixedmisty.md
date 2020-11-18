@@ -89,7 +89,7 @@ the Misty Command Center window on the other side, as shown in this screenshot:
 side-by-side](/fig/tutorial_proxy_fixedmisty_finalarrange.png)
 
 A similar arrangement is shown in [the following video](https://vimeo.com/308490117):
-<iframe src="https://player.vimeo.com/video/308490117" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/440801712" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 ## The general case
