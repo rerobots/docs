@@ -17,13 +17,13 @@ proxy](tutorial_proxy_fixedmisty.html).
 
 ## Change LED color and tilt the head of the robot
 
-Example images in this section are from a [`fixed_misty2fieldtrial`](
-/workspaces/fixed_misty2fieldtrial.html) workspace, in particular the
+Example images in this section are from a [`fixed_misty2`](
+/workspaces/fixed_misty2.html) workspace, in particular the
 [deployment
-f06c8740](https://rerobots.net/workspace/f06c8740-02a0-48ec-bdde-69ff88b71afd).
+2c0873b5](https://rerobots.net/workspace/2c0873b5-1da1-46e6-9658-c40379774edf).
 
-Upon a new instantiation of a [`fixed_misty2fieldtrial`](
-/workspaces/fixed_misty2fieldtrial.html) workspace, the offboard camera view
+Upon a new instantiation of a [`fixed_misty2`](
+/workspaces/fixed_misty2.html) workspace, the offboard camera view
 appears like
 
 ![view from before mistyrest.py](/fig/tutorial_mistyskills_beforeledtilt.jpg)
