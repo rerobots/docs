@@ -18,6 +18,11 @@ ticket](https://github.com/rerobots/doc-help/issues).
 * [SSH-tunnel-based instance with fixed Crazyflie](tutorial_sshtunnel_fixedcrazyflie.html)
 
 
+## Manuals of products
+
+* [hardshare](https://hardshare.readthedocs.io/en/latest/) - the system for sharing your robot through the rerobots infrastructure.
+
+
 ## Using the website
 
 ### Summary
