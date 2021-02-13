@@ -1,7 +1,12 @@
-HTTP API
-========
+API
+===
 
 <div class="alert alert-danger" role="alert">Beware! This API is actively changing. Some effort is made to support backwards compatibility, but it is not yet high priority.</div>
+
+Most users will want to use one of the official client libraries instead of
+working directly with the HTTP interface:
+
+* Python - <https://github.com/rerobots/py>
 
 The current version is 1, so calls to api.rerobots.net that lack a version route
 default to v1. To request this or any particular version, in requests include an
