@@ -55,3 +55,8 @@ interface">[API](/api.html)</abbr>. An **API token** is a string that provides
 authentication and authorization for API requests. rerobots API tokens follow
 the JSON Web Token standard, [RFC 7519](https://tools.ietf.org/html/rfc7519),
 which is introduced at <https://jwt.io/>.
+
+## Hardshare
+
+Please read the [Introduction of the hardshare manual](https://hardshare.readthedocs.io/en/latest/intro.html).
+The source files for it are available [in the repository of the hardshare client](https://github.com/rerobots/hardshare/tree/master/doc).
