@@ -1,4 +1,6 @@
 digraph A {
+"" [shape=none,height=0]
+"" -> INIT
 INIT -> READY
 INIT -> INIT_FAIL
 INIT_FAIL -> INIT_FAIL
