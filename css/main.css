@@ -149,3 +149,8 @@ img {
 ul.list-wtypes {
   margin: 1em 0;
 }
+
+#main-content {
+  font-family: Georgia, serif;
+  font-size: 17px;
+}
