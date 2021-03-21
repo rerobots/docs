@@ -5,9 +5,8 @@ image: smaller-logo.png
 
 ## Summary
 
-rerobots uses several terms that might seem familiar but that are not currently
-in common use. This section presents them. For a broader view about what is
-rerobots, read [the introduction](index.html).
+This page presents terms and concepts about rerobots infrastructure.
+To get an executive summary instead, go back to [the introduction](index.html).
 
 If you think that something is missing, or if you find errors, please [contact
 us](https://rerobots.net/contact) or [open a
@@ -31,6 +30,10 @@ An **instance** of a workspace corresponds to usage of a deployment by a
 user. Ideally, each instance of a deployment is identical modulo changes of
 user-defined parameters where available, but practically there may be some
 differences, which motivates introducing a new term.
+
+## Instances
+
+![diagram of instance lifecycle](/fig/instance-lifecycle.svg)
 
 ## Kinds of connection
 
