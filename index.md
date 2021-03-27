@@ -12,8 +12,8 @@ cloud-computing pattern.
 You can develop software on these robots interactively through a Web-based IDE,
 demonstrated in videos of [multi_kobuki](https://vimeo.com/465989844) and
 [fixed_misty2](https://vimeo.com/488264658) workspaces.
-You can also build your own applications that manage robot access through client
-libraries, such as in [Python](https://pypi.org/project/rerobots/).
+You can also build your own applications that manage robot access with popular programming languages,
+like [Python](https://pypi.org/project/rerobots/).
 
 You can share your own robot or <abbr title="Internet of Things">IoT</abbr> device through the same infrastructure with
 [hardshare](https://hardshare.readthedocs.io/en/latest/).
