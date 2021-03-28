@@ -20,7 +20,7 @@ PREFIX="""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 {OPENGRAPHBLOB}
-<title>documentation - rerobots</title>
+<title>{TITLE}</title>
 
 <link href="/extern/css/bootstrap.min.css" rel="stylesheet">
 <link href="/extern/css/sticky-footer.css" rel="stylesheet">
@@ -160,7 +160,11 @@ def from_template(body, path, baseurl=None):
     if len(ogheader) > 0:
         body = strip_header(body)
     ogblob = create_ogblob(ogheader)
-    out = PREFIX.format(OPENGRAPHBLOB=ogblob)
+    title = ogheader.get('title', '')
+    if len(title) > 0:
+        title += ' - '
+    title += 'rerobots help'
+    out = PREFIX.format(OPENGRAPHBLOB=ogblob, TITLE=title)
     out += markdown(body, output_format='html5', extensions=[TocExtension(), 'markdown.extensions.tables', 'markdown.extensions.codehilite'])
     if '$$' in body:
         endblock = '<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>'
