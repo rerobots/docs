@@ -19,7 +19,7 @@ website via
 
 where the first command populates a build/ directory and the latter uses
 [http.server in the Python 3 standard library](
-https://docs.python.org/3.5/library/http.server.html)
+https://docs.python.org/3.8/library/http.server.html)
 to serve requests. (Python versions < 3 are not supported.)
 
 Now, direct your Web browser at http://127.0.0.1:8001/
