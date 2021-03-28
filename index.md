@@ -19,6 +19,11 @@ You can share your own robot or <abbr title="Internet of Things">IoT</abbr> devi
 [hardshare](https://hardshare.readthedocs.io/en/latest/).
 
 
+## Who are you?
+
+[Scott](https://twitter.com/nocturnalnectar)
+
+
 ## How do I begin?
 
 rerobots is not yet generally available.
