@@ -16,8 +16,8 @@ ticket](https://github.com/rerobots/doc-help/issues).
 
 A **workspace** is an abstraction of a collection of methods and materials for
 robotics experiments. Note that "experiments" is not only for basic or applied
-research, but it is also for routine engineering activities like continuous
-integration testing.
+research, but it is also for routine engineering activities like
+<abbr title="continuous integration">CI</abbr> testing.
 
 Conceptually, there are three levels of refinement. A **workspace type** is the
 workspace in terms of essential features, such as the models of hardware and the
