@@ -39,6 +39,9 @@ The instance lifecycle is shown in the following diagram:
 
 Instantiating always begins at `INIT`. It is rare but possible that an error
 will occur during `INIT` that causes the instance to be marked as `INIT_FAIL`.
+If initialization succeeds, the instance becomes `READY` and usage time
+measurement begins for purposes such as billing. When the user is done, she can
+terminate the instance.
 
 ## Kinds of connection
 
