@@ -1,7 +1,7 @@
 image: smaller-logo.png
 ---
 
-# Preliminary concepts
+# Preliminary Concepts
 
 ## Summary
 
@@ -43,7 +43,7 @@ If initialization succeeds, the instance becomes `READY` and usage time
 measurement begins for purposes such as billing. When the user is done, she can
 terminate the instance.
 
-## Kinds of connection
+## Kinds of Connection
 
 To connect to an instance, there are several options available now, and more are
 under development. The best choice depends on a variety of factors, including
@@ -57,7 +57,7 @@ Available kinds of connection:
 1. `sshtun`: ssh to a public IP address and port number.
 2. `openvpn`: create OpenVPN server and install client certificates on instance hosts.
 
-## API tokens
+## API Tokens
 
 This section presents terms that are not required if you only use the Web UI.
 
