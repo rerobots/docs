@@ -9,7 +9,7 @@ If you think that something is missing, or if you find errors, please [contact
 us](https://rerobots.net/contact) or [open a
 ticket](https://github.com/rerobots/doc-help/issues).
 
-### Table of contents
+### Table of Contents
 
 * [Try the Misty API with a proxy](tutorial_proxy_fixedmisty.html)
 * [Develop skills for Misty robots](tutorial_mistyskills.html)
@@ -18,19 +18,19 @@ ticket](https://github.com/rerobots/doc-help/issues).
 * [SSH-tunnel-based instance with fixed Crazyflie](tutorial_sshtunnel_fixedcrazyflie.html)
 
 
-## Manuals of products
+## Manuals of Products
 
 * [hardshare](https://hardshare.readthedocs.io/en/latest/) - the system for sharing your robot through the rerobots infrastructure.
 
 
-## Using the website
+## Using the Website
 
 ### Summary
 
 This section describes how to use the Web interface of rerobots. You can learn
 how to perform basic tasks like adding SSH keys to your account.
 
-### Table of contents
+### Table of Contents
 
 * [Uploading SSH public keys](webui.html#uploading-ssh-public-keys)
 * [Making and revoking API tokens](webui.html#making-and-revoking-api-tokens)
