@@ -103,6 +103,6 @@ list_wtypes += '</ul>'
 
 with open(os.path.join(sys.argv[1], 'index.html'), 'wt') as fp:
     fp.write(gen.from_template('''
-# Index of workspace types
+# Index of Workspace Types
 
 ''' + list_wtypes, os.path.join(sys.argv[1], 'index.html')))
