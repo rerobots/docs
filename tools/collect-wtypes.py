@@ -105,4 +105,6 @@ with open(os.path.join(sys.argv[1], 'index.html'), 'wt') as fp:
     fp.write(gen.from_template('''
 # Index of Workspace Types
 
+(generated from [https://github.com/rerobots/workspaces](https://github.com/rerobots/workspaces))
+
 ''' + list_wtypes, os.path.join(sys.argv[1], 'index.html')))
