@@ -76,7 +76,7 @@ Misty robot.
 
 In this example, you would copy-and-paste the first address
 (`proxy.rerobots.net:32912/61ab371e4`...) into the "Robot IP Address" box at
-<http://api-explorer.mistyrobotics.com/>.
+<http://sdk.mistyrobotics.com/command-center/>.
 
 To view the robot, select the link "start camera stream" in the panel titled
 "camera streams". This will start the camera stream and generate a URL for
@@ -102,7 +102,7 @@ you should use this one.
 For example, if the URL prefix is
 `https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3`,
 then you can make [Misty API](
-https://docs.mistyrobotics.com/docs/reference/rest/) calls from the
+https://docs.mistyrobotics.com/misty-ii/rest-api/api-reference/) calls from the
 command-line with [cURL](https://curl.haxx.se/):
 
     export MISTYPREFIX=https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3
@@ -110,7 +110,7 @@ command-line with [cURL](https://curl.haxx.se/):
     curl $MISTYPREFIX/api/device
 
 which demonstrates [GET /api/device](
-https://docs.mistyrobotics.com/docs/reference/rest/#getdeviceinformation). Notice
+https://docs.mistyrobotics.com/misty-ii/rest-api/api-reference/#getdeviceinformation). Notice
 that we save the URL prefix to the shell variable `$MISTYPREFIX`, which makes
 the `curl` command concise.
 
