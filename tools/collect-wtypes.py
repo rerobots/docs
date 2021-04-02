@@ -92,11 +92,14 @@ for wtype in wtypes:
                         out_img.write(in_img.read())
         typedef_changelog = strip_emailaddr(typedef_changelog)
         typedef_changelog = rm_version_prefix(typedef_changelog)
+        repo_url = 'https://github.com/rerobots/workspaces/blob/master/types/{}.md'.format(wtype)
         typedef += '''
 Changelog
 ---------
+([latest source file]({}))
+
 {}
-'''.format(typedef_changelog)
+'''.format(repo_url, typedef_changelog)
         fp.write(gen.from_template(typedef, os.path.join(sys.argv[1], wtype + '.html')))
 
 list_wtypes += '</ul>'
