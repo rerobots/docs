@@ -59,8 +59,6 @@ Available kinds of connection:
 
 ## API Tokens
 
-This section presents terms that are not required if you only use the Web UI.
-
 The core interface of rerobots is its <abbr title="application programming
 interface">[API](/api.html)</abbr>. An **API token** is a string that provides
 authentication and authorization for API requests. rerobots API tokens follow
