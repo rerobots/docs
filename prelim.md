@@ -43,6 +43,11 @@ If initialization succeeds, the instance becomes `READY` and usage time
 measurement begins for purposes such as billing. When the user is done, she can
 terminate the instance.
 
+In the case of `INIT_FAIL`, you can [contact a rerobots
+employee](https://rerobots.net/contact) for assistance, or you can try to
+terminate and start a new instance again. Internal rerobots logging will
+automatically save this event for further investigation later.
+
 ## Kinds of Connection
 
 To connect to an instance, there are several options available now, and more are
