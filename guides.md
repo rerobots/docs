@@ -18,11 +18,6 @@ ticket](https://github.com/rerobots/doc-help/issues).
 * [SSH-tunnel-based instance with fixed Crazyflie](tutorial_sshtunnel_fixedcrazyflie.html)
 
 
-## Manuals of Products
-
-* [hardshare](https://hardshare.readthedocs.io/en/latest/) - the system for sharing your robot through the rerobots infrastructure.
-
-
 ## Using the Website
 
 ### Summary
@@ -34,3 +29,8 @@ how to perform basic tasks like adding SSH keys to your account.
 
 * [Uploading SSH public keys](webui.html#uploading-ssh-public-keys)
 * [Making and revoking API tokens](webui.html#making-and-revoking-api-tokens)
+
+
+## Manuals of Products
+
+* [hardshare](https://hardshare.readthedocs.io/en/latest/) - the system for sharing your robot through the rerobots infrastructure.
