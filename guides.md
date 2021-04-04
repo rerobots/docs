@@ -27,8 +27,8 @@ how to perform basic tasks like adding SSH keys to your account.
 
 ### Table of Contents
 
-* [Uploading SSH public keys](webui.html#uploading-ssh-public-keys)
-* [Making and revoking API tokens](webui.html#making-and-revoking-api-tokens)
+* [Uploading SSH Public Keys](webui.html#uploading-ssh-public-keys)
+* [Making and Revoking API Tokens](webui.html#making-and-revoking-api-tokens)
 
 
 ## Manuals of Products

@@ -9,12 +9,12 @@ If you think that something is missing, or if you find errors, please [contact
 us](https://rerobots.net/contact) or [open a
 ticket](https://github.com/rerobots/doc-help/issues).
 
-## Table of contents
+## Table of Contents
 
-* [Uploading SSH public keys](#uploading-ssh-public-keys)
-* [Making and revoking API tokens](#making-and-revoking-api-tokens)
+* [Uploading SSH Public Keys](#uploading-ssh-public-keys)
+* [Making and Revoking API Tokens](#making-and-revoking-api-tokens)
 
-## Uploading SSH public keys
+## Uploading SSH Public Keys
 
 Remote log-in to hosts of a workspace instance is achieved through `ssh`. If you
 save public keys to your user account, then they can easily be selected when you
@@ -46,7 +46,7 @@ appear in the table. For example,
 
 ![screenshot of user's table of uploaded SSH keys, showing the new one](fig/webguide_new_sshkeys_table_item.png)
 
-## Making and revoking API tokens
+## Making and Revoking API Tokens
 
 As introduced in the [Preliminaries](prelim.html) section, API tokens are
 required to use the rerobots API directly, instead of through [the Web
