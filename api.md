@@ -143,7 +143,7 @@ JSON object with one or more of the following:
   where `A` is the address from which this request arrived.
 
 * action: one of `"ACCEPT"`, `"DROP"`, `"REJECT"`. These have the usual
-  interpretation, e.g., as in Linux [iptables](http://www.netfilter.org/).
+  interpretation, e.g., as in Linux [iptables](https://www.netfilter.org/).
   Default is `ACCEPT`.
 
 
