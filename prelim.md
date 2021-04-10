@@ -53,7 +53,7 @@ automatically save this event for further investigation later.
 To connect to an instance, there are several options available now, and more are
 under development. The best choice depends on a variety of factors, including
 some that rerobots cannot control; e.g., your geographic location relative to
-workspace deployments, which whether you will operate the robots interactively
+workspace deployments, whether you will operate the robots interactively
 (in real-time) or upload tests and run them in batch, the kind of communications
 middleware you use on the robots.
 
