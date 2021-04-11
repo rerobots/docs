@@ -151,6 +151,10 @@ ul.list-wtypes {
 }
 
 #main-content {
-  font-family: Georgia, serif;
+  font-family: Georgia, sans;
   font-size: 17px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, serif;
 }
