@@ -70,6 +70,10 @@ authentication and authorization for API requests. rerobots API tokens follow
 the JSON Web Token standard, [RFC 7519](https://tools.ietf.org/html/rfc7519),
 which is introduced at <https://jwt.io/>.
 
+Users manage their API tokens at <https://rerobots.net/tokens>.
+Learn more by reading the <a href="/guides.html">guides</a> about API tokens,
+such as [how to make and revoke API tokens](#making-and-revoking-api-tokens).
+
 ## Hardshare
 
 Please read the [Introduction of the hardshare manual](https://hardshare.readthedocs.io/en/latest/intro.html).
