@@ -72,7 +72,7 @@ which is introduced at <https://jwt.io/>.
 
 Users manage their API tokens at <https://rerobots.net/tokens>.
 Learn more by reading the <a href="/guides.html">guides</a> about API tokens,
-such as [how to make and revoke API tokens](#making-and-revoking-api-tokens).
+such as [how to make and revoke API tokens](webui.html#making-and-revoking-api-tokens).
 
 ## Hardshare
 
