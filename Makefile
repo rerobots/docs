@@ -10,6 +10,8 @@ all:
 	mkdir -p $(BUILDDIR)
 	mkdir -p $(BUILDDIR)/workspaces
 	mkdir -p $(BUILDDIR)/workspaces/figures
+	mkdir -p $(BUILDDIR)events/RSS2021
+	tools/gen.py events/RSS2021.md > $(BUILDDIR)events/RSS2021/index.html
 	tools/gen.py index.md > $(BUILDDIR)index.html
 	tools/gen.py api.md > $(BUILDDIR)api.html
 	tools/gen.py references.md > $(BUILDDIR)references.html
