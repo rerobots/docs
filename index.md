@@ -28,5 +28,5 @@ You can share your own robot or <abbr title="Internet of Things">IoT</abbr> devi
 
 rerobots is not yet generally available.
 However, you can anonymously [try a sandbox](https://rerobots.net/sandbox).
-If you want early access, then [contact us](https://rerobots.net/contact) or
+If you want early access, then
 [join the community on Discord](https://discord.gg/ur3jTyw).
