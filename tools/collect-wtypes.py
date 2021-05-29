@@ -60,7 +60,8 @@ list_wtypes = '<ul class="list-group list-wtypes">\n'
 for wtype in wtypes:
     list_wtypes += '<li class="list-group-item"><a href="{WTYPE}.html">{WTYPE}</a></li>\n'.format(WTYPE=wtype)
     with open(os.path.join(sys.argv[1], wtype + '.html'), 'wt') as fp:
-        with open(os.path.join(wtypes_path, wtype + '.md'), 'rt') as fpmd:
+        source_path = os.path.join(wtypes_path, wtype + '.md')
+        with open(source_path, 'rt') as fpmd:
             typedef = fpmd.read()
         with open(os.path.join(wtypes_path, 'changelogs', wtype + '.changelog.md'), 'rt') as fpcl:
             typedef_changelog = fpcl.read()
@@ -96,18 +97,18 @@ for wtype in wtypes:
         typedef += '''
 Changelog
 ---------
-([latest source file]({}))
 
 {}
-'''.format(repo_url, typedef_changelog)
-        fp.write(gen.from_template(typedef, os.path.join(sys.argv[1], wtype + '.html')))
+'''.format(typedef_changelog)
+        fp.write(gen.from_template(typedef, os.path.join(sys.argv[1], wtype + '.html'), repo_url=repo_url))
 
 list_wtypes += '</ul>'
 
+repo_url = 'https://github.com/rerobots/doc-help/blob/master/' + __file__
 with open(os.path.join(sys.argv[1], 'index.html'), 'wt') as fp:
     fp.write(gen.from_template('''
 # Index of Workspace Types
 
 (generated from [https://github.com/rerobots/workspaces](https://github.com/rerobots/workspaces))
 
-''' + list_wtypes, os.path.join(sys.argv[1], 'index.html')))
+''' + list_wtypes, os.path.join(sys.argv[1], 'index.html'), repo_url=repo_url))

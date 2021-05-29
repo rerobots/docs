@@ -111,6 +111,10 @@ footer a#commons-license {
   height: auto;
 }
 
+.footer-left {
+  margin: 0;
+}
+
 .control-btn {
   margin: 0.1em;
 }

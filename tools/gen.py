@@ -68,7 +68,7 @@ SUFFIX="""</div>
   <div class="container"><div class="row">
     <div class="col-md-6 col-sm-6 text-muted">
       Copyright &copy; 2021 rerobots, Inc.<br />
-      This work is <a rel="license" href="https://github.com/rerobots/doc-help/" id="commons-license">free, open source</a>.
+      <a class="footer-left" href="{REPOURL}">Edit this page</a>; <a rel="license" href="https://github.com/rerobots/doc-help/" id="commons-license">free, open source</a>.
     </div>
     <div class="col-md-6 col-sm-6 text-muted">
       <span id="update-date">updated {DATESTAMP}</span>
@@ -147,7 +147,9 @@ def strip_header(blob):
     return blob[(ind+5):]
 
 
-def from_template(body, path, baseurl=None):
+def from_template(body, path, baseurl=None, repo_url=None):
+    if repo_url is None:
+        repo_url = 'https://github.com/rerobots/doc-help/blob/master/' + path
     if baseurl is None:
         baseurl = 'https://help.rerobots.net/'
     tstamp = datetime.utcnow().strftime('%Y-%m-%d')
@@ -170,7 +172,7 @@ def from_template(body, path, baseurl=None):
         endblock = '<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>'
     else:
         endblock = ''
-    out += SUFFIX.format(DATESTAMP=tstamp, ENDBLOCK=endblock)
+    out += SUFFIX.format(DATESTAMP=tstamp, ENDBLOCK=endblock, REPOURL=repo_url)
     return out
 
 
