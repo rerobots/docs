@@ -72,5 +72,5 @@ such as [how to make and revoke API tokens](webui.html#making-and-revoking-api-t
 
 ## Hardshare
 
-Please read the [Introduction of the hardshare manual](https://hardshare.readthedocs.io/en/latest/intro.html).
+Please read the [Introduction of the hardshare manual](https://docs.hardshare.dev/intro.html).
 The source files for it are available [in the repository of the hardshare client](https://github.com/rerobots/hardshare/tree/master/doc).

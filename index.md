@@ -16,7 +16,7 @@ You can also build your own applications that manage robot access with popular p
 like [Python](https://pypi.org/project/rerobots/).
 
 You can share your own robot or <abbr title="Internet of Things">IoT</abbr> device through the same infrastructure with
-[hardshare](https://hardshare.readthedocs.io/en/latest/).
+[hardshare](https://hardshare.dev/).
 
 
 ## Who are you?

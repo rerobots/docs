@@ -30,4 +30,4 @@ how to perform basic tasks like adding SSH keys to your account.
 
 ## Manuals of Products
 
-* [hardshare](https://hardshare.readthedocs.io/en/latest/) - the system for sharing your robot through the rerobots infrastructure.
+* [hardshare](https://docs.hardshare.dev/) - the system for sharing your robot through the rerobots infrastructure.
