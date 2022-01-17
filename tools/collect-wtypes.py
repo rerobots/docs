@@ -70,7 +70,7 @@ for wtype in wtypes:
             basename = os.path.basename(image_path)
             dirname = os.path.dirname(image_path)
             filenames = [basename]
-            if basename.startswith('480px-'):
+            if basename.startswith('480px-') and basename != '480px-basic_ur5_no_tool.jpg':
                 filename_fullsize = basename[6:]
                 rebuilt_path = os.path.join(dirname, filename_fullsize)
                 origpath = os.path.join(os.path.abspath(os.path.join(wtypes_path, '..')),
