@@ -41,7 +41,7 @@ panel with the URL will appear similar to the following:
 ![screenshot of the Misty proxy panel](/fig/tutorial_proxy_fixedmisty_proxypanel.png)
 
 This example demonstrates how to use the [Misty REST
-API](https://docs.mistyrobotics.com/docs/reference/rest/) through the rerobots
+API](https://docs.mistyrobotics.com/misty-ii/web-api/overview/) through the rerobots
 proxy. If you had the robot on your local network, then `MPURL` can instead be
 the IP address of the robot.
 
@@ -57,7 +57,7 @@ https://github.com/rerobots/examples/blob/a25067f0b5b666dcb7cf9fd6fa6a4232c9e8fe
 
     :::python
     # Change the color of the chest LED to green
-    # https://docs.mistyrobotics.com/docs/reference/rest/#changeled
+    # https://docs.mistyrobotics.com/misty-ii/web-api/api-reference/#changeled
     res = requests.post(MPURL + '/api/led', json={
         'red': 0,
         'green': 255,
@@ -65,7 +65,7 @@ https://github.com/rerobots/examples/blob/a25067f0b5b666dcb7cf9fd6fa6a4232c9e8fe
     })
 
 It follows the [official Misty reference documentation](
-https://docs.mistyrobotics.com/docs/reference/rest/#changeled).
+https://docs.mistyrobotics.com/misty-ii/web-api/api-reference/#changeled).
 This call is followed by
 
     :::python
