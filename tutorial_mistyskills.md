@@ -32,10 +32,10 @@ If you do not know how to open a camera view, read [another tutorial](
 tutorial_proxy_fixedmisty.html).
 
 Now, consider the example Python code [mistyrest.py](
-https://github.com/rerobots/examples/blob/a25067f0b5b666dcb7cf9fd6fa6a4232c9e8fec9/mistyrest.py). Copy-and-paste
+https://github.com/rerobots/examples/blob/497e3e808821878cad5a0ddbf9bb25900a57e6b8/misty2/mistyrest.py). Copy-and-paste
 the HTTPS URL from the "Misty robot proxy" panel of your instance details page
 into [line 24 of mistyrest.py](
-https://github.com/rerobots/examples/blob/a25067f0b5b666dcb7cf9fd6fa6a4232c9e8fec9/mistyrest.py#L24). The
+https://github.com/rerobots/examples/blob/497e3e808821878cad5a0ddbf9bb25900a57e6b8/misty2/mistyrest.py#L24). The
 panel with the URL will appear similar to the following:
 
 ![screenshot of the Misty proxy panel](/fig/tutorial_proxy_fixedmisty_proxypanel.png)
@@ -53,7 +53,7 @@ is in the following image:
 
 Each basic action of the example Python code is little more than HTTP GET or
 POST. Consider the command to change the LED color ([lines 29 - 33](
-https://github.com/rerobots/examples/blob/a25067f0b5b666dcb7cf9fd6fa6a4232c9e8fec9/mistyrest.py#L29-L33)):
+https://github.com/rerobots/examples/blob/497e3e808821878cad5a0ddbf9bb25900a57e6b8/misty2/mistyrest.py#L29-L33)):
 
     :::python
     # Change the color of the chest LED to green
