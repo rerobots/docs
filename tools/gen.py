@@ -67,7 +67,7 @@ SUFFIX="""</div>
 <footer class="footer">
   <div class="container"><div class="row">
     <div class="col-md-6 col-sm-6 text-muted">
-      Copyright &copy; 2021 rerobots, Inc.<br />
+      Copyright &copy; 2022 rerobots, Inc.<br />
       <a class="footer-left" href="{REPOURL}">Edit this page</a>; <a rel="license" href="https://github.com/rerobots/doc-help/" id="commons-license">free, open source</a>.
     </div>
     <div class="col-md-6 col-sm-6 text-muted">
