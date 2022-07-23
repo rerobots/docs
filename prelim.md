@@ -41,7 +41,7 @@ terminate the instance.
 
 In the case of `INIT_FAIL`, you can [contact a rerobots
 employee](https://rerobots.net/contact) for assistance, or you can try to
-terminate and start a new instance again. Internal rerobots logging will
+start a new instance again. Internal rerobots logging will
 automatically save this event for further investigation later.
 
 ## Kinds of Connection
