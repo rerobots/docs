@@ -21,7 +21,7 @@ You can share your own robot or <abbr title="Internet of Things">IoT</abbr> devi
 
 ## Who are you?
 
-[Scott](https://twitter.com/nocturnalnectar)
+[Scott](https://scottman.net/)
 
 
 ## How do I begin?
