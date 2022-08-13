@@ -5,7 +5,7 @@ image: smaller-logo.png
 
 ## What is rerobots?
 
-**rerobots** is a suite of tools and services for building and sharing robots.
+**rerobots** is a suite of tools for building and sharing robots.
 
 We maintain a variety of robots that can be remotely accessed in a *bare metal*
 cloud-computing pattern.
