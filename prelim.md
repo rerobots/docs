@@ -11,7 +11,7 @@ To get an executive summary instead, go back to [the introduction](index.html).
 ## Workspaces
 
 A **workspace** is an abstraction of a collection of methods and materials for
-robotics experiments. Note that "experiments" is not only for basic or applied
+experiments with hardware. Note that "experiments" is not only for basic or applied
 research, but it is also for routine engineering activities like
 <abbr title="continuous integration">CI</abbr> testing.
 
