@@ -60,7 +60,7 @@ Available kinds of connection:
 
 ## API Tokens
 
-The core interface of rerobots is its <abbr title="application programming
+Besides the Web user interface (WebUI), rerobots has an <abbr title="application programming
 interface">[API](/api.html)</abbr>. An **API token** is a string that provides
 authentication and authorization for API requests. rerobots API tokens follow
 the JSON Web Token standard, [RFC 7519](https://tools.ietf.org/html/rfc7519),
