@@ -2,7 +2,7 @@ Documentation for users
 =======================
 
 The current release of this documentation is available at
-https://help.rerobots.net
+https://docs.rerobots.net
 
 
 Building
