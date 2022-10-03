@@ -4,3 +4,4 @@
 *.pyc
 shipit.sh
 node_modules/
+/.next/
