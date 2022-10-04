@@ -1,12 +1,26 @@
 {
-  "name": "rerorobots-help",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/rerobots/doc-help",
+  "name": "rerobots-docs",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": "https://github.com/rerobots/docs",
   "author": "Scott C. Livingston <scott@rerobots.net>",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "private": true,
   "dependencies": {
-    "lunr": "^2.3.8"
+    "@markdoc/markdoc": "^0.1.12",
+    "@markdoc/next.js": "^0.1.10",
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.0",
+    "@types/react": "18.0.21",
+    "typescript": "4.8.4"
   }
 }
