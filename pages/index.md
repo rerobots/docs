@@ -1,4 +1,5 @@
-image: smaller-logo.png
+---
+title: Introduction
 ---
 
 # Introduction
