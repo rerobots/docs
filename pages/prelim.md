@@ -32,7 +32,7 @@ differences, which motivates introducing a new term.
 
 The instance lifecycle is shown in the following diagram:
 
-![diagram of instance lifecycle](/fig/instance-lifecycle.svg)
+![diagram of instance lifecycle](figures/instance-lifecycle.svg)
 
 Instantiating always begins at `INIT`. It is rare but possible that an error
 will occur during `INIT` that causes the instance to be marked as `INIT_FAIL`.

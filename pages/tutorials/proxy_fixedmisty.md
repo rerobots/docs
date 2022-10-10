@@ -1,3 +1,5 @@
+---
+title: Try the Misty API with a proxy
 image: fig/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 ---
 
@@ -21,7 +23,7 @@ https://github.com/rerobots/doc-help/issues).
 To begin, sign-in to <https://rerobots.net>, and go to [the search
 page](https://rerobots.net/search). It should look like the following:
 
-![screenshot of the search page](/fig/tutorial_proxy_fixedmisty_search.png)
+![screenshot of the search page](figures/proxy_fixedmisty_search.png)
 
 For this tutorial, we want to use a workspace deployment that has the type
 [`fixed_misty2`](/workspaces/fixed_misty2.html). If one is not
@@ -32,7 +34,7 @@ Click on the photo or the "deployment id" of one of the items in the search
 results. You will get a brief description of the workspace, which should look
 like the following:
 
-![screenshot of the workspace deployment summary](/fig/tutorial_proxy_fixedmisty_wddetails.png)
+![screenshot of the workspace deployment summary](figures/proxy_fixedmisty_wddetails.png)
 
 ## Requesting an instance
 
@@ -40,7 +42,7 @@ To request to use the workspace deployment that you are viewing, click the
 "request instance" button. The next page provides some choices about the
 instance that you will create. It should look like:
 
-![screenshot of the page to create a new instance](/fig/tutorial_proxy_fixedmisty_newinstance.png)
+![screenshot of the page to create a new instance](figures/proxy_fixedmisty_newinstance.png)
 
 If you encounter difficulty here, please [contact us](
 https://rerobots.net/contact).
@@ -66,13 +68,13 @@ minutes of initializing, during which the robot and other parts of the workspace
 are prepared, the instance status will be `READY`. Select it from the list to
 get instance details, resulting in a page like the following:
 
-![screenshot of the instance details page](/fig/tutorial_proxy_fixedmisty_instancedetails.png)
+![screenshot of the instance details page](figures/proxy_fixedmisty_instancedetails.png)
 
 In the panel titled "Misty robot proxy", select the link "start proxy". This
 will start a proxy server through which you can remotely make API calls on the
 Misty robot.
 
-![screenshot of the Misty proxy panel](/fig/tutorial_proxy_fixedmisty_proxypanel.png)
+![screenshot of the Misty proxy panel](figures/proxy_fixedmisty_proxypanel.png)
 
 In this example, you would copy-and-paste the first address
 (`proxy.rerobots.net:32912/61ab371e4`...) into the "Robot IP Address" box at
@@ -86,7 +88,7 @@ Find the link with text "open camera stream". Open this link in a new browser
 window. Try arranging the camera stream window on one side of your desktop and
 the Misty Command Center window on the other side, as shown in this screenshot:
 ![screenshot of the camera stream and Misty API Explorer
-side-by-side](/fig/tutorial_proxy_fixedmisty_finalarrange.png)
+side-by-side](figures/proxy_fixedmisty_finalarrange.png)
 
 A similar arrangement is shown in [the following video](https://vimeo.com/440801712):
 <iframe src="https://player.vimeo.com/video/440801712" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

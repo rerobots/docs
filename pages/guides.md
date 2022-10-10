@@ -8,7 +8,7 @@ Tutorials are step-by-step instructions for common use-cases.
 
 ### Table of Contents
 
-* [Try the Misty API with a proxy](tutorial_proxy_fixedmisty.html)
+* [Try the Misty API with a proxy](tutorials/proxy_fixedmisty)
 * [Develop skills for Misty robots](tutorial_mistyskills.html)
 * [VPN-based instance with ROS and Brunel Hand](tutorial_vpn_brunelhand.html)
 * [VPN-based instance with LCM](tutorial_vpn_lcm.html)
