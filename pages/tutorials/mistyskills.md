@@ -13,7 +13,7 @@ https://github.com/rerobots/doc-help/issues).
 
 This tutorial assumes that you already have some workspace instance with a Misty
 robot. For instructions about how to do so, read: [Try the Misty API with a
-proxy](tutorial_proxy_fixedmisty.html).
+proxy](/tutorials/proxy_fixedmisty).
 
 ## Change LED color and tilt the head of the robot
 
@@ -26,10 +26,10 @@ Upon a new instantiation of a [`fixed_misty2`](
 /workspaces/fixed_misty2.html) workspace, the offboard camera view
 appears like
 
-![view from before mistyrest.py](/fig/tutorial_mistyskills_beforeledtilt.jpg)
+![view from before mistyrest.py](figures/mistyskills_beforeledtilt.jpg)
 
 If you do not know how to open a camera view, read [another tutorial](
-tutorial_proxy_fixedmisty.html).
+/tutorials/proxy_fixedmisty).
 
 Now, consider the example Python code [mistyrest.py](
 https://github.com/rerobots/examples/blob/497e3e808821878cad5a0ddbf9bb25900a57e6b8/misty2/mistyrest.py). Copy-and-paste
@@ -38,7 +38,7 @@ into [line 24 of mistyrest.py](
 https://github.com/rerobots/examples/blob/497e3e808821878cad5a0ddbf9bb25900a57e6b8/misty2/mistyrest.py#L24). The
 panel with the URL will appear similar to the following:
 
-![screenshot of the Misty proxy panel](/fig/tutorial_proxy_fixedmisty_proxypanel.png)
+![screenshot of the Misty proxy panel](figures/proxy_fixedmisty_proxypanel.png)
 
 This example demonstrates how to use the [Misty REST
 API](https://docs.mistyrobotics.com/misty-ii/web-api/overview/) through the rerobots
@@ -49,7 +49,7 @@ Now, with the proxy URL saved to `MPURL`, try to execute mistyrest.py on your
 own computer. At some time during operation, the head should appear tilted as it
 is in the following image:
 
-![view from after mistyrest.py](/fig/tutorial_mistyskills_afterledtilt.jpg)
+![view from after mistyrest.py](figures/mistyskills_afterledtilt.jpg)
 
 Each basic action of the example Python code is little more than HTTP GET or
 POST. Consider the command to change the LED color ([lines 29 - 33](

@@ -8,7 +8,7 @@ image: fig/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 ## Summary
 
 In this tutorial, you are shown how to instantiate a workspace with a Misty robot
-(for example, [`fixed_misty2`](/workspaces/fixed_misty2.html)) to control the robot through the
+(for example, [`fixed_misty2`](/workspaces/fixed_misty2)) to control the robot through the
 [Misty Command Center](http://sdk.mistyrobotics.com/command-center/index.html), to directly make
 [Misty REST API](https://docs.mistyrobotics.com/misty-ii/web-api/overview/) calls
 through a secure proxy. (Note that the Misty Command Center is a product of [Misty
@@ -26,7 +26,7 @@ page](https://rerobots.net/search). It should look like the following:
 ![screenshot of the search page](figures/proxy_fixedmisty_search.png)
 
 For this tutorial, we want to use a workspace deployment that has the type
-[`fixed_misty2`](/workspaces/fixed_misty2.html). If one is not
+[`fixed_misty2`](/workspaces/fixed_misty2). If one is not
 already listed, enter "misty" into the search field, or try the following URL:
 <https://rerobots.net/search?q=fixed_misty2>
 

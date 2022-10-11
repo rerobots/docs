@@ -62,14 +62,14 @@ Available kinds of connection:
 ## API Tokens
 
 Besides the Web user interface (WebUI), rerobots has an <abbr title="application programming
-interface">[API](/api.html)</abbr>. An **API token** is a string that provides
+interface">[API](/api)</abbr>. An **API token** is a string that provides
 authentication and authorization for API requests. rerobots API tokens follow
 the JSON Web Token standard, [RFC 7519](https://tools.ietf.org/html/rfc7519),
 which is introduced at <https://jwt.io/>.
 
 Users manage their API tokens at <https://rerobots.net/tokens>.
 Learn more by reading the <a href="/guides.html">guides</a> about API tokens,
-such as [how to make and revoke API tokens](webui.html#making-and-revoking-api-tokens).
+such as [how to make and revoke API tokens](webui#making-and-revoking-api-tokens).
 
 ## Hardshare
 

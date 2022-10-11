@@ -13,8 +13,8 @@ ticket](https://github.com/rerobots/doc-help/issues).
 
 The instantiation process for this tutorial is entirely similar to that of the
 tutorial [VPN-based instance with ROS and Brunel
-Hand](tutorial_vpn_brunelhand.html) through the end of the subsection [Your
-first log-in](tutorial_vpn_brunelhand.html#your-first-log-in) in that tutorial.
+Hand](/tutorials/vpn_brunelhand) through the end of the subsection [Your
+first log-in](/tutorials/vpn_brunelhand#your-first-log-in) in that tutorial.
 Note that the instructions here for passing LCM messages to and from your
 instance can be applied to any workspace type.
 
@@ -36,7 +36,7 @@ Checking the SHA-256 hash of the downloaded file provides confidence that the
 file has not been maliciously modified.
 
 Assuming the base image used in [the tutorial with ROS and Brunel
-Hand](tutorial_vpn_brunelhand.html), two more packages must be installed:
+Hand](/tutorials/vpn_brunelhand), two more packages must be installed:
 
     apt-get -y install autoconf libglib2.0-dev
 
