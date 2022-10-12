@@ -15,7 +15,7 @@ ticket](https://github.com/rerobots/doc-help/issues).
 To begin, sign-in to <https://rerobots.net>, and go to to [the search
 page](https://rerobots.net/search). It should look like the following:
 
-![screenshot of the search page](/fig/tutorial_vpn_brunelhand_search.png)
+![screenshot of the search page](figures/vpn_brunelhand_search.png)
 
 For this tutorial, we want to use a workspace deployment that has the type
 [`fixed_brunelhand`](/workspaces/fixed_brunelhand.html). If one is not already listed, enter "brunel" into the search
@@ -25,7 +25,7 @@ Click on the photo or the "deployment id" of one of the items in the search
 results. You will get a brief description of the workspace, which should look
 like the following:
 
-![screenshot of the workspace deployment summary](/fig/tutorial_vpn_brunelhand_wdeployment_summary.png)
+![screenshot of the workspace deployment summary](figures/vpn_brunelhand_wdeployment_summary.png)
 
 ## Requesting an instance
 
@@ -33,7 +33,7 @@ To request to use the workspace deployment that you are viewing, click the
 "request instance" button. The next page provides some choices about the
 instance that you will create. It should look like:
 
-![screenshot of the page to create a new instance](/fig/tutorial_vpn_brunelhand_new_instance_dialog.png)
+![screenshot of the page to create a new instance](figures/vpn_brunelhand_new_instance_dialog.png)
 
 Under "kind of connection", select "VPN". Then, request it. A reservation system
 is under development, so your request might be denied if someone else started to
@@ -56,7 +56,7 @@ In the table of your instances, you will find the one that you just created. Its
 status should be `INIT`, which indicates that it is initializing. If you select
 it, then details will be shown that look like the following:
 
-![status text of an initializing instance](/fig/tutorial_vpn_brunelhand_instance_init.png)
+![status text of an initializing instance](figures/vpn_brunelhand_instance_init.png)
 
 Creating a new VPN server for your instance can require up to 12 minutes, more
 or less, because the certificate and key generation process is slow. Thus,
@@ -79,7 +79,7 @@ SSH key, this can be used precisely once. When ready, select "one-time download"
 to get an OVPN file. If something goes wrong, then try "add new client"
 again. (You can generate VPN credentials for as many clients as you want.)
 
-![status text of ready instance](/fig/tutorial_vpn_brunelhand_instance_ready.png)
+![status text of ready instance](figures/vpn_brunelhand_instance_ready.png)
 
 Import the OVPN file into your VPN client software. It contains client
 credentials with which you can connect to the VPN of your instance, namely, a CA
@@ -222,7 +222,7 @@ and watch the video stream in your Web browser. Depending on the speed of your
 Internet connection, there might be some delay in the video. If the video has
 extreme lag, hit the refresh button.
 
-![example video sequence showing the hand move](/fig/tutorial_vpn_brunelhand_demovideo.gif)
+![example video sequence showing the hand move](figures/vpn_brunelhand_demovideo.gif)
 
 A brief help message for the CLI program `bhand` can be obtained by
 

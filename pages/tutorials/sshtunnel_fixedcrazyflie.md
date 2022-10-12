@@ -25,7 +25,7 @@ field, or try the following URL:
 <https://rerobots.net/search?q=fixed_crazyflie&maxl=u>
 There should be at least one match, as in the following screenshot:
 
-![screenshot of the search page](/fig/tutorial_sshtunnel_fixedcrazyflie_search.png)
+![screenshot of the search page](figures/sshtunnel_fixedcrazyflie_search.png)
 
 Click on the photo or the "deployment id" of one of the items in the search
 results. You will get a brief description of the workspace.
@@ -36,7 +36,7 @@ To request to use the workspace deployment that you are viewing, click the
 "request instance" button. The next page provides some choices about the
 instance that you will create. It should look like:
 
-![screenshot of the page to create a new instance](/fig/tutorial_sshtunnel_fixedcrazyflie_new_instance_dialog.png)
+![screenshot of the page to create a new instance](figures/sshtunnel_fixedcrazyflie_new_instance_dialog.png)
 
 Under "kind of connection", select "SSH tunnel". For the SSH public key that
 provides authorization for remote log-in to the instance, you can select one
@@ -72,7 +72,7 @@ status should be `INIT`, which indicates that it is initializing.
 After several seconds or minutes, the instance will be READY as in the following
 example screenshot:
 
-![status text of ready instance](/fig/tutorial_sshtunnel_fixedcrazyflie_instancedetails.png)
+![status text of ready instance](figures/sshtunnel_fixedcrazyflie_instancedetails.png)
 
 In the details panel, an IP address and port number are listed. On this address
 and port there is an SSH server listening for incoming connections to the main
@@ -91,7 +91,7 @@ Internet. For example, at the terminal, try
 
 New rules can be added in the panel titled "modify firewall rules", as shown in the screenshot:
 
-![screenshot of the form for modifying firewall rules](/fig/tutorial_sshtunnel_fixedcrazyflie_modifyfirewall.png)
+![screenshot of the form for modifying firewall rules](figures/sshtunnel_fixedcrazyflie_modifyfirewall.png)
 
 Addresses are specified in CIDR notation ([RFC
 4632](https://tools.ietf.org/html/rfc4632)). The default (if no netmask is
@@ -235,7 +235,7 @@ and "Image View". The Image View plugin can display images from the
 `/cv_camera/image_raw` ROS topic, which contains data from the webcam in the
 workspace of this tutorial.
 
-![example video sequence showing the rotor blades spin](/fig/tutorial_sshtunnel_fixedcrazyflie_demovideo.gif)
+![example video sequence showing the rotor blades spin](figures/sshtunnel_fixedcrazyflie_demovideo.gif)
 
 ## Conclusion
 

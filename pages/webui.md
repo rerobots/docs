@@ -32,23 +32,23 @@ on your personal computer.
 Now go to [the SSH keys page](https://rerobots.net/sshkeys), which should appear
 similar to the following screenshot:
 
-![screenshot of the SSH keys page](/fig/webguide_empty_sshkeys_page.png)
+![screenshot of the SSH keys page](webui/figures/empty_sshkeys_page.png)
 
 Copy-and-paste the contents of demokey.pub into the "key text" field of the
 "upload new public key" form. Then, give a name to this key pair that you can
 use later to refer to it on the rerobots website. Continuing our example, the
 completed form might look like:
 
-![screenshot of example filled upload key form](/fig/webguide_filled_new_sshkey_upload.png)
+![screenshot of example filled upload key form](webui/figures/filled_new_sshkey_upload.png)
 
 Finally, press the submit button. The newly uploaded public key should now
 appear in the table. For example,
 
-![screenshot of user's table of uploaded SSH keys, showing the new one](fig/webguide_new_sshkeys_table_item.png)
+![screenshot of user's table of uploaded SSH keys, showing the new one](webui/figures/new_sshkeys_table_item.png)
 
 ## Making and Revoking API Tokens
 
-As introduced in the [Preliminaries](prelim.html) section, API tokens are
+As introduced in the [Preliminaries](prelim) section, API tokens are
 required to use the rerobots API directly, instead of through [the Web
 console](https://rerobots.net/). API tokens are mainly of interest to
 application developers, and they are required to perform nontrivial actions from
@@ -59,7 +59,7 @@ To get and manage your API tokens, go to the [API tokens page in the Web
 console](https://rerobots.net/tokens). When there are no active tokens, the main
 section will appear similar to the following screenshot:
 
-![screenshot of the main section of the API tokens page](/fig/webguide_api_tokens_page_empty.png)
+![screenshot of the main section of the API tokens page](webui/figures/api_tokens_page_empty.png)
 
 To create a new API token, use the control panel near the bottom of the page.
 Select the duration of validity of the API token. The default is 24 hours, i.e.,
@@ -67,12 +67,12 @@ the token cannot be used 24 hours or more after its creation. Click the button
 labeled `make API token`. The table should now have at least one row that
 appears like
 
-![screenshot of a single item in the API tokens table](/fig/webguide_api_tokens_table_item.png)
+![screenshot of a single item in the API tokens table](webui/figures/api_tokens_table_item.png)
 
 Selecting one of the rows in the table will cause the corresponding API token to
 be displayed in a new panel titled "token" that appears similar to
 
-![screenshot of the detailed token view panel](/fig/webguide_api_token_detail.png)
+![screenshot of the detailed token view panel](webui/figures/api_token_detail.png)
 
 In this panel, the token text is displayed and can be copy-and-pasted where you
 need it. To download the text as a file named jwt.txt, press the `download`

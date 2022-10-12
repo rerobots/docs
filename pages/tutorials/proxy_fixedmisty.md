@@ -1,6 +1,6 @@
 ---
 title: Try the Misty API with a proxy
-image: fig/smaller-tutorial_proxy_fixedmisty_finalarrange.png
+image: /tutorials/figures/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 ---
 
 # Try the Misty API with a proxy
