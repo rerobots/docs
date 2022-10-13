@@ -6,3 +6,5 @@ shipit.sh
 node_modules/
 /.next/
 /next-env.d.ts
+/pages/workspaces/
+/public/workspaces/figures/
