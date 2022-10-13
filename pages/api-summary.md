@@ -1,7 +1,12 @@
-API
-===
+---
+title: API Summary
+---
 
-<div class="alert alert-danger" role="alert">Beware! This API is actively changing. Some effort is made to support backwards compatibility, but it is not yet high priority.</div>
+# API Summary
+
+{% alert %}
+This API is unstable. If you are developing with it, please [contact us](https://rerobots.net/contact) first.
+{% /alert %}
 
 Most users will want to use one of the official client libraries instead of
 working directly with the HTTP interface:
@@ -28,15 +33,13 @@ limit, e.g., if a redirect is required. Each subsequent request will cause
 no more requests will be accepted until the current time passes `T`.
 
 
-Authentication
---------------
+## Authentication
 
 <div class="alert alert-danger" role="alert">Authentication is not available yet through the HTTP API. Instead, <a href="https://rerobots.net/tokens">Get API tokens through the Web UI</a>.
 (<a href="/webui.html#making-and-revoking-api-tokens">Read instructions about how to do so.</a>)</div>
 
 
-Commands
---------
+## Commands
 
 ### GET /
 
