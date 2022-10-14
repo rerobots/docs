@@ -7,7 +7,7 @@ In this tutorial, you are shown how to use rerobots as a platform for developing
 
 If you think that something is missing, or if you find errors, please [contact
 us](https://rerobots.net/contact) or [open a ticket](
-https://github.com/rerobots/doc-help/issues).
+https://github.com/rerobots/docs/issues).
 
 ## Prerequisites
 
@@ -55,21 +55,23 @@ Each basic action of the example Python code is little more than HTTP GET or
 POST. Consider the command to change the LED color ([lines 29 - 33](
 https://github.com/rerobots/examples/blob/497e3e808821878cad5a0ddbf9bb25900a57e6b8/misty2/mistyrest.py#L29-L33)):
 
-    :::python
-    # Change the color of the chest LED to green
-    # https://docs.mistyrobotics.com/misty-ii/web-api/api-reference/#changeled
-    res = requests.post(MPURL + '/api/led', json={
-        'red': 0,
-        'green': 255,
-        'blue': 0,
-    })
+```python
+# Change the color of the chest LED to green
+# https://docs.mistyrobotics.com/misty-ii/web-api/api-reference/#changeled
+res = requests.post(MPURL + '/api/led', json={
+    'red': 0,
+    'green': 255,
+    'blue': 0,
+})
+```
 
 It follows the [official Misty reference documentation](
 https://docs.mistyrobotics.com/misty-ii/web-api/api-reference/#changeled).
 This call is followed by
 
-    :::python
-    assert res.ok, 'response from POST /api/led: {} {}'.format(res.status_code, res.reason)
+```python
+assert res.ok, 'response from POST /api/led: {} {}'.format(res.status_code, res.reason)
+```
 
 to verify that the HTTP response indicates success. If it is not, then some
 error message is printed.

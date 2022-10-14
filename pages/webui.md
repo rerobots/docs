@@ -7,7 +7,7 @@ how to perform basic tasks like adding SSH keys to your account.
 
 If you think that something is missing, or if you find errors, please [contact
 us](https://rerobots.net/contact) or [open a
-ticket](https://github.com/rerobots/doc-help/issues).
+ticket](https://github.com/rerobots/docs/issues).
 
 ## Table of Contents
 
@@ -22,7 +22,9 @@ create a new instance. The process of doing so is described here. For this
 exercise, suppose that your key pair is the files demokey and demokey.pub. For
 example, these can be generated from the terminal:
 
-    ssh-keygen -f demokey
+```bash
+ssh-keygen -f demokey
+```
 
 The public key is demokey.pub. It is the key that should be given to others who
 need to reliably authenticate you. The other file, demokey, is secret and must

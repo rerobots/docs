@@ -17,13 +17,17 @@ The current version is 1, so calls to api.rerobots.net that lack a version route
 default to v1. To request this or any particular version, in requests include an
 `Accept` header, e.g.,
 
-    application/vnd.rerobots.v1+json
+```http
+application/vnd.rerobots.v1+json
+```
 
 Response includes headers concerning rate limiting:
 
-    X-RateLimit-Limit: N
-    X-RateLimit-Remaining: M
-    X-RateLimit-Reset: T
+```http
+X-RateLimit-Limit: N
+X-RateLimit-Remaining: M
+X-RateLimit-Reset: T
+```
 
 where T is seconds since The Epoch, and it is invariant that M < N. (It cannot
 be that M = N because the response header is sent if and only if a request was
@@ -260,8 +264,9 @@ one. Response is a JSON object with some or all of the following:
 If there is no VPN for this instance (but the instance otherwise exists), then
 the response is
 
-    {"status": "nil"}
-
+```json
+{"status": "nil"}
+```
 
 ### POST /vpn/:instanceID
 

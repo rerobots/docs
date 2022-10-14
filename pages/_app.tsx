@@ -5,6 +5,13 @@ import Link from 'next/link';
 import type { AppProps } from 'next/app';
 import type { MarkdocNextJsPageProps } from '@markdoc/next.js';
 
+import 'prismjs';
+import 'prismjs/themes/prism.css';
+import 'prismjs/components/prism-bash.min';
+import 'prismjs/components/prism-http.min';
+import 'prismjs/components/prism-json.min';
+import 'prismjs/components/prism-python.min';
+
 import '../css/main.css';
 
 
