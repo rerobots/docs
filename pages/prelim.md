@@ -14,7 +14,7 @@ To get an executive summary instead, go back to [the introduction](/).
 A **workspace** is an abstraction of a collection of methods and materials for
 experiments with hardware. Note that "experiments" is not only for basic or applied
 research, but it is also for routine engineering activities like
-<abbr title="continuous integration">CI</abbr> testing.
+{% abbr title="continuous integration" %}CI{% /abbr %} testing.
 
 Conceptually, there are three levels of refinement. A **workspace type** is the
 workspace in terms of essential features, such as the models of hardware and the
@@ -61,8 +61,9 @@ Available kinds of connection:
 
 ## API Tokens
 
-Besides the Web user interface (WebUI), rerobots has an <abbr title="application programming
-interface">[API](/api-summary)</abbr>. An **API token** is a string that provides
+Besides the Web user interface (WebUI), rerobots has an
+{% abbr title="application programming interface" %}[API](/api-summary){% /abbr %}.
+An **API token** is a string that provides
 authentication and authorization for API requests. rerobots API tokens follow
 the JSON Web Token standard, [RFC 7519](https://tools.ietf.org/html/rfc7519),
 which is introduced at <https://jwt.io/>.
