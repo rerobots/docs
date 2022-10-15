@@ -15,30 +15,29 @@ some large files will not be fetched.
 Provided the dependencies (next section), you can get a local view of this
 website via
 
-    make && ./local-staging.sh
+    yarn dev
 
-where the first command populates a build/ directory and the latter uses
-[http.server in the Python 3 standard library](
-https://docs.python.org/3.10/library/http.server.html)
-to serve requests. (Python versions < 3 are not supported.)
-
-Now, direct your Web browser at http://127.0.0.1:8001/
+Now, direct your Web browser at http://127.0.0.1:3000/
 
 
 Dependencies
 ------------
 
-This site depends on [Bootstrap](https://getbootstrap.com/) and
-[jQuery](https://jquery.com/). The expected layout for `make` to work is:
+Dependency management is only tested with [Yarn](https://yarnpkg.com/). To
+install what you need,
 
-* extern/css/bootstrap.min.css
-* extern/css/sticky-footer.css
-* extern/js/bootstrap.min.js
-* extern/js/jquery.min.js
+    yarn install
 
-To install required Python packages,
+The most prominent dependencies to consider when you begin studying the source
+code of this documentation are
 
-    pip install --require-hashes -r devel-requirements.txt
+* Markdoc, https://markdoc.dev/
+* Next.js, https://nextjs.org/
+
+The following fonts are included in the build and available from upstream under
+the Open Font License:
+
+* Orbitron, https://fonts.google.com/specimen/Orbitron/about
 
 
 Licenses
