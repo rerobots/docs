@@ -8,3 +8,4 @@ node_modules/
 /next-env.d.ts
 /pages/workspaces/
 /public/workspaces/figures/
+/out/
