@@ -6,7 +6,7 @@
     "build": "./tools/collect-wtypes.py && next build && next export",
     "start": "next start",
     "lint": "./tools/collect-wtypes.py && next lint",
-    "clean": "rm -r -f pages/workspaces public/workspaces/figures"
+    "clean": "rm -r -f pages/workspaces public/workspaces/figures out"
   },
   "repository": "https://github.com/rerobots/docs",
   "author": "Scott C. Livingston <scott@rerobots.net>",
