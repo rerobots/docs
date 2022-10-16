@@ -40,6 +40,31 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
         ogImage = 'https://docs.rerobots.net' + (ogImage[0] === '/' ? '' : '/') + ogImage;
     }
 
+    const toggleMenu = () => {
+        const sidenav = document.getElementById('navbar-collapse-1');
+        if (!(sidenav?.classList)) {
+            return;
+        }
+        if (sidenav.classList.contains('navbar-collapse')) {
+            sidenav.classList.add('navbar-collapse-show');
+            sidenav.classList.remove('navbar-collapse');
+        } else {
+            sidenav.classList.add('navbar-collapse');
+            sidenav.classList.remove('navbar-collapse-show');
+        }
+    };
+
+    const possiblyCollapseMenu = () => {
+        const sidenav = document.getElementById('navbar-collapse-1');
+        if (!(sidenav?.classList)) {
+            return;
+        }
+        if (!sidenav.classList.contains('navbar-collapse')) {
+            sidenav.classList.add('navbar-collapse');
+            sidenav.classList.remove('navbar-collapse-show');
+        }
+    };
+
     return (
         <>
             <Head>
@@ -50,24 +75,24 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
             </Head>
             <nav className="navbar">
               <div className="navbar-header">
-                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                  <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" onClick={toggleMenu}>
                   <span className="sr-only">Toggle navigation</span>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                 </button>
                 <a className="navbar-brand" href="https://rerobots.net/">
-                  <span className="prefix-re">re</span>robots
+                  <span className="brandText"><span className="prefix-re">re</span>robots</span>
                 </a>
               </div>
-              <div className="collapse navbar-collapse" id="navbar-collapse-1">
+              <div className="navbar-collapse" id="navbar-collapse-1">
                 <ul className="navbar-items">
-                <li><Link href="/">introduction</Link></li>
-                <li><Link href="/prelim">preliminaries</Link></li>
-                <li><Link href="/guides">guides</Link></li>
-                <li><Link href="/workspaces">workspaces</Link></li>
-                <li><Link href="/api-summary">API</Link></li>
-                <li><Link href="/references">references</Link></li>
+                <li onClick={possiblyCollapseMenu}><Link href="/">introduction</Link></li>
+                <li onClick={possiblyCollapseMenu}><Link href="/prelim">preliminaries</Link></li>
+                <li onClick={possiblyCollapseMenu}><Link href="/guides">guides</Link></li>
+                <li onClick={possiblyCollapseMenu}><Link href="/workspaces">workspaces</Link></li>
+                <li onClick={possiblyCollapseMenu}><Link href="/api-summary">API</Link></li>
+                <li onClick={possiblyCollapseMenu}><Link href="/references">references</Link></li>
                 </ul>
               </div>
             </nav>
@@ -75,14 +100,9 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
                 <Component {...pageProps} />
             </div>
             <footer>
-              <div>
                 Copyright &copy; 2022 rerobots, Inc.<br />
-                <a className="footer-left" href={repoUrl}>Edit this page</a>; <a rel="license" href="https://github.com/rerobots/docs" id="commons-license">free, open source</a>.
-              </div>
-              <div>
-                <span id="update-date">updated DATESTAMP</span>
                 <a href="https://rerobots.net/site/terms-of-service">terms of service</a> <a href="https://rerobots.net/contact">contact</a>
-              </div>
+                <a href={repoUrl}>source</a>
             </footer>
         </>
     );
