@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [L,R=301]
+
+RewriteCond %{DOCUMENT_ROOT}/$1\.html -f
+RewriteRule ^(.+)$ /$1.html [L]
