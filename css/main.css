@@ -61,6 +61,7 @@ a:focus {
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus {
+    z-index: 100;
     position: relative;
     top: 5px;
     font-size: 16pt;
