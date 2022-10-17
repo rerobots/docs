@@ -39,8 +39,10 @@ no more requests will be accepted until the current time passes `T`.
 
 ## Authentication
 
-<div class="alert alert-danger" role="alert">Authentication is not available yet through the HTTP API. Instead, <a href="https://rerobots.net/tokens">Get API tokens through the Web UI</a>.
-(<a href="/webui.html#making-and-revoking-api-tokens">Read instructions about how to do so.</a>)</div>
+{% alert %}
+Authentication is not available yet through the HTTP API. Instead, [Get API tokens through the Web UI](https://rerobots.net/tokens).
+([Read instructions about how to do so.](/webui/making-and-revoking-api-tokens))
+{% /alert %}
 
 
 ## Commands
