@@ -12,7 +12,7 @@ ticket](https://github.com/rerobots/docs/issues).
 
 ## Searching
 
-To begin, sign-in to <https://rerobots.net>, and go to to [the search
+To begin, sign-in to <https://rerobots.net>, and go to [the search
 page](https://rerobots.net/search). It should look like the following:
 
 ![screenshot of the search page](figures/vpn_brunelhand_search.png)

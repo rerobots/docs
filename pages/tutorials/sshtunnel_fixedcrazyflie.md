@@ -16,7 +16,7 @@ ticket](https://github.com/rerobots/docs/issues).
 
 ## Searching
 
-To begin, sign-in to <https://rerobots.net>, and go to to [the search
+To begin, sign-in to <https://rerobots.net>, and go to [the search
 page](https://rerobots.net/search).  As an example in this tutorial, we will use
 a workspace deployment that has the type [`fixed_crazyflie`](/workspaces/fixed_crazyflie.html). Note, however, the
 basic steps can be applied anywhere that an SSH-tunnel-based connection is
