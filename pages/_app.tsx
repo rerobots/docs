@@ -81,14 +81,13 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                 </button>
-                <a className="navbar-brand" href="https://rerobots.net/">
+                <Link href="/"><a className="navbar-brand" onClick={possiblyCollapseMenu}>
                   <span className="brandText"><span className="prefix-re">re</span>robots</span>
-                </a>
+                </a></Link>
               </div>
               <div className="navbar-collapse" id="navbar-collapse-1">
                 <ul className="navbar-items">
-                <li onClick={possiblyCollapseMenu}><Link href="/">introduction</Link></li>
-                <li onClick={possiblyCollapseMenu}><Link href="/prelim">preliminaries</Link></li>
+                <li onClick={possiblyCollapseMenu}><Link href="/intro">introduction</Link></li>
                 <li onClick={possiblyCollapseMenu}><Link href="/guides">guides</Link></li>
                 <li onClick={possiblyCollapseMenu}><Link href="/workspaces">workspaces</Link></li>
                 <li onClick={possiblyCollapseMenu}><Link href="/api-summary">API</Link></li>

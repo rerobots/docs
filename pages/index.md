@@ -1,8 +1,8 @@
 ---
-title: Introduction
+title: FAQ
 ---
 
-# Introduction
+# FAQ
 
 ## What is rerobots?
 

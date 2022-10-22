@@ -1,6 +1,6 @@
 # Making and Revoking API Tokens
 
-As introduced in the [Preliminaries](prelim) section, API tokens are
+As described in the [introduction](/intro), API tokens are
 required to use the rerobots API directly, instead of through [the Web
 console](https://rerobots.net/). API tokens are mainly of interest to
 application developers, and they are required to perform nontrivial actions from

@@ -1,13 +1,12 @@
 ---
-title: Preliminary Concepts
+title: Introduction
 ---
 
-# Preliminary Concepts
+# Introduction
 
 ## Summary
 
-This page presents terms and concepts about rerobots infrastructure.
-To get an executive summary instead, go back to [the introduction](/).
+This page introduces concepts of rerobots.
 
 ## Workspaces
 
