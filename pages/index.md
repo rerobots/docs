@@ -16,8 +16,14 @@ demonstrated in videos of [multi_kobuki](https://vimeo.com/465989844) and
 You can also create your own applications that leverage it with popular programming languages,
 like [Python](https://pypi.org/project/rerobots/).
 
-You can share your own robot or {% abbr title="Internet of Things" %}IoT{% /abbr %} device through the same infrastructure with
+
+## What is hardshare?
+
+You can share your own robot or {% abbr title="Internet of Things" %}IoT{% /abbr %} device using
 [hardshare](https://hardshare.dev/).
+This involves the same infrastructure as rerobots except at the edge, where the
+[hardshare client](https://github.com/rerobots/hardshare) presents your devices
+to rerobots servers.
 
 
 ## How do I begin?
