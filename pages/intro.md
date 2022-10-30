@@ -75,3 +75,6 @@ such as [how to make and revoke API tokens](/webui/making-and-revoking-api-token
 
 Please read the [Introduction of the hardshare manual](https://docs.hardshare.dev/intro.html).
 The source files for it are available [in the repository of the hardshare client](https://github.com/rerobots/hardshare/tree/master/doc).
+
+In rerobots, devices shared through hardshare are always given the workspace
+type [user_provided](/workspaces/user_provided).
