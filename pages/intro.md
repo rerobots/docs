@@ -73,8 +73,21 @@ such as [how to make and revoke API tokens](/webui/making-and-revoking-api-token
 
 ## Hardshare
 
-Please read the [Introduction of the hardshare manual](https://docs.hardshare.dev/intro.html).
-The source files for it are available [in the repository of the hardshare client](https://github.com/rerobots/hardshare/tree/master/doc).
+The part of rerobots that facilitates users sharing their own hardware with
+others is named **hardshare**. These workspaces are available through the same
+interfaces as robots that are maintained by rerobots the company.
+
+However, properties like uptime and calibration depend on the owners.
+The owner decides who is permitted to access their hardware, and they decide how
+add-on features like VNC should work in their specific case.
+In practice, this is not a problem because the users and owners of devices
+through hardshare are typically trusted.
 
 In rerobots, devices shared through hardshare are always given the workspace
-type [user_provided](/workspaces/user_provided).
+type [user_provided](/workspaces/user_provided). Every workspace with type other
+than `user_provided` is maintained professionally by rerobots, e.g.,
+[fixed_misty2](/workspaces/fixed_misty2).
+
+If you are interested in sharing your hardware,
+please read the [Introduction of the hardshare manual](https://docs.hardshare.dev/intro.html).
+The source code of the hardshare client is at <https://github.com/rerobots/hardshare>.
