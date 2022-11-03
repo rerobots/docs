@@ -24,8 +24,8 @@ This term is more concisely written as *workspace deployment* or *wdeployment*.
 
 An **instance** of a workspace corresponds to usage of a deployment by a
 user. Ideally, each instance of a deployment is identical modulo changes of
-user-defined parameters where available, but practically there may be some
-differences, which motivates introducing a new term.
+user-defined parameters where available, but practically there may be small
+differences.
 
 ## Instances
 
