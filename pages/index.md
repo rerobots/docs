@@ -29,6 +29,5 @@ to rerobots servers.
 ## How do I begin?
 
 rerobots is not yet generally available.
-However, you can anonymously [try a sandbox](https://rerobots.net/sandbox).
 If you want early access, then
-[join the community on Discord](https://discord.gg/ur3jTyw).
+[try a sandbox](https://rerobots.net/sandbox), and [join the community](https://discord.gg/ur3jTyw).
