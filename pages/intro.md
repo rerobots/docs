@@ -6,7 +6,7 @@ title: Introduction
 
 ## Summary
 
-This page introduces concepts of rerobots.
+This page introduces the main concepts and parts of rerobots.
 
 ## Workspaces
 
