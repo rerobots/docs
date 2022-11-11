@@ -28,6 +28,7 @@ how to perform basic tasks like adding SSH keys to your account.
 * [Making and Revoking API Tokens](/webui/making-and-revoking-api-tokens)
 
 
-## Manuals of Products
+## Manuals
 
+* [CLI](/tools/cli) - command-line interface of rerobots
 * [hardshare](https://docs.hardshare.dev/) - the system for sharing your devices through the rerobots infrastructure.
