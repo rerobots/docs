@@ -94,7 +94,7 @@ The following video demonstrates how to search for types of workspaces, request
 an instance, and finally terminate it. The same example is also presented below
 in text. (This video can also be watched at <https://asciinema.org/a/l0l2yh83JtAM8RjDiOHsk3Q9F>)
 
-<script id="asciicast-l0l2yh83JtAM8RjDiOHsk3Q9F" src="https://asciinema.org/a/l0l2yh83JtAM8RjDiOHsk3Q9F.js" async></script>
+{% asciinema id="l0l2yh83JtAM8RjDiOHsk3Q9F" /%}
 
 Before beginning, [get an API token](/webui/making-and-revoking-api-tokens)
 ([from the Web UI](https://rerobots.net/tokens)). Now assign it to an
