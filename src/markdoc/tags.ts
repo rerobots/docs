@@ -1,4 +1,4 @@
-import { Abbr, AlertBanner } from '../components';
+import { Abbr, AlertBanner, Asciinema } from '../components';
 
 export const abbr = {
     render: Abbr,
@@ -11,4 +11,16 @@ export const abbr = {
 
 export const alert = {
     render: AlertBanner,
+};
+
+export const asciinema = {
+    render: Asciinema,
+    description: 'Renders an Asciinema asciicast',
+    attributes: {
+        id: {
+            type: String,
+            errorLevel: 'critical',
+            required: true,
+        },
+    },
 };
