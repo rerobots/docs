@@ -6,7 +6,10 @@ title: CLI
 
 ## Summary
 
-This is the command-line interface (CLI) for [rerobots](https://rerobots.net/).
+The command-line interface (CLI) for rerobots is realized through a program that
+allows you to search for devices, launch new instances, and perform other
+rerobots actions from a text-based terminal.
+
 The corresponding source code repository is hosted at <https://github.com/rerobots/cli>
 
 
