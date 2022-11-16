@@ -87,7 +87,9 @@ necessary to add one rule to allow you to log-in. There are several methods to
 determine the externally visible address from which you are accessing the
 Internet. For example, at the terminal, try
 
-    curl https://ipinfo.io/
+```bash
+curl https://ipinfo.io/
+```
 
 New rules can be added in the panel titled "modify firewall rules", as shown in the screenshot:
 
@@ -103,7 +105,9 @@ There should now be a row in the table of firewall rules: `0.0.0.0/0 ACCEPT`.
 To log-in, open a terminal. Assuming that your private key is in the local
 directory in the file key.pem, then,
 
-    ssh -i key.pem -p 2211 root@147.75.69.207
+```bash
+ssh -i key.pem -p 2211 root@147.75.69.207
+```
 
 If you selected an SSH key that is uploaded to your rerobots account, then the
 switch `-i key.pem` can be omitted or changed as needed.
@@ -118,8 +122,10 @@ Kinetic](http://wiki.ros.org/kinetic), but for this tutorial, the
 package [cv_camera](http://wiki.ros.org/cv_camera) must also be installed. To
 do so,
 
-    apt-get update
-    apt-get install -y ros-kinetic-cv-camera
+```bash
+apt-get update
+apt-get install -y ros-kinetic-cv-camera
+```
 
 To send thrust commands to the [Crazyflie
 quadrotor](https://www.bitcraze.io/crazyflie-2/) in this tutorial, `cfheadless`
@@ -127,26 +133,34 @@ must be installed. It is part of the [Crazyflie client
 software](https://github.com/bitcraze/crazyflie-clients-python).
 The current release can be installed from
 
-    apt-get update
-    apt-get install -y python3 python3-pip python3-pyqt5
-    pip3 install -U pip
-    pip install cfclient
+```bash
+apt-get update
+apt-get install -y python3 python3-pip python3-pyqt5
+pip3 install -U pip
+pip install cfclient
+```
 
 Finally, create a minimal configuration by creating the file
 /root/.config/cfclient/config.json with the contents
 
-    {
-      "enable_zmq_input": true
-    }
+```json
+{
+  "enable_zmq_input": true
+}
+```
 
 This can be achieved in one command,
 
-    mkdir -p /root/.config/cfclient && echo '{"enable_zmq_input": true}' > /root/.config/cfclient/config.json
+```bash
+mkdir -p /root/.config/cfclient && echo '{"enable_zmq_input": true}' > /root/.config/cfclient/config.json
+```
 
 Finally, start `cfheadless` to connect to a Crazyflie that is attached to the
 host via USB:
 
-    cfheadless -u usb://0
+```bash
+cfheadless -u usb://0
+```
 
 ## Running an open-loop controller and recording a video
 
@@ -154,45 +168,47 @@ Now that `cfheadless` is using the terminal for output, open a new terminal and
 log-in again to the instance host via SSH. Create a file named demo.py with the
 following contents:
 
-    import time
-    import zmq
+```python
+import time
+import zmq
 
-    sender = zmq.Context().socket(zmq.PUSH)
-    sender.connect('tcp://127.0.0.1:1212')
+sender = zmq.Context().socket(zmq.PUSH)
+sender.connect('tcp://127.0.0.1:1212')
 
-    sender.send_json({
-	'version': 1,
-	'ctrl': {
-	    'roll': 0.0,
-	    'pitch': 0.0,
-	    'yaw': 0.0,
-	    'thrust': 0.0
-	}
-    })
+sender.send_json({
+    'version': 1,
+    'ctrl': {
+	'roll': 0.0,
+	'pitch': 0.0,
+	'yaw': 0.0,
+	'thrust': 0.0
+    }
+})
 
-    time.sleep(1)
+time.sleep(1)
 
-    sender.send_json({
-	'version': 1,
-	'ctrl': {
-	    'roll': 0.0,
-	    'pitch': 0.0,
-	    'yaw': 0.0,
-	    'thrust': 35.0
-	}
-    })
+sender.send_json({
+    'version': 1,
+    'ctrl': {
+	'roll': 0.0,
+	'pitch': 0.0,
+	'yaw': 0.0,
+	'thrust': 35.0
+    }
+})
 
-    time.sleep(2)
+time.sleep(2)
 
-    sender.send_json({
-	'version': 1,
-	'ctrl': {
-	    'roll': 0.0,
-	    'pitch': 0.0,
-	    'yaw': 0.0,
-	    'thrust': 0.0
-	}
-    })
+sender.send_json({
+    'version': 1,
+    'ctrl': {
+	'roll': 0.0,
+	'pitch': 0.0,
+	'yaw': 0.0,
+	'thrust': 0.0
+    }
+})
+```
 
 This Python program commands zero thrust, small positive thrust, and after 2
 seconds, zero thrust again.
@@ -202,21 +218,27 @@ record`, and `demo.py` (the file defined above), each of which requires its own
 terminal. To do so, start as many new SSH log-ins as needed, or use a terminal
 multiplexing tool like `screen` or `tmux`, and run each of
 
-    roscore
-    rosrun cv_camera cv_camera_node
-    rosbag record -a
-    python3 demo.py
+```bash
+roscore
+rosrun cv_camera cv_camera_node
+rosbag record -a
+python3 demo.py
+```
 
 After demo.py finishes, kill the `rosbag record` process and compress the log
 file:
 
-    rosbag compress *bag
+```bash
+rosbag compress *bag
+```
 
 Then, download the compressed log file to your local storage. There are several
 tools available to copy files via an SSH connection, such as `scp`. For example,
 you might use a command like the following:
 
-    scp -i ~/.ssh/unodist -P 2210 root@147.75.69.207:/root/2018-02-27-00-05-15.bag .
+```bash
+scp -i ~/.ssh/unodist -P 2210 root@147.75.69.207:/root/2018-02-27-00-05-15.bag .
+```
 
 Notice that to specify the port number used by `scp`, the switch is uppercase
 `-P`.
@@ -228,7 +250,9 @@ Assuming that you have ROS installed locally, the
 and visually reviewed in [rqt](http://wiki.ros.org/rqt). After starting
 `roscore`, run a `rosbag play` process by a command like
 
-    rosbag play -r 0.25 2018-02-27-00-05-15.bag
+```bash
+rosbag play -r 0.25 2018-02-27-00-05-15.bag
+```
 
 Open the `rqt` GUI, select the drop-down menu "Plugins", then "Visualization",
 and "Image View". The Image View plugin can display images from the
