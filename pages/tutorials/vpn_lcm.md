@@ -25,12 +25,16 @@ instance. To get the latest [official
 release](https://github.com/lcm-proj/lcm/releases), in the terminal that has an
 active SSH session, enter
 
-    curl -L -O https://github.com/lcm-proj/lcm/archive/v1.3.1.tar.gz
-    shasum -a 256 v1.3.1.tar.gz
+```bash
+curl -L -O https://github.com/lcm-proj/lcm/archive/v1.3.1.tar.gz
+shasum -a 256 v1.3.1.tar.gz
+```
 
 The last line of output should be
 
-    d9765731127e5138017938c2f990eda6d8a8df260c98fe3053189db7954b9a41  v1.3.1.tar.gz
+```bash
+d9765731127e5138017938c2f990eda6d8a8df260c98fe3053189db7954b9a41  v1.3.1.tar.gz
+```
 
 Checking the SHA-256 hash of the downloaded file provides confidence that the
 file has not been maliciously modified.
@@ -38,24 +42,32 @@ file has not been maliciously modified.
 Assuming the base image used in [the tutorial with ROS and Brunel
 Hand](/tutorials/vpn_brunelhand), two more packages must be installed:
 
-    apt-get -y install autoconf libglib2.0-dev
+```bash
+apt-get -y install autoconf libglib2.0-dev
+```
 
 Now, build LCM from the source release as follows
 
-    tar -xzf v1.3.1.tar.gz
-    cd lcm-1.3.1/
-    ./configure && make && make install
+```bash
+tar -xzf v1.3.1.tar.gz
+cd lcm-1.3.1/
+./configure && make && make install
+```
 
 As a superficial check of the installation, try
 
-    lcm-gen --version
+```bash
+lcm-gen --version
+```
 
 which should print its version number.
 Now, finish configuring the instance host:
 
-    export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
-    export LCM_DEFAULT_URL=udpm://239.255.76.67:7667?ttl=1
-    sudo route add -net 224.0.0.0 netmask 240.0.0.0 dev tap0
+```bash
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+export LCM_DEFAULT_URL=udpm://239.255.76.67:7667?ttl=1
+sudo route add -net 224.0.0.0 netmask 240.0.0.0 dev tap0
+```
 
 The last two lines are critical because they
 
@@ -66,24 +78,32 @@ The last two lines are critical because they
 
 For the example Python LCM listener,
 
-    cd /root/lcm-1.3.1/examples/python
-    ./gen-types.sh
+```bash
+cd /root/lcm-1.3.1/examples/python
+./gen-types.sh
+```
 
 which will generate the message types that are used in this example. Now
 
-    python listener.py
+```bash
+python listener.py
+```
 
 Open a new terminal on your computer, i.e., the computer from which you are
 following this tutorial, not the one in the instance.
 Build LCM locally if you do not have it already.
 Then, configure routing for the LCM multicast subnet:
 
-    sudo route add -net 224.0.0.0 netmask 240.0.0.0 dev tap0
+```bash
+sudo route add -net 224.0.0.0 netmask 240.0.0.0 dev tap0
+```
 
 Finally, start to send LCM messages
 
-    export LCM_DEFAULT_URL=udpm://239.255.76.67:7667?ttl=1
-    python send-message.py
+```bash
+export LCM_DEFAULT_URL=udpm://239.255.76.67:7667?ttl=1
+python send-message.py
+```
 
 and a message should be printed from the listener.py program that is running
 within the instance.
