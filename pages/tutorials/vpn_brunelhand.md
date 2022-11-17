@@ -102,7 +102,9 @@ network".
 
 When connected to the VPN, open a terminal, and try
 
-    ping rrc.local
+```bash
+ping rrc.local
+```
 
 Possibly after some delay, you should get successful pings. `rrc.local` is the
 one and only Linux host that is part of your instance of the [`fixed_brunelhand`](/workspaces/fixed_brunelhand.html)
@@ -113,11 +115,15 @@ to connect via SSH. As a security precaution, permissions on the file must
 prevent other users from reading it. Assuming that you moved key.pem into the
 directory where you have a terminal, try
 
-    chmod 600 key.pem
+```bash
+chmod 600 key.pem
+```
 
 Now, start a SSH session using this key,
 
-    ssh -i key.pem root@rrc.local
+```bash
+ssh -i key.pem root@rrc.local
+```
 
 Note that in your instance, you have the root account. There is no need to use
 `sudo`, so be careful. (You can create a new user account if you want.)
@@ -128,35 +134,41 @@ Now we can install [a small command-line program for the Brunel
 hand](https://github.com/rerobots/brunel_hand_cli).
 To do so, enter the following to get necessary packages:
 
-    apt-get update
-    apt-get -y install python3 python3-virtualenv
-    python3 -m virtualenv -p python3 PY
-    source PY/bin/activate
-    pip install bhand
+```bash
+apt-get update
+apt-get -y install python3 python3-virtualenv
+python3 -m virtualenv -p python3 PY
+source PY/bin/activate
+pip install bhand
+```
 
 At the end of the above sequence, your instance will have installed the `bhand`
 tool, which we will use to command motions. Check that it is installed and that
 the Brunel Hand hardware is operational:
 
-    bhand
+```bash
+bhand
+```
 
 The output should be similar to the following:
 
-    Printing diagnostics. (Try `-h` for help.)
+```
+Printing diagnostics. (Try `-h` for help.)
 
-    #
-	 System Diagnostics
-    ____________________________
+#
+     System Diagnostics
+____________________________
 
-    FW:	Beetroot V1.01
-    Board:	Chestnut
-    Hand:	Right
-    OnTime:	00:00:01:77
-    CPU Temp:	26.61'C
-    IMU Temp:	29.31'C
-    Errors:	No Errors
-    Mode:	None
-    Motors:	DISABLED
+FW:	Beetroot V1.01
+Board:	Chestnut
+Hand:	Right
+OnTime:	00:00:01:77
+CPU Temp:	26.61'C
+IMU Temp:	29.31'C
+Errors:	No Errors
+Mode:	None
+Motors:	DISABLED
+```
 
 ## ROS streaming of webcams
 
@@ -166,33 +178,41 @@ Kinetic](http://wiki.ros.org/kinetic), but for this tutorial, the following
 packages must also be installed: [cv_camera](http://wiki.ros.org/cv_camera) and
 [web_video_server](http://wiki.ros.org/web_video_server). To do so,
 
-    apt-get -y install ros-kinetic-cv-camera ros-kinetic-web-video-server
+```bash
+apt-get -y install ros-kinetic-cv-camera ros-kinetic-web-video-server
+```
 
 In this tutorial, the declaration of ROS nodes is through a
 [roslaunch](http://wiki.ros.org/roslaunch#Overview) file. Create a text file on
 your computer called demo.launch and place the following in it:
 
-    <launch>
-      <node name="video0" pkg="cv_camera" type="cv_camera_node">
-	<param name="device_id" value="0" />
-      </node>
-      <node name="video1" pkg="cv_camera" type="cv_camera_node">
-	<param name="device_id" value="1" />
-      </node>
-      <node name="webstreamer" pkg="web_video_server" type="web_video_server">
-	<param name="address" value="0.0.0.0" />
-	<param name="port" value="8080" />
-	<param name="ros_threads" value="2" />
-      </node>
-    </launch>
+```
+<launch>
+  <node name="video0" pkg="cv_camera" type="cv_camera_node">
+    <param name="device_id" value="0" />
+  </node>
+  <node name="video1" pkg="cv_camera" type="cv_camera_node">
+    <param name="device_id" value="1" />
+  </node>
+  <node name="webstreamer" pkg="web_video_server" type="web_video_server">
+    <param name="address" value="0.0.0.0" />
+    <param name="port" value="8080" />
+    <param name="ros_threads" value="2" />
+  </node>
+</launch>
+```
 
 Save it, and copy it into the instance host:
 
-    scp -i key.pem demo.launch root@rrc.local:/root/
+```bash
+scp -i key.pem demo.launch root@rrc.local:/root/
+```
 
 Start an SSH session with `rrc.local` again, and enter
 
-    roslaunch demo.launch
+```bash
+roslaunch demo.launch
+```
 
 Then, direct your Web browser at <http://rrc.local:8080>. The video streams
 listed are coming from the `web_video_server` ROS node.
@@ -201,8 +221,10 @@ listed are coming from the `web_video_server` ROS node.
 
 Start another SSH session (something like `ssh -i key.pem root@rrc.local`) and
 
-    source PY/bin/activate
-    bhand --raw A3
+```bash
+source PY/bin/activate
+bhand --raw A3
+```
 
 which should end with a confirmation like
 
@@ -210,13 +232,17 @@ which should end with a confirmation like
 
 You can now send motion commands. For example,
 
-    bhand --raw G0
+```bash
+bhand --raw G0
+```
 
 will cause a fist to form. Send the same command again to toggle between "open"
 and "close":
 
-    bhand --raw G0
-    bhand --raw G0
+```bash
+bhand --raw G0
+bhand --raw G0
+```
 
 and watch the video stream in your Web browser. Depending on the speed of your
 Internet connection, there might be some delay in the video. If the video has
@@ -226,11 +252,15 @@ extreme lag, hit the refresh button.
 
 A brief help message for the CLI program `bhand` can be obtained by
 
-    bhand --help
+```bash
+bhand --help
+```
 
 and to get a help message from the firmware, try
 
-    bhand --fw-help
+```bash
+bhand --fw-help
+```
 
 or, equivalently, `bhand --raw \?`. Technical specifications are available from
 the [Brunel Hand product page](https://www.openbionics.com/shop/brunel-hand) by
