@@ -174,16 +174,16 @@ Motors:	DISABLED
 
 To visualize the space, we will start ROS nodes that stream images from the
 webcams. The instance already has the "desktop" installation of [ROS
-Kinetic](http://wiki.ros.org/kinetic), but for this tutorial, the following
-packages must also be installed: [cv_camera](http://wiki.ros.org/cv_camera) and
-[web_video_server](http://wiki.ros.org/web_video_server). To do so,
+Kinetic](https://wiki.ros.org/kinetic), but for this tutorial, the following
+packages must also be installed: [cv_camera](https://wiki.ros.org/cv_camera) and
+[web_video_server](https://wiki.ros.org/web_video_server). To do so,
 
 ```bash
 apt-get -y install ros-kinetic-cv-camera ros-kinetic-web-video-server
 ```
 
 In this tutorial, the declaration of ROS nodes is through a
-[roslaunch](http://wiki.ros.org/roslaunch#Overview) file. Create a text file on
+[roslaunch](https://wiki.ros.org/roslaunch#Overview) file. Create a text file on
 your computer called demo.launch and place the following in it:
 
 ```
