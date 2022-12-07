@@ -91,7 +91,8 @@ the Misty Command Center window on the other side, as shown in this screenshot:
 side-by-side](figures/proxy_fixedmisty_finalarrange.png)
 
 A similar arrangement is shown in [the following video](https://vimeo.com/440801712):
-<iframe src="https://player.vimeo.com/video/440801712" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+{% vimeo id="440801712" /%}
 
 
 ## The general case
