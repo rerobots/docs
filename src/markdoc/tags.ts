@@ -1,4 +1,4 @@
-import { Abbr, AlertBanner, Asciinema } from '../components';
+import { Abbr, AlertBanner, Asciinema, Vimeo } from '../components';
 
 export const abbr = {
     render: Abbr,
@@ -16,6 +16,18 @@ export const alert = {
 export const asciinema = {
     render: Asciinema,
     description: 'Renders an Asciinema asciicast',
+    attributes: {
+        id: {
+            type: String,
+            errorLevel: 'critical',
+            required: true,
+        },
+    },
+};
+
+export const vimeo = {
+    render: Vimeo,
+    description: 'Embeds a video on Vimeo',
     attributes: {
         id: {
             type: String,
