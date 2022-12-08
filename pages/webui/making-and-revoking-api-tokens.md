@@ -2,13 +2,13 @@
 
 As described in the [introduction](/intro), API tokens are
 required to use the rerobots API directly, instead of through [the Web
-console](https://rerobots.net/). API tokens are mainly of interest to
+dashboard](https://rerobots.net/). API tokens are mainly of interest to
 application developers, and they are required to perform nontrivial actions from
 client libraries like the [rerobots Python package](
 https://pypi.org/project/rerobots/).
 
 To get and manage your API tokens, go to the [API tokens page in the Web
-console](https://rerobots.net/tokens). When there are no active tokens, the main
+dashboard](https://rerobots.net/tokens). When there are no active tokens, the main
 section will appear similar to the following screenshot:
 
 ![screenshot of the main section of the API tokens page](figures/api_tokens_page_empty.png)
@@ -33,7 +33,7 @@ button.
 For security, the best practice is to revoke API tokens that are no longer
 required but have not yet expired. (Expired tokens cannot be used, and thus do
 not need to be manually revoked.) To do so, periodically go to your [API tokens
-page in the Web console](https://rerobots.net/tokens) and review the table of
+page in the Web dashboard](https://rerobots.net/tokens) and review the table of
 active tokens. To revoke one, simply use its `revoke` button in the right
 column. To prevent mistakes, there is a confirmation dialog for the revoke
 action.
