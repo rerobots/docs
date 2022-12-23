@@ -111,14 +111,14 @@ export REROBOTS_API_TOKEN=$(cat tok)
 Search for workspace deployments
 
 ```bash
-$ rerobots search misty
+# rerobots search misty
 2c0873b5-1da1-46e6-9658-c40379774edf    fixed_misty2
 ```
 
 Get more information about one of them
 
 ```bash
-$ rerobots wdinfo 2c0873b5-1da1-46e6-9658-c40379774edf
+# rerobots wdinfo 2c0873b5-1da1-46e6-9658-c40379774edf
 {
   "cap": {
     "rules": []
@@ -141,14 +141,14 @@ Notice that `queuelen = 0`, i.e., this workspace deployment is available, and
 requests to instantiate from it now are likely to succeed. To do so,
 
 ```bash
-$ rerobots launch 2c0873b5-1da1-46e6-9658-c40379774edf
+# rerobots launch 2c0873b5-1da1-46e6-9658-c40379774edf
 f7856ad4-a9d7-43f5-8420-7073d10bceec
 ```
 
 Get information about the new instance
 
 ```bash
-$ rerobots info f7856ad4-a9d7-43f5-8420-7073d10bceec
+# rerobots info f7856ad4-a9d7-43f5-8420-7073d10bceec
 {
   "id": "f7856ad4-a9d7-43f5-8420-7073d10bceec",
   "deployment": "2c0873b5-1da1-46e6-9658-c40379774edf",
@@ -170,7 +170,7 @@ $ rerobots info f7856ad4-a9d7-43f5-8420-7073d10bceec
 When `READY`, get the SSH secret key created for the instance
 
 ```bash
-$ rerobots get-ssh-key f7856ad4-a9d7-43f5-8420-7073d10bceec
+rerobots get-ssh-key f7856ad4-a9d7-43f5-8420-7073d10bceec
 ```
 
 The section `fwd` contains an IP address and port at which ssh connections can
@@ -178,11 +178,11 @@ be established to the instance host. The rerobots CLI provides a convenient
 command to do this::
 
 ```bash
-$ rerobots ssh f7856ad4-a9d7-43f5-8420-7073d10bceec
+rerobots ssh f7856ad4-a9d7-43f5-8420-7073d10bceec
 ```
 
 Finally, `exit` the ssh shell, and terminate the instance
 
 ```bash
-$ rerobots terminate f7856ad4-a9d7-43f5-8420-7073d10bceec
+rerobots terminate f7856ad4-a9d7-43f5-8420-7073d10bceec
 ```
