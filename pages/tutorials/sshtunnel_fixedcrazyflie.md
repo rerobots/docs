@@ -118,8 +118,8 @@ the details panel (example is shown in screenshot earlier in this tutorial).
 
 To visualize the space, we will start a ROS node that streams images from the
 webcam. The instance already has the "desktop" installation of [ROS
-Kinetic](http://wiki.ros.org/kinetic), but for this tutorial, the
-package [cv_camera](http://wiki.ros.org/cv_camera) must also be installed. To
+Kinetic](https://wiki.ros.org/kinetic), but for this tutorial, the
+package [cv_camera](https://wiki.ros.org/cv_camera) must also be installed. To
 do so,
 
 ```bash
@@ -246,8 +246,8 @@ Notice that to specify the port number used by `scp`, the switch is uppercase
 ## Reviewing results
 
 Assuming that you have ROS installed locally, the
-[rosbag](http://wiki.ros.org/rosbag) file can be played back at a slower speed
-and visually reviewed in [rqt](http://wiki.ros.org/rqt). After starting
+[rosbag](https://wiki.ros.org/rosbag) file can be played back at a slower speed
+and visually reviewed in [rqt](https://wiki.ros.org/rqt). After starting
 `roscore`, run a `rosbag play` process by a command like
 
 ```bash
