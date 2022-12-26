@@ -12,7 +12,7 @@ import 'prismjs/components/prism-http.min';
 import 'prismjs/components/prism-json.min';
 import 'prismjs/components/prism-python.min';
 
-import '../css/main.css';
+import '../styles/main.css';
 
 
 export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPageProps>)
