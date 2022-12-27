@@ -128,36 +128,6 @@ nav a:focus {
   background-color: #F5F5F5;
 }
 
-form div {
-  display: inline-block;
-  margin: 0 0 0 1.5em;
-}
-
-.form-signin {
-  max-width: 300px;
-}
-
-.form-control {
-  margin: 5px 0;
-}
-
-.upload-new-public-key {
-  display: block;
-}
-
-.form-special div {
-  margin: 0;
-  display: block;
-}
-
-.panel {
-  margin: 1em 0;
-}
-
-.form-special .panel {
-  margin: 1em 0;
-}
-
 footer {
     position: absolute;
     bottom: 0;
