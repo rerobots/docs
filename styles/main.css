@@ -214,7 +214,7 @@ code {
 }
 
 img {
-  border: 1px solid #000;
+    border: 0;
   max-width: 600px;
 }
 
