@@ -5,7 +5,8 @@ required to use the rerobots API directly, instead of through [the Web
 dashboard](https://rerobots.net/). API tokens are mainly of interest to
 application developers, and they are required to perform nontrivial actions from
 client libraries like the [rerobots Python package](
-https://pypi.org/project/rerobots/).
+https://pypi.org/project/rerobots/)
+and [Rust crate](https://crates.io/crates/rerobots).
 
 To get and manage your API tokens, go to the [API tokens page in the Web
 dashboard](https://rerobots.net/tokens). When there are no active tokens, the main
