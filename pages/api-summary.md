@@ -11,7 +11,7 @@ This API is unstable. If you are developing with it, please [contact us](https:/
 Most users will want to use one of the official client libraries instead of
 working directly with the HTTP interface:
 
-* Python - <https://github.com/rerobots/py>
+* Python - <https://pypi.org/project/rerobots/>
 
 The current version is 1, so calls to api.rerobots.net that lack a version route
 default to v1. To request this or any particular version, in requests include an
