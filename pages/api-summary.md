@@ -12,6 +12,7 @@ Most users will want to use one of the official client libraries instead of
 working directly with the HTTP interface:
 
 * Python - <https://pypi.org/project/rerobots/>
+* Rust - <https://crates.io/crates/rerobots>
 
 The current version is 1, so calls to api.rerobots.net that lack a version route
 default to v1. To request this or any particular version, in requests include an
