@@ -89,5 +89,5 @@ than `user_provided` is maintained professionally by rerobots, e.g.,
 [fixed_misty2](/workspaces/fixed_misty2).
 
 If you are interested in sharing your hardware,
-please read the [Introduction of the hardshare manual](https://docs.hardshare.dev/intro.html).
+please read the [Introduction of the hardshare manual](https://docs.hardshare.dev/intro).
 The source code of the hardshare client is at <https://github.com/rerobots/hardshare>.
