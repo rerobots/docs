@@ -106,7 +106,7 @@ For example, if the URL prefix is
 `https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3`,
 then you can make [Misty API](
 https://docs.mistyrobotics.com/misty-ii/web-api/overview/) calls from the
-command-line with [cURL](https://curl.haxx.se/):
+command-line with [cURL](https://curl.se/):
 
 ```bash
 export MISTYPREFIX=https://proxy.rerobots.net/2c748d9af25319fcb5ee5dea70400c9f4fbb8e71a5c2b31cde7ee85838b1db09/mistyproxy/c9ab91885e059d56263e514a6812b9d4a2e2b2ef71fdcb13651da9bc2e6064b3
