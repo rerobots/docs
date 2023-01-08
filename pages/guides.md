@@ -19,8 +19,9 @@ Tutorials are step-by-step instructions for common use-cases.
 
 ### Summary
 
-This section describes how to use the Web interface of rerobots. You can learn
-how to perform basic tasks like adding SSH keys to your account.
+This section describes how to use the Web interface, also known as the
+_dashboard_.
+You can learn how to perform basic tasks like adding SSH keys to your account.
 
 ### Table of Contents
 
