@@ -11,6 +11,7 @@ This API is unstable. If you are developing with it, please [contact us](https:/
 Most users will want to use one of the official client libraries instead of
 working directly with the HTTP interface:
 
+* JS - <https://www.npmjs.com/package/rerobots>
 * Python - <https://pypi.org/project/rerobots/>
 * Rust - <https://crates.io/crates/rerobots>
 
