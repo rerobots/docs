@@ -10,7 +10,8 @@ title: FAQ
 
 We maintain a variety of robots that can be remotely accessed just as you would
 any cloud computing service.
-You can develop software on these robots interactively through a Web-based IDE,
+You can develop software on these robots interactively through a Web-based
+{% abbr title="integrated development environment" %}IDE{% /abbr %},
 demonstrated in videos of [multi_kobuki](https://vimeo.com/465989844) and
 [fixed_misty2](https://vimeo.com/488264658) workspaces.
 You can also create your own applications that leverage it with popular programming languages,
