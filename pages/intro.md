@@ -23,8 +23,8 @@ address or brand of a range finder.
 This term is more concisely written as *workspace deployment* or *wdeployment*.
 
 An **instance** of a workspace corresponds to usage of a deployment by a
-user. Ideally, each instance of a deployment is identical modulo changes of
-user-defined parameters where available, but practically there may be small
+user. Ideally, each instance of a deployment is identical except for changes of
+user-defined parameters where available. Practically, there may be small
 differences.
 
 ## Instances
