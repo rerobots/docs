@@ -100,7 +100,7 @@ in text. (This video can also be watched at <https://asciinema.org/a/l0l2yh83JtA
 {% asciinema id="l0l2yh83JtAM8RjDiOHsk3Q9F" /%}
 
 Before beginning, [get an API token](/webui/making-and-revoking-api-tokens)
-([from the Web UI](https://rerobots.net/tokens)). Now assign it to an
+([from the dashboard](https://rerobots.net/tokens)). Now assign it to an
 environment variable.  For example, if the API token is saved to a local file
 named `tok`, then
 

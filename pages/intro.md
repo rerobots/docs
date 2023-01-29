@@ -61,7 +61,7 @@ Available kinds of connection:
 
 ## API Tokens
 
-Besides the Web user interface (WebUI), rerobots has an
+Besides the dashboard at <https://rerobots.net>, rerobots has an
 {% abbr title="application programming interface" %}[API](/api-summary){% /abbr %}.
 An **API token** is a string that provides
 authentication and authorization for API requests. rerobots API tokens follow
