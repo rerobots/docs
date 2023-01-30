@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
     if (markdoc?.frontmatter?.srcUrl) {
         repoUrl = markdoc?.frontmatter?.srcUrl;
     } else if (markdoc?.file?.path) {
-        repoUrl += '/blob/master/pages' + markdoc.file.path;
+        repoUrl += '/blob/main/pages' + markdoc.file.path;
     }
 
     let ogImage = markdoc?.frontmatter?.image;

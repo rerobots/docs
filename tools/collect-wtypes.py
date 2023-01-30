@@ -127,7 +127,7 @@ for wtype in wtypes:
                     out_img.write(in_img.read())
     typedef_changelog = strip_emailaddr(typedef_changelog)
     typedef_changelog = rm_version_prefix(typedef_changelog)
-    typedef_header['srcUrl'] = f'https://github.com/rerobots/workspaces/blob/master/types/{wtype}.md'
+    typedef_header['srcUrl'] = f'https://github.com/rerobots/workspaces/blob/main/types/{wtype}.md'
     typedef += '''
 
 ## Changelog
