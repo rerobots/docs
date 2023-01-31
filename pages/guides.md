@@ -27,6 +27,7 @@ You can learn how to perform basic tasks like adding SSH keys to your account.
 
 * [Uploading SSH Public Keys](/webui/uploading-ssh-public-keys)
 * [Making and Revoking API Tokens](/webui/making-and-revoking-api-tokens)
+* [Sandboxes](/sandbox)
 
 
 ## Manuals
