@@ -10,3 +10,8 @@ freely.
 
 Several robots are available for anonymous trials at
 <https://rerobots.net/sandbox>.
+
+## Kinds of Sandbox
+
+* [misty-blockly](/sandbox/misty-blockly)
+* [xterm](/sandbox/xterm)
