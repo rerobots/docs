@@ -59,6 +59,9 @@ Available kinds of connection:
 1. `sshtun`: ssh to a public IP address and port number.
 2. `openvpn`: create OpenVPN server and install client certificates on instance hosts.
 
+Keys can be generated as needed per instance, or [you can upload keys for
+reuse](/webui/uploading-ssh-public-keys).
+
 ## API Tokens
 
 Besides the dashboard at <https://rerobots.net>, rerobots has an
