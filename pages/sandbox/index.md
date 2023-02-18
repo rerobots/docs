@@ -13,5 +13,5 @@ Several robots are available for anonymous trials at
 
 ## Kinds of Sandbox
 
-* [misty-blockly](/sandbox/misty-blockly)
-* [xterm](/sandbox/xterm)
+* [misty-blockly](/sandbox/misty-blockly) - visual code editor for Misty robots
+* [xterm](/sandbox/xterm) - text terminals
