@@ -79,7 +79,7 @@ such as [how to make and revoke API tokens](/webui/making-and-revoking-api-token
 
 The part of rerobots that facilitates users sharing their own hardware with
 others is named **hardshare**. These workspaces are available through the same
-interfaces as robots that are maintained by rerobots the company.
+interfaces as devices that are maintained by rerobots the company.
 
 However, properties like uptime and calibration depend on the owners.
 The owner decides who is permitted to access their hardware, and they decide how
