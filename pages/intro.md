@@ -67,10 +67,7 @@ reuse](/webui/uploading-ssh-public-keys).
 Besides the dashboard at <https://rerobots.net>, rerobots has an
 {% abbr title="application programming interface" %}[API](/api-summary){% /abbr %}.
 An **API token** is a string that provides
-authentication and authorization for API requests. rerobots API tokens follow
-the JSON Web Token standard, [RFC 7519](https://tools.ietf.org/html/rfc7519),
-which is introduced at <https://jwt.io/>.
-
+authentication and authorization for API requests.
 Users manage their API tokens at <https://rerobots.net/tokens>.
 Learn more by reading the [guides](/guides) about API tokens,
 such as [how to make and revoke API tokens](/webui/making-and-revoking-api-tokens).
