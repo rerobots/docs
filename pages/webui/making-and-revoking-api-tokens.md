@@ -16,7 +16,7 @@ section will appear similar to the following screenshot:
 
 To create a new API token, use the control panel near the bottom of the page.
 Select the duration of validity of the API token. The default is 24 hours, i.e.,
-the token cannot be used 24 hours or more after its creation. Click the button
+the token cannot be used more than 24 hours after its creation. Click the button
 labeled `make API token`. The table should now have at least one row that
 appears like
 
