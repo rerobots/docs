@@ -15,7 +15,7 @@ Tutorials are step-by-step instructions for common use-cases.
 * [SSH-tunnel-based instance with fixed Crazyflie](/tutorials/sshtunnel_fixedcrazyflie)
 
 
-## Using the Website
+## Using the Dashboard
 
 ### Summary
 
