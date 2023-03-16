@@ -19,11 +19,15 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
 {
     const { markdoc } = pageProps;
 
-    let title = 'rerobots';
+    let title: string;
     if (markdoc?.frontmatter?.title) {
-        title += ': ' + markdoc.frontmatter.title;
+        if (markdoc.frontmatter.section) {
+            title = `${markdoc.frontmatter.title} | ${markdoc.frontmatter.section} | rerobots`;
+        } else {
+            title = `${markdoc.frontmatter.title} | rerobots`;
+        }
     } else {
-        title += '  documentation';
+        title = 'rerobots documentation';
     }
 
     let repoUrl = 'https://github.com/rerobots/docs';
