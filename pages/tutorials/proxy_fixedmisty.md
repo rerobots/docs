@@ -1,4 +1,5 @@
 ---
+section: tutorials
 title: Try the Misty API with a proxy
 image: /tutorials/figures/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 ---
