@@ -19,6 +19,7 @@ from pathlib import Path
 
 
 def dump_header(header):
+    header['section'] = 'workspaces'
     body = '\n'.join([f'{k}: {v}' for (k, v) in header.items()])
     return '---\n' + body + '\n---\n'
 
@@ -128,6 +129,7 @@ for wtype in wtypes:
     typedef_changelog = strip_emailaddr(typedef_changelog)
     typedef_changelog = rm_version_prefix(typedef_changelog)
     typedef_header['srcUrl'] = f'https://github.com/rerobots/workspaces/blob/main/types/{wtype}.md'
+    typedef_header['title'] = wtype
     typedef += '''
 
 ## Changelog
