@@ -72,7 +72,7 @@ Users manage their API tokens at <https://rerobots.net/tokens>.
 Learn more by reading the [guides](/guides) about API tokens,
 such as [how to make and revoke API tokens](/webui/making-and-revoking-api-tokens).
 
-## Hardshare
+## hardshare
 
 The part of rerobots that facilitates users sharing their own hardware with
 others is named **hardshare**. These workspaces are available through the same
