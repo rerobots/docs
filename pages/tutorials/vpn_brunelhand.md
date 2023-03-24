@@ -1,3 +1,8 @@
+---
+section: tutorials
+title: VPN-based instance with ROS and Brunel Hand
+---
+
 # VPN-based instance with ROS and Brunel Hand
 
 ## Summary
