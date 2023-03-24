@@ -1,4 +1,5 @@
 ---
+section: sandbox kind
 title: Misty Blockly
 ---
 
