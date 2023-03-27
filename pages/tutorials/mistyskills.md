@@ -1,3 +1,8 @@
+---
+section: tutorials
+title: Develop skills for Misty robots
+---
+
 # Develop skills for Misty robots
 
 ## Summary
