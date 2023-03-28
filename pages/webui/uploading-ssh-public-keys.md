@@ -1,3 +1,7 @@
+---
+title: Uploading SSH Public Keys
+---
+
 # Uploading SSH Public Keys
 
 Remote log-in to hosts of a workspace instance is achieved through `ssh`. If you
