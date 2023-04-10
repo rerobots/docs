@@ -40,7 +40,7 @@ instance that you will create. It should look like:
 
 Under "kind of connection", select "SSH tunnel". For the SSH public key that
 provides authorization for remote log-in to the instance, you can select one
-that you [previously uploaded](/webui/uploading-ssh-public-keys), or you
+that you [previously uploaded](/web/uploading-ssh-public-keys), or you
 can have a new key pair generated for you as part of instantiation. When you are
 ready, request the instance.  A reservation system is under development, so your
 request might be denied if someone else started to use the same workspace. If

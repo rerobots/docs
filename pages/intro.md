@@ -60,7 +60,7 @@ Available kinds of connection:
 2. `openvpn`: create OpenVPN server and install client certificates on instance hosts.
 
 Keys can be generated as needed per instance, or [you can upload keys for
-reuse](/webui/uploading-ssh-public-keys).
+reuse](/web/uploading-ssh-public-keys).
 
 ## API Tokens
 
@@ -70,7 +70,7 @@ An **API token** is a string that provides
 authentication and authorization for API requests.
 Users manage their API tokens at <https://rerobots.net/tokens>.
 Learn more by reading the [guides](/guides) about API tokens,
-such as [how to make and revoke API tokens](/webui/making-and-revoking-api-tokens).
+such as [how to make and revoke API tokens](/web/making-and-revoking-api-tokens).
 
 ## hardshare
 
