@@ -54,33 +54,45 @@ rerobots help
 which will result in a message similar to the following
 
 ```
+rerobots API command-line client
+
 USAGE:
     rerobots [FLAGS] [OPTIONS] [SUBCOMMAND]
 
 FLAGS:
+    -n               assume "no" for any questions required to execute the
+                     command; this can prevent destructive actions, e.g.,
+                     overwriting a local file
+    -y               assume "yes" for any questions required to execute the
+                     command; otherwise, interactive prompts will appear to
+                     confirm actions as needed
     -h, --help       Prints help information
     -v, --verbose    Increases verboseness level of logs; ignored if RUST_LOG is
-		     defined
+                     defined
     -V, --version    Prints version number and exits
 
 OPTIONS:
     -t <FILE>                plaintext file containing API token; with this
-			     flag, the REROBOTS_API_TOKEN environment variable
-			     is ignored
-	--format <FORMAT>    output formatting; options: YAML , JSON
+                             flag, the REROBOTS_API_TOKEN environment variable
+                             is ignored
+        --format <FORMAT>    output formatting; options: YAML , JSON
 
 SUBCOMMANDS:
-    help         Prints this message or the help of the given subcommand(s)
-    info         Print summary about instance
-    isready      Indicate whether instance is ready with exit code
-    launch       Launch instance from specified workspace deployment or type
-    list         List all instances by this user
-    search       Search for matching deployments. empty query implies show
-		 all existing workspace deployments
-    ssh          Connect to instance host via ssh
-    terminate    Terminate instance
-    version      Prints version number and exits
-    wdinfo       Print summary about workspace deployment
+    get-ssh-key    Get secret key for SSH access to instance
+    help           Prints this message or the help of the given
+                   subcommand(s)
+    info           Print summary about instance
+    isready        Indicate whether instance is ready with exit code
+    launch         Launch instance from specified workspace deployment or
+                   type
+    list           List all instances by this user
+    search         Search for matching deployments. empty query implies show
+                   all existing workspace deployments
+    ssh            Connect to instance host via ssh
+    terminate      Terminate instance
+    token          Get information about an API token
+    version        Prints version number and exits
+    wdinfo         Print summary about workspace deployment
 ```
 
 Call `help` to learn more about commands, e.g., `rerobots help info` to
