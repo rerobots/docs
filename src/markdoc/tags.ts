@@ -1,4 +1,4 @@
-import { Abbr, AlertBanner, Asciinema, Vimeo } from '../components';
+import { Abbr, AlertBanner, Asciinema, Image, Vimeo } from '../components';
 
 export const abbr = {
     render: Abbr,
@@ -21,6 +21,24 @@ export const asciinema = {
             type: String,
             errorLevel: 'critical',
             required: true,
+        },
+    },
+};
+
+export const image = {
+    render: Image,
+    description: 'Image with shape constraints',
+    attributes: {
+        src: {
+            type: String,
+            errorLevel: 'critical',
+            required: true,
+        },
+        alt: {
+            type: String,
+        },
+        maxWidth: {
+            type: String,
         },
     },
 };
