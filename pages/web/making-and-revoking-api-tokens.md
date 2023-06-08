@@ -12,7 +12,7 @@ To get and manage your API tokens, go to the [API tokens page in the Web
 dashboard](https://rerobots.net/tokens). When there are no active tokens, the main
 section will appear similar to the following screenshot:
 
-![screenshot of the main section of the API tokens page](figures/api_tokens_page_empty.png)
+![screenshot of the main section of the API tokens page](figures/api_tokens_page.png)
 
 To create a new API token, use the control panel near the bottom of the page.
 Select the duration of validity of the API token. The default is 24 hours, i.e.,
