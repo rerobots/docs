@@ -64,11 +64,11 @@ reuse](/web/uploading-ssh-public-keys).
 
 ## API Tokens
 
-Besides the dashboard at <https://rerobots.net>, rerobots has an
+Besides the dashboard at [rerobots.net](https://rerobots.net/), rerobots has an
 {% abbr title="application programming interface" %}[API](/api-summary){% /abbr %}.
 An **API token** is a string that provides
 authentication and authorization for API requests.
-Users manage their API tokens at <https://rerobots.net/tokens>.
+Users manage their API tokens at [rerobots.net/tokens](https://rerobots.net/tokens).
 Learn more by reading the [guides](/guides) about API tokens,
 such as [how to make and revoke API tokens](/web/making-and-revoking-api-tokens).
 
