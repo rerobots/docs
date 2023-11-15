@@ -5,8 +5,14 @@ The current release of this documentation is available at
 https://docs.rerobots.net
 
 
-Building
---------
+Building and local development
+------------------------------
+
+The repository uses submodules, so when you first clone it, try
+
+    git clone --recurse https://github.com/rerobots/docs.git
+
+or if you already cloned it, then do `git submodule update --init --recursive`.
 
 A [Git LFS](https://git-lfs.github.com/) client is required to clone this
 repository. Note that `git clone` will succeed without `git lfs` available, but
