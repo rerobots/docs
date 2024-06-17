@@ -21,7 +21,7 @@ like [Python](https://pypi.org/project/rerobots/).
 ## What is hardshare?
 
 You can share your own robot or {% abbr title="Internet of Things" %}IoT{% /abbr %} device using
-[hardshare](https://hardshare.dev/).
+[hardshare](/hardshare).
 This involves the same infrastructure as rerobots except at the edge, where the
 [hardshare client](https://github.com/rerobots/hardshare) presents your devices
 to rerobots servers.
