@@ -34,7 +34,7 @@ hardshare config-addon -a mistyproxy -l
 ## Check details via the rerobots CLI
 
 You can check the details associated with your Misty robot deployment through
-the [rerobots CLI](https://docs.rerobots.net/tools/cli).
+the [rerobots CLI](/tools/cli).
 The rerobots CLI requires an API token, much like the hardshare client. To find yours locally,
 
 ```bash
@@ -100,7 +100,7 @@ live stream like that at <https://rerobots.net/sandbox/fixed_misty2>
 ## Make a sandbox
 
 At this stage, your workspace deployment with a Misty robot is ready for the
-kind of low-level access demonstrated in the tutorial at <https://docs.rerobots.net/tutorials/proxy_fixedmisty>
+kind of low-level access demonstrated in the tutorial at </tutorials/proxy_fixedmisty>
 
 To provide a faster and simpler (and also more constrained) experience for
 remote users of your Misty, you can make a sandbox.
@@ -121,7 +121,7 @@ Other sandbox kinds are available for different language runtimes. For example,
 `misty-java` provides a Java runtime. Alternatively, the sandbox can present a
 [Blockly](https://developers.google.com/blockly/) editor if `misty-blockly` is selected. An example is shown in the
 video at <https://vimeo.com/488264658>.
-Read about it at <https://docs.rerobots.net/sandbox/misty-blockly>.
+Read about it at </sandbox/misty-blockly>.
 
 
 ## Example misty-py template

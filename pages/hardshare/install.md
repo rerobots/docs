@@ -38,7 +38,7 @@ hardshare init
 ### API Tokens
 
 Instructions about managing API tokens are [in the rerobots Web Guide](
-https://docs.rerobots.net/web/making-and-revoking-api-tokens). The
+/web/making-and-revoking-api-tokens). The
 token that you create at <https://rerobots.net/tokens> and download is saved to
 your local hardshare configuration. As such, the default expiration time might
 be too small for your application. Download the token, and add it

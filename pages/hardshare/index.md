@@ -12,11 +12,6 @@ infrastructure. For a conceptual overview, read the [Introduction](/hardshare/in
 The source code repository is at <https://github.com/rerobots/hardshare>
 
 
-## What is rerobots?
-
-Learn more at [docs.rerobots.net](https://docs.rerobots.net/).
-
-
 ## How do I begin?
 
 Before you can share things, you must have a user account on rerobots.
