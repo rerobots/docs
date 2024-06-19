@@ -54,18 +54,17 @@ a:focus {
 .brandText {
     font-family: "orbitronb", sans-serif;
     font-weight: bold;
-    font-size: 12pt;
-    padding: 0.4em 1em;
+    font-size: 16pt;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #777777;
 }
 
-.navbar-brand,
-.navbar-brand:hover,
-.navbar-brand:focus {
+.navbarBrand,
+.navbarBrand:hover,
+.navbarBrand:focus {
     z-index: 100;
-    position: relative;
-    top: 5px;
-    font-size: 16pt;
-    color: #777777;
     text-decoration: none;
 }
 
@@ -291,4 +290,17 @@ h1, h2, h3, h4 {
     margin: 5px 0;
     border-radius: 1px;
     background-color: #999;
+}
+
+.body {
+    display: flex;
+}
+
+.navbarSide {
+    margin: 10px;
+    padding-top: 28px;
+}
+
+ul.innerNavLinks {
+    padding-left: 24px;
 }
