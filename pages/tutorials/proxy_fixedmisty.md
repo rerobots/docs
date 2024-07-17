@@ -49,12 +49,7 @@ If you encounter difficulty here, please [contact us](
 https://rerobots.net/contact).
 
 If your request is accepted, then you will be redirected to a page that shows
-all of your active instances. Notice that there is a message at the top of the page:
-
-> Your new workspace instance is initializing! Because you did not use an SSH key
-> that is already associated with your user account, a new key pair was generated
-> for this instance. The following link can be used to download the private key
-> precisely once.
+information about the new instance.
 
 When you are ready, select the link "Download private key.", which will download
 a file named `key.pem`. Be careful to only click the link when you are ready for
