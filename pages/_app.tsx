@@ -74,6 +74,7 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
                             <li><Link href="/hardshare/quickstart">quickstart</Link></li>
                             <li><Link href="/hardshare/install">installation</Link></li>
                             <li><Link href="/hardshare/tutorials">tutorials</Link></li>
+                            <li><Link href="/hardshare/filters">filters</Link></li>
                             <li><Link href="/hardshare/maint">maintenance</Link></li>
                             <li><Link href="/hardshare/help">help</Link></li>
                             <li><Link href="/hardshare/develop">develop</Link></li>
