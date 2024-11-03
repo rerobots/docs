@@ -6,6 +6,8 @@ title: Filters
 
 ## Summary
 
+A *filter* is a program that decides whether input to an instance can reach the hardware.
+
 ## rrhttp
 
 The `default` behavior choice is for requests that do not match a rule,
