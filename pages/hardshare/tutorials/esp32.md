@@ -4,7 +4,7 @@ title: "Tutorial: ESP32"
 
 # Tutorial: ESP32
 
-This tutorial begins where [Quickstart](/hardshare/quickstart) ended. Using [ESP32-DevKitC](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html) as an
+This tutorial begins where [Quickstart](/hardshare/quickstart) ended. Using [ESP32-DevKitC](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/index.html) as an
 example, this tutorial provides typical preparation for sharing a
 [PlatformIO](https://docs.platformio.org/en/latest/what-is-platformio.html)-compatible board via hardshare:
 
@@ -88,7 +88,7 @@ PlatformIO, version 5.0.3
 In a separate terminal, copy the initial code (including platformio.ini) into
 the container. To get the container ID, call `docker ps`. For the commands
 below, we assume this value is `5baec5c80e45`. Continuing with the example of
-[espidf-hello-world](https://github.com/platformio/platform-espressif32/tree/a58a358fdc1122523c7fcf7b4fc8b4016e48961d/examples/espidf-hello-world) from the Prerequisites section above,
+[espidf-hello-world](https://github.com/platformio/platform-espressif32/tree/0bdfa3070724e777cf5fb05ce6ab23bafcf085e5/examples/espidf-hello-world) from the Prerequisites section above,
 
 ```bash
 cd platform-espressif32/examples
@@ -260,7 +260,7 @@ In the Sandboxes section, push "create new". The form has the following parts:
 1. a summary to remind you about the sandbox; visitors to the sandbox cannot read this;
 2. introduction text (Markdown syntax): put whatever you want here to introduce visitors to your sandbox;
 3. sandbox kind: select `editor-xterm`;
-4. example code: copy-and-paste [src/hello_world_main.c](https://github.com/platformio/platform-espressif32/blob/a58a358fdc1122523c7fcf7b4fc8b4016e48961d/examples/espidf-hello-world/src/hello_world_main.c) from [espidf-hello-world](https://github.com/platformio/platform-espressif32/tree/a58a358fdc1122523c7fcf7b4fc8b4016e48961d/examples/espidf-hello-world),
+4. example code: copy-and-paste [src/hello_world_main.c](https://github.com/platformio/platform-espressif32/blob/0bdfa3070724e777cf5fb05ce6ab23bafcf085e5/examples/espidf-hello-world/src/hello_world_main.c) from `espidf-hello-world`,
 5. destination path, i.e., where we want to put code from the code editor: for this tutorial, it should be `/root/espidf-hello-world/src/hello_world_main.c`
 6. button label: a short text to indicate what the custom button does; for this tutorial, put "build & flash";
 7. command associated with the button: for this tutorial, it should be `export LC_ALL=C.UTF-8 LANG=C.UTF-8 && source /root/.platformio/penv/bin/activate && cd /root/espidf-hello-world && pio run -t upload`
