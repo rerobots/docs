@@ -69,7 +69,7 @@ hardshare version
 
 ## Prepare a cprovider
 
-A container provider must be installed before `hardshare` can create
+A container provider (known as **cprovider**) must be installed before `hardshare` can create
 instances.
 
 ### Docker
