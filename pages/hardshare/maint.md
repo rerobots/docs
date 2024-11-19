@@ -133,6 +133,8 @@ hardshare ad
 
 Finally, request an instance as usual.
 
+Alternatively, build a new image on your host using files [under the directory devices/ of the sourcetree](https://github.com/rerobots/hardshare/tree/main/devices).
+
 
 ## Daemon fails to start or is not responsive
 
