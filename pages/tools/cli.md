@@ -33,7 +33,7 @@ cargo build --release --locked
 Beware that the resulting program might be dynamically linked to libraries and,
 therefore, not easily copied to a different host. For cross-compiling and
 creating static programs (therefore avoiding linker dependencies at runtime),
-releases are made with [cross](https://github.com/rust-embedded/cross).
+releases are made with [cross](https://github.com/cross-rs/cross).
 For example, to build for Linux on Raspberry Pi,
 
 ```bash
