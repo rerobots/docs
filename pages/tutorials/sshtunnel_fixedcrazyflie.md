@@ -4,7 +4,7 @@
 
 In this tutorial, you are shown how to instantiate a workspace that is accessed
 through an SSH tunnel. As an example, the workspace type demonstrated here is
-[`fixed_crazyflie`](/workspaces/fixed_crazyflie.html), but the basic steps can be applied to any type for which SSH
+[`fixed_crazyflie`](/workspaces/fixed_crazyflie), but the basic steps can be applied to any type for which SSH
 tunneling is an option.
 
 If you want to see an example video that you can reproduce, skip to the section
@@ -18,7 +18,7 @@ ticket](https://github.com/rerobots/docs/issues).
 
 To begin, sign-in to <https://rerobots.net>, and go to [the search
 page](https://rerobots.net/search).  As an example in this tutorial, we will use
-a workspace deployment that has the type [`fixed_crazyflie`](/workspaces/fixed_crazyflie.html). Note, however, the
+a workspace deployment that has the type [`fixed_crazyflie`](/workspaces/fixed_crazyflie). Note, however, the
 basic steps can be applied anywhere that an SSH-tunnel-based connection is
 desired. If one is not already listed, enter "fixed_crazyflie" into the search
 field, or try the following URL:
