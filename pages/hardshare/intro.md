@@ -29,10 +29,10 @@ In hardshare, the terms *robot* and *device* are interchangeable. Minimally, it
 is some hardware with output or input. A workspace can have multiple devices (or
 multiple robots).
 
-The "rerobots infrastructure" is stuff described at [docs.rerobots.net](/)
-and includes facilities like [a Python client library](
-https://pypi.org/project/rerobots) and [sandboxes](
-https://rerobots.net/sandbox).
+The "rerobots infrastructure" is stuff that handles client requests, provides
+queues and reservations, sends alerts, etc. It includes facilities like
+[a Python client library](https://pypi.org/project/rerobots) and
+[sandboxes](https://rerobots.net/sandbox).
 
 The hardshare client is the part that manages the lifecycle of remote access,
 including advertising that the robot is available, creating SSH tunnels to a
