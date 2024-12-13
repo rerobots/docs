@@ -83,10 +83,9 @@ The owner decides who is permitted to access their hardware, and they decide how
 add-on features like VNC should work in their specific case.
 In practice, this is not a problem because the users and owners of devices
 through hardshare are typically trusted.
-
-In rerobots, devices shared through hardshare are always given the workspace
-type [user_provided](/workspaces/user_provided). Every workspace with type other
-than `user_provided` is maintained professionally by rerobots, e.g.,
+Devices shared through hardshare are initially given the workspace type
+[user_provided](/workspaces/user_provided). After being reviewed, the
+deployment can have its type changed to something more precise, e.g.,
 [fixed_misty2](/workspaces/fixed_misty2).
 
 If you are interested in sharing your hardware,
