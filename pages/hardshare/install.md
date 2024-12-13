@@ -168,9 +168,9 @@ Then, [the section about Docker](#docker) can be
 followed by replacing `docker` with `podman`.
 
 
-### LXD
+### Incus (or LXD)
 
-For many operations, [LXD](https://linuxcontainers.org/lxd/) is a drop-in
+For many operations, [Incus](https://linuxcontainers.org/incus/) (formerly, LXD) is a drop-in
 replacement for `docker`. To switch to it with an existing hardshare
 configuration (created as described above),
 
