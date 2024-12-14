@@ -17,11 +17,11 @@ research, but it is also for routine engineering activities like
 
 Conceptually, there are three levels of refinement. A **workspace type** is the
 workspace in terms of essential features, such as the models of hardware and the
-number of robots.
+number of robots. This term is sometimes abbreviated as *type*.
 
 A **workspace deployment** is a physical realization of a workspace type, where
 parameters from the type take particular values like IP address or brand of a
-range finder.  This term is sometimes abbreviated as *wdeployment*.
+range finder. This term is sometimes abbreviated as *deployment*.
 
 An **instance** of a workspace corresponds to usage of a deployment by a
 user. Ideally, each instance of a deployment is identical except for changes of
