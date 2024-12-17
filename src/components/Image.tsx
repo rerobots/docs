@@ -9,12 +9,9 @@ interface ImageProps {
 
 export function Image({ src, alt, maxWidth }: ImageProps)
 {
-    let style = undefined;
-    if (maxWidth) {
-        style = {
-            maxWidth,
-        };
-    }
+    const style = {
+        maxWidth: maxWidth ? maxWidth : '600px',
+    };
 
     return (
         <img src={src} alt={alt} style={style} />

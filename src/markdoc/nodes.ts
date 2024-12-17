@@ -1,4 +1,4 @@
-import { CodeBlock, Heading, Link } from '../components';
+import { CodeBlock, Heading, Image, Link } from '../components';
 
 export const link = {
     render: Link,
@@ -28,6 +28,24 @@ export const heading = {
             type: Number,
             required: true,
             default: 1,
+        },
+    },
+};
+
+export const image = {
+    render: Image,
+    description: 'Image with shape constraints',
+    attributes: {
+        src: {
+            type: String,
+            errorLevel: 'critical',
+            required: true,
+        },
+        alt: {
+            type: String,
+        },
+        maxWidth: {
+            type: String,
         },
     },
 };
