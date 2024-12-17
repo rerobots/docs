@@ -78,7 +78,7 @@ If you get `READY`, then the workspace instance is ready for you!
 
 Now that the workspace instance has the status of `READY`, find the section
 "VPN" on the page and click the "add new client" button. The response might be
-slow (approx. 10 seconds). When completed, there will be a new entry in the list
+slow (approximately 10 seconds). When completed, there will be a new entry in the list
 of "client identifiers" with a "one-time download" link. Like the URL for your
 SSH key, this can be used precisely once. When ready, select "one-time download"
 to get an OVPN file. If something goes wrong, then try "add new client"
