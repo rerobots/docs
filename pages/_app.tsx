@@ -57,14 +57,13 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
             </Head>
             <nav className="navbar">
               <div className="navbar-header">
-                <Link href="/" className="navbarBrand">
-                  <span className="brandText"><span className="prefix-re">re</span>robots</span>
-                </Link>
+                <span className="brandText"><span className="prefix-re">re</span>robots</span>
               </div>
             </nav>
             <div className="body">
             <nav className="navbarSide">
                 <ul>
+                    <li><Link href="/">FAQ</Link></li>
                     <li><Link href="/intro">introduction</Link></li>
                     <li><Link href="/guides">guides</Link></li>
                     <li><Link href="/workspaces">workspaces</Link></li>
