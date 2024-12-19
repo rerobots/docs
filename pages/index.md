@@ -32,3 +32,5 @@ rerobots is not yet generally available.
 If you want early access, then
 [try a sandbox](https://rerobots.net/sandbox), [join the community](https://discord.gg/ur3jTyw),
 or [ask for an account](https://rerobots.net/contact).
+
+For a conceptual overview, read the [Introduction](/intro).
