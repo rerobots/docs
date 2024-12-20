@@ -33,6 +33,7 @@ The "rerobots infrastructure" is stuff that handles client requests, provides
 queues and reservations, sends alerts, etc. It includes facilities like
 [a Python client library](https://pypi.org/project/rerobots) and
 [sandboxes](https://rerobots.net/sandbox).
+For details, read the [rerobots introduction](/intro).
 
 The hardshare client is the part that manages the lifecycle of remote access,
 including advertising that the robot is available, creating SSH tunnels to a
@@ -43,31 +44,6 @@ adminstrative decisions.
 
 Remote users do not necessarily have rerobots accounts. The kinds of access that
 are possible depend on the permissions assigned by the owner.
-
-
-## Lifecycle of Instances
-
-The time during which a user has exclusive access to a workspace deployment is
-known as an [instance](/intro).  The process of
-requesting, getting credentials, and terminating an instance is similar to how
-you might get a "compute node" from a "cloud computing" company:
-
-1. Someone requests access using the unique ID of the workspace deployment.
-2. The remote user is connected through a container that you host locally.
-3. Their input/output can be constrained according to filter rules. For example,
-   the "reboot" command is dropped, while getting sensor data is accepted.
-4. The instance is terminated when the remote user is done. (If needed, you can
-   force termination at any time.)
-
-The lifecycle of instances is illustrated below. In summary, every instance
-begins at `INIT` and can be used when `READY`. If there is an error during
-initialization, the instance is marked as `INIT_FAIL`. While `READY`, the
-instance can be terminated (that is, permanently stopped), either automatically
-when it expires or manually by the user or owner.
-
-For details, read the [rerobots introduction](/intro).
-
-{% image src="/figures/instance-lifecycle.svg" alt="diagram of instance lifecycle" maxWidth="400px" /%}
 
 
 ## Interfaces Around Instances
