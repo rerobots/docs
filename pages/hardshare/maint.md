@@ -194,7 +194,7 @@ hardshare config --add-token path/to/your/jwt.txt
 ```
 
 
-## Manage wdeployment IDs
+## Manage deployment IDs
 
 With the hardshare client, you can freely create and destroy workspace
 deployments. This process corresponds to creating or destroying a unique ID.
