@@ -38,7 +38,7 @@ you might get a "compute node" from a "cloud computing" company:
 1. Someone requests access using the unique ID of the workspace deployment.
 2. The remote user is connected to a container that is local to the robot.
 3. Their input/output can be constrained according to filter rules. For example,
-   the "reboot" command is dropped, while getting sensor data is accepted.
+   the "reboot" command is dropped, while getting sensor data is permitted.
 4. The instance is terminated when the remote user is done.
 
 The instance lifecycle is shown in the following diagram:
