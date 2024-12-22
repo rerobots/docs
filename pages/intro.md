@@ -70,6 +70,7 @@ Available kinds of connection:
 
 1. `sshtun`: ssh to a public IP address and port number.
 2. `openvpn`: create [OpenVPN](https://community.openvpn.net/) server and install client certificates on instance hosts.
+3. `proxy`: TCP packets are filtered and forwarded directly to devices in the instance. Details of the proxy depend on the target deployment.
 
 Keys can be generated as needed per instance, or [you can upload keys for
 reuse](/web/uploading-ssh-public-keys).
