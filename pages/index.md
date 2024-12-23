@@ -34,3 +34,9 @@ If you want early access, then
 or [ask for an account](https://rerobots.net/contact).
 
 For a conceptual overview, read the [Introduction](/intro).
+
+
+## How can I report errors or ask questions about the docs?
+
+The source code for this documentation is at <https://github.com/rerobots/docs>,
+where you can report issues.
