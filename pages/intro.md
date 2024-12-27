@@ -25,8 +25,7 @@ range finder. This term is sometimes abbreviated as *deployment*.
 
 An **instance** of a workspace corresponds to usage of a deployment by a
 user. Ideally, each instance of a deployment is identical except for changes of
-user-defined parameters where available. Practically, there may be small
-differences.
+user-defined parameters where available.
 
 ## Instances
 
