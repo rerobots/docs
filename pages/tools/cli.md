@@ -148,6 +148,7 @@ Get more information about one of them
   "created": "2019-11-18 22:23:57.433893",
   "queuelen": 0
 }
+```
 
 Notice that `queuelen = 0`, i.e., this workspace deployment is available, and
 requests to instantiate from it now are likely to succeed. To do so,
