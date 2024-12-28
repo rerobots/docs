@@ -37,4 +37,4 @@ You can learn how to perform basic tasks like adding SSH keys to your account.
 ## Manuals
 
 * [CLI](/tools/cli) - command-line interface of rerobots
-* [hardshare](/hardshare) - the system for sharing your devices through the rerobots infrastructure.
+* [hardshare](/hardshare/intro) - the system for sharing your devices through the rerobots infrastructure.
