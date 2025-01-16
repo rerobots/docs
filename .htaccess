@@ -2,6 +2,7 @@ RewriteEngine on
 
 RedirectMatch /webui/?$ /guides
 RedirectMatch /webui.html$ /guides
+RedirectMatch /hardshare/?$ /hardshare/intro
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)/$ /$1 [L,R=301]
