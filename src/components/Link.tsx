@@ -10,6 +10,13 @@ interface LinkProps {
 
 export function Link({ children, href }: LinkProps)
 {
+    if (typeof children === 'string') {
+        if (children.startsWith('https://')) {
+            children = children.substring(8);
+        } else if (children.startsWith('http://')) {
+            children = children.substring(7);
+        }
+    }
     return (
         <>
             {href.startsWith("https://") || href.startsWith("http://") ? (
