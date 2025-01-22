@@ -10,7 +10,7 @@ image: /tutorials/figures/smaller-tutorial_proxy_fixedmisty_finalarrange.png
 
 In this tutorial, you are shown how to instantiate a workspace with a Misty robot
 (for example, [`fixed_misty2`](/workspaces/fixed_misty2)) to control the robot through the
-[Misty Command Center](http://sdk.mistyrobotics.com/command-center/index.html), to directly make
+Misty Command Center, to directly make
 [Misty REST API](https://docs.mistyrobotics.com/misty-ii/web-api/overview/) calls
 through a secure proxy. (Note that the Misty Command Center is a product of [Misty
 Robotics](https://www.mistyrobotics.com/), Inc., and NOT A PART OF rerobots.)
@@ -74,7 +74,7 @@ Misty robot.
 
 In this example, you would copy-and-paste the first address
 (`proxy.rerobots.net:32912/61ab371e4`...) into the "Robot IP Address" box at
-<http://sdk.mistyrobotics.com/command-center/>.
+the Misty Command Center.
 
 To view the robot, select the link "start camera stream" in the panel titled
 "camera streams". This will start the camera stream and generate a URL for
