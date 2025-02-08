@@ -182,6 +182,11 @@ Then, [the section about Docker](#docker) can be
 followed by replacing `docker` with `lxc`.
 
 
+### Proxies
+
+
+
+
 ## Include Devices
 
 For example,
