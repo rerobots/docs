@@ -11,6 +11,6 @@ The `misty-blockly` kind of sandbox includes a Blockly-based programming environ
 It is only applicable to workspace types that include a Misty robot, e.g.,
 [basic_misty2](/workspaces/basic_misty2).
 
-Besides common programming elemenst like while-loops, the editor has blocks for
+Besides common programming elements like while-loops, the editor has blocks for
 robot actions, like moving the head, and sensor readings, like whether the
 bumpers are pressed.
