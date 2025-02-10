@@ -304,3 +304,8 @@ h1, h2, h3, h4 {
 ul.innerNavLinks {
     padding-left: 24px;
 }
+
+a.permalink::before {
+    content: '#';
+    margin-left: 0.5em;
+}
