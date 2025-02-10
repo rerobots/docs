@@ -309,3 +309,11 @@ a.permalink::before {
     content: '#';
     margin-left: 0.5em;
 }
+
+a.permalink {
+    color: #CCC;
+}
+
+a.permalink:hover, a.permalink:focus {
+    color: #4040BF;
+}
