@@ -58,7 +58,7 @@ Supporting software that facilitates containers in hardshare are known *cprovide
 For new users, Docker is a good first cprovider to try and is the default in a
 newly installed `hardshare` client configuration.
 
-Finally, releases of the client are available at <https://github.com/rerobots/hardshare/releases>
+Finally, releases of the client are available at <https://github.com/rerobots/hardshare/releases>.
 When installed, you should be able to get the version from the
 command-line interface (CLI)
 
@@ -184,7 +184,11 @@ followed by replacing `docker` with `lxc`.
 
 ### Proxies
 
+```bash
+hardshare config --cprovider proxy
+```
 
+Then, select a [filter](/hardshare/filters).
 
 
 ## Include Devices
