@@ -44,6 +44,31 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
         ogImage = 'https://docs.rerobots.net' + (ogImage[0] === '/' ? '' : '/') + ogImage;
     }
 
+    const toggleMenu = () => {
+        const sidenav = document.getElementById('navbarSide');
+        if (!(sidenav?.classList)) {
+            return;
+        }
+        if (sidenav.classList.contains('navbarSideShow')) {
+            sidenav.classList.remove('navbarSideShow');
+            sidenav.classList.add('navbarSideHide');
+        } else {
+            sidenav.classList.add('navbarSideShow');
+            sidenav.classList.remove('navbarSideHide');
+        }
+    };
+
+    const possiblyCollapseMenu = () => {
+        const sidenav = document.getElementById('navbarSide');
+        if (!(sidenav?.classList)) {
+            return;
+        }
+        if (sidenav.classList.contains('navbarSideShow')) {
+            sidenav.classList.remove('navbarSideShow');
+            sidenav.classList.add('navbarSideHide');
+        }
+    };
+
     return (
         <>
             <Head>
@@ -56,31 +81,37 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
                 )}
             </Head>
             <nav className="navbar">
-              <div className="navbar-header">
-                <span className="brandText"><span className="prefix-re">re</span>robots</span>
-              </div>
+                <div>
+                    <button type="button" className="navbarToggle collapsed" aria-expanded="false" onClick={toggleMenu}>
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                    </button>
+                    <span className="brandText"><span className="prefix-re">re</span>robots</span>
+                </div>
             </nav>
             <div className="body">
-            <nav className="navbarSide">
+            <nav id="navbarSide" className="navbarSideHide">
                 <ul>
-                    <li><Link href="/">FAQ</Link></li>
-                    <li><Link href="/intro">introduction</Link></li>
-                    <li><Link href="/guides">guides</Link></li>
-                    <li><Link href="/workspaces">workspaces</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/">FAQ</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/intro">introduction</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/guides">guides</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/workspaces">workspaces</Link></li>
                     <li>hardshare
                         <ul className="innerNavLinks">
-                            <li><Link href="/hardshare/intro">introduction</Link></li>
-                            <li><Link href="/hardshare/quickstart">quickstart</Link></li>
-                            <li><Link href="/hardshare/install">installation</Link></li>
-                            <li><Link href="/hardshare/tutorials">tutorials</Link></li>
-                            <li><Link href="/hardshare/filters">filters</Link></li>
-                            <li><Link href="/hardshare/maint">maintenance</Link></li>
-                            <li><Link href="/hardshare/help">help</Link></li>
-                            <li><Link href="/hardshare/develop">develop</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/intro">introduction</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/quickstart">quickstart</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/install">installation</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/tutorials">tutorials</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/filters">filters</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/maint">maintenance</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/help">help</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/develop">develop</Link></li>
                         </ul>
                     </li>
-                    <li><Link href="/api-summary">API</Link></li>
-                    <li><Link href="/references">references</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/api-summary">API</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/references">references</Link></li>
                 </ul>
             </nav>
             <div id="main-content">

@@ -55,9 +55,7 @@ a:focus {
     font-family: "orbitronb", sans-serif;
     font-weight: bold;
     font-size: 16pt;
-    position: absolute;
-    top: 5px;
-    left: 10px;
+    margin-left: 10px;
     color: #777777;
 }
 
@@ -210,69 +208,37 @@ h1, h2, h3, h4 {
     font-family: Georgia, serif;
 }
 
+button.navbarToggle {
+    display: none;
+    width: 3em;
+}
+
+#navbarSide {
+    margin: 10px;
+    padding-top: 28px;
+}
+
+ul.innerNavLinks {
+    padding-left: 24px;
+}
 
 @media(max-width: 700px) {
-    .collapsed {
-	display: block;
-	height: 44px;
-	width: 44px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	overflow: hidden;
-    }
-
-    button.collapsed {
-	background-color: #F8F8F8;
-	border: 1px solid #999;
-	border-radius: 5px;
-    }
-
-    .navbar-collapse {
-	display: none;
-    }
-
-    .navbar-collapse-show {
-	display: block;
-    }
-
-    ul.navbar-items {
-	width: 100%;
-	height: 44px;
-	font-size: 11pt;
-	text-align: right;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	right: 0;
-	top: 44px;
-    }
-
-    ul.navbar-items li {
-	display: block;
-	padding: 0;
-	margin: 0;
-	background-color: #F8F8F8;
-    }
-
-    ul.navbar-items li a {
-	display: block;
-	padding: .75em;
-	height: 100%;
-	width: 100%;
-	border-radius: 5px;
-    }
-
-    ul.navbar-items li a:hover,
-    ul.navbar-items li a:focus {
-	background-color: #E8E8E8;
+    button.navbarToggle {
+        display: inline;
     }
 
     #main-content {
-	padding: 0;
+        padding: 0 2px;
+    }
+
+    .navbarSideHide {
+        display: none;
+    }
+
+    .navbarSideShow {
+        display: auto;
     }
 }
-
 
 .sr-only {
     position: absolute;
@@ -294,15 +260,6 @@ h1, h2, h3, h4 {
 
 .body {
     display: flex;
-}
-
-.navbarSide {
-    margin: 10px;
-    padding-top: 28px;
-}
-
-ul.innerNavLinks {
-    padding-left: 24px;
 }
 
 a.permalink::before {
