@@ -199,9 +199,15 @@ ul.list-wtypes {
 #main-content {
     font-family: Georgia, sans;
     font-size: 17px;
-    max-width: 60em;
-    padding: 0 6em;
     margin: 44px 0 64px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    max-width: 40em;
 }
 
 h1, h2, h3, h4 {
@@ -216,6 +222,8 @@ button.navbarToggle {
 #navbarSide {
     margin: 10px;
     padding-top: 28px;
+    flex: none;
+    min-width: 150px;
 }
 
 ul.innerNavLinks {
@@ -228,7 +236,8 @@ ul.innerNavLinks {
     }
 
     #main-content {
-        padding: 0 2px;
+        margin: 44px 0 64px 0;
+        width: 100%;
     }
 
     .navbarSideHide {
