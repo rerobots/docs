@@ -201,9 +201,7 @@ ul.list-wtypes {
     font-size: 17px;
     margin: 44px 0 64px 0;
     width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0 5px;
 }
 
 article {
