@@ -95,23 +95,23 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
             <nav id="navbarSide" className="navbarSideHide">
                 <ul>
                     <li onClick={possiblyCollapseMenu}><Link href="/">FAQ</Link></li>
-                    <li onClick={possiblyCollapseMenu}><Link href="/intro">introduction</Link></li>
-                    <li onClick={possiblyCollapseMenu}><Link href="/guides">guides</Link></li>
-                    <li onClick={possiblyCollapseMenu}><Link href="/workspaces">workspaces</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/intro">Introduction</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/guides">Guides</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/workspaces">Workspaces</Link></li>
                     <li>hardshare
                         <ul className="innerNavLinks">
-                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/intro">introduction</Link></li>
-                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/quickstart">quickstart</Link></li>
-                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/install">installation</Link></li>
-                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/tutorials">tutorials</Link></li>
-                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/filters">filters</Link></li>
-                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/maint">maintenance</Link></li>
-                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/help">help</Link></li>
-                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/develop">develop</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/intro">Introduction</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/quickstart">Quickstart</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/install">Installation</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/tutorials">Tutorials</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/filters">Filters</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/maint">Maintenance</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/help">Help</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/develop">Develop</Link></li>
                         </ul>
                     </li>
                     <li onClick={possiblyCollapseMenu}><Link href="/api-summary">API</Link></li>
-                    <li onClick={possiblyCollapseMenu}><Link href="/references">references</Link></li>
+                    <li onClick={possiblyCollapseMenu}><Link href="/references">References</Link></li>
                 </ul>
             </nav>
             <div id="main-content">
