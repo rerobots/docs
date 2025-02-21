@@ -100,7 +100,7 @@ live stream like that at <https://rerobots.net/sandbox/fixed_misty2>
 ## Make a sandbox
 
 At this stage, your workspace deployment with a Misty robot is ready for the
-kind of low-level access demonstrated in the tutorial at </tutorials/proxy_fixedmisty>
+kind of low-level access demonstrated in the tutorial [Try the Misty API with a proxy](/tutorials/proxy_fixedmisty).
 
 To provide a faster and simpler (and also more constrained) experience for
 remote users of your Misty, you can make a sandbox.
