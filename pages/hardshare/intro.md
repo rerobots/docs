@@ -20,8 +20,8 @@ As illustrated above, the main parts are:
 4. remote users.
 
 The robot and the surrounding environment are together known as a [workspace
-deployment](/intro). Robots that are owned and managed
-by the company rerobots are always presented as workspace deployments with
+deployment](/intro) (or simply, *deployment*). Robots that are owned and managed
+by the company rerobots are always presented as deployments with
 unique IDs.  To share your robot via hardshare, it also must be assigned a
 unique ID.
 
@@ -39,7 +39,7 @@ The hardshare client is the part that manages the lifecycle of remote access,
 including advertising that the robot is available, creating SSH tunnels to a
 local container, and enforcing constraints like input filters.
 
-When you create a workspace deployment, you become the owner and can make
+When you create a deployment, you become the owner and can make
 adminstrative decisions.
 
 Remote users do not necessarily have rerobots accounts. The kinds of access that
@@ -53,7 +53,7 @@ are possible depend on the permissions assigned by the owner.
 The rerobots/hardshare architecture provides for specifying how hardware appears
 to an instance. If carefully configured, any device can be shared through
 instances safely and securely. The precise meanings of *safe* and *secure*
-depend on the hardware in the workspace deployment, but the basic organization
+depend on the hardware in the deployment, but the basic organization
 is the same: associate actions with lifecycle events (e.g., initialization), and
 filter input and output streams.
 
