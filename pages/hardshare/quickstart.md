@@ -13,7 +13,7 @@ For more details, including alternative configurations and special cases, read
 
 ## Preliminaries
 
-Instuctions below are known to work on modern GNU/Linux distributions, for
+Instructions below are known to work on modern GNU/Linux distributions, for
 example [Ubuntu](https://ubuntu.com/download/desktop).
 
 First, get the current release at <https://github.com/rerobots/hardshare/releases>
