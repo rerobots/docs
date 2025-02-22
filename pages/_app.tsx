@@ -105,6 +105,7 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
                             <li onClick={possiblyCollapseMenu}><Link href="/hardshare/install">Installation</Link></li>
                             <li onClick={possiblyCollapseMenu}><Link href="/hardshare/tutorials">Tutorials</Link></li>
                             <li onClick={possiblyCollapseMenu}><Link href="/hardshare/filters">Filters</Link></li>
+                            <li onClick={possiblyCollapseMenu}><Link href="/hardshare/monitors">Monitors</Link></li>
                             <li onClick={possiblyCollapseMenu}><Link href="/hardshare/maint">Maintenance</Link></li>
                             <li onClick={possiblyCollapseMenu}><Link href="/hardshare/help">Help</Link></li>
                             <li onClick={possiblyCollapseMenu}><Link href="/hardshare/develop">Develop</Link></li>
