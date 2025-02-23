@@ -20,6 +20,9 @@ where we say a rule and request *match* when the verb and request-URI match thos
 of the rule. Any such request is allowed if it satisfies the rule it matches;
 else, it is blocked (independently of the `default` behavior).
 
+For example, to use the default filter rules (i.e., allow all) for the target
+host at address 192.168.1.134, port 80,
+
 ```bash
-hardshare config --assign-proxy-command 'rrhttp 192.168.1.134'
+hardshare config --assign-proxy-command 'rrhttp 192.168.1.134:80'
 ```
