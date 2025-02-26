@@ -199,3 +199,6 @@ Finally, `exit` the ssh shell, and terminate the instance
 ```bash
 rerobots terminate f7856ad4-a9d7-43f5-8420-7073d10bceec
 ```
+
+In all of the above commands, the instance ID can be omitted (e.g.,
+`rerobots launch` without the ID) if there is only one active instance.
