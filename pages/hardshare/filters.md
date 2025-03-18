@@ -26,3 +26,10 @@ host at address 192.168.1.134, port 80,
 ```bash
 hardshare config --assign-proxy-command 'rrhttp 192.168.1.134:80'
 ```
+
+
+## rrpc
+
+`rrpc` filters remote procedure calls (RPC).
+
+Example configurations are in the directory [examples/rrpc/](https://github.com/rerobots/hardshare/tree/main/examples/rrpc).
