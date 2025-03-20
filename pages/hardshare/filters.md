@@ -33,3 +33,7 @@ hardshare config --assign-proxy-command 'rrhttp 192.168.1.134:80'
 `rrpc` filters remote procedure calls (RPC).
 
 Example configurations are in the directory [examples/rrpc/](https://github.com/rerobots/hardshare/tree/main/examples/rrpc).
+
+```bash
+hardshare config --assign-proxy-command 'rrpc --config examples/rrpc/date.yaml'
+```
