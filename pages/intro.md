@@ -23,14 +23,13 @@ A **workspace deployment** is a physical realization of a workspace type, where
 parameters from the type take particular values like IP address or brand of a
 range finder. This term is sometimes abbreviated as *deployment*.
 
-An **instance** of a workspace corresponds to usage of a deployment by a
-user. Ideally, each instance of a deployment is identical except for changes of
-user-defined parameters where available.
-
 ## Instances
 
 The time during which a user has exclusive access to a workspace deployment is
-known as an [instance](/intro).  The process of
+known as an **instance**.
+Ideally, each instance of a deployment is identical except for changes of
+user-defined parameters where available.
+The process of
 requesting, getting credentials, and terminating an instance is similar to how
 you might get a "compute node" from a "cloud computing" company:
 
