@@ -34,6 +34,8 @@ hardshare config --assign-proxy-command 'rrhttp 192.168.1.134:80'
 
 Example configurations are in the directory [examples/rrpc/](https://github.com/rerobots/hardshare/tree/main/examples/rrpc).
 
+`rrpc` presents an HTTP server that executes commands.
+
 ```bash
 hardshare config --assign-proxy-command 'rrpc --config examples/rrpc/date.yaml'
 ```
