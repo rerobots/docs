@@ -40,3 +40,8 @@ For a conceptual overview, read the [Introduction](/intro).
 
 The source code for this documentation is at <https://github.com/rerobots/docs>,
 where you can report issues.
+
+
+## Is it open source?
+
+Yes! Currently, the code is hosted at <https://github.com/rerobots>
