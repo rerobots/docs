@@ -40,7 +40,7 @@ including advertising that the robot is available, creating SSH tunnels to a
 local container, and enforcing constraints like input filters.
 
 When you create a deployment, you become the owner and can make
-adminstrative decisions.
+administrative decisions.
 
 Remote users do not necessarily have rerobots accounts. The kinds of access that
 are possible depend on the permissions assigned by the owner.

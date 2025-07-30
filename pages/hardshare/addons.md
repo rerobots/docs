@@ -48,13 +48,13 @@ Docker image `rerobots/hs-generic` (defined by generic/Dockerfile in the
 
 VNC is a system for remote access to a desktop display, keyboard, and mouse,
 following the protocol defined in [RFC 6143](https://tools.ietf.org/html/rfc6143). The add-on `vnc` enables parts
-of the rerobots API for worknig with VNC servers in instances. An example with
+of the rerobots API for working with VNC servers in instances. An example with
 [HackRF](https://greatscottgadgets.com/hackrf/) hardware together with a window of [GNU Radio](https://www.gnuradio.org/) embedded in a sandbox is
 shown in the figure below.
 
 ![screenshot of VNC with HackRF](/figures/screenshot-vnc-hackrf.jpg)
 
-At this time, the sandbox kind `vnc` is basesd on [noVNC](https://github.com/novnc/noVNC) and requires
+At this time, the sandbox kind `vnc` is based on [noVNC](https://github.com/novnc/noVNC) and requires
 instances created from an image derived from Dockerfile-vnc [under the directory
 devices/ of the sourcetree](https://github.com/rerobots/hardshare/tree/main/devices).
 
