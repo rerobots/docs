@@ -22,7 +22,7 @@ export function Link({ children, href }: LinkProps)
             {href.startsWith("https://") || href.startsWith("http://") ? (
                 <a href={href}>{children}</a>
             ) : (
-                <NextjsLink href={href}><a>{children}</a></NextjsLink>
+                <NextjsLink href={href}>{children}</NextjsLink>
             )}
         </>
     );
