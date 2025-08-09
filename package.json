@@ -9,7 +9,7 @@
     "clean": "rm -r -f pages/workspaces public/workspaces/figures out"
   },
   "repository": "https://github.com/rerobots/docs",
-  "author": "Scott C. Livingston <scott@rerobots.net>",
+  "author": "rerobots, Inc. <q@rerobots.net>",
   "license": "Apache-2.0",
   "private": true,
   "dependencies": {
