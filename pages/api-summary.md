@@ -42,7 +42,7 @@ no more requests will be accepted until the current time passes `T`.
 ## Authentication
 
 {% alert %}
-Authentication is not available yet through the HTTP API. Instead, [Get API tokens through the Web UI](https://rerobots.net/tokens).
+Authentication is not available yet through the HTTP API. Instead, [get API tokens from the dashboard](https://rerobots.net/tokens).
 ([Read instructions about how to do so.](/web/making-and-revoking-api-tokens))
 {% /alert %}
 
