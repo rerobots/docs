@@ -69,7 +69,7 @@ A valid API token can be used to revoke itself.
 
 ### POST /purge
 
-Delete all authetication (API) tokens associated with the user. To do this, the
+Delete all authentication (API) tokens associated with the user. To do this, the
 user and password pair or an existing token of sufficient capabilities must be
 provided. If both are provided, then only the user and password pair is checked.
 
