@@ -78,7 +78,7 @@ Now start a container from it. For example, on a x86_64 host
 docker run -it --rm rerobots/hs-generic-platformio:x86_64-latest bash
 ```
 
-This will start the container with a `bash` shell. PlatformIO is already installed
+This will start the container with a `bash` shell. PlatformIO is already installed.
 
 ```
 # pio --version
@@ -95,7 +95,7 @@ cd platform-espressif32/examples
 docker cp espidf-hello-world 5baec5c80e45:/root/
 ```
 
-Now, in the terminal that is attached to the container
+Now, in the terminal that is attached to the container,
 
 ```bash
 cd /root/espidf-hello-world
