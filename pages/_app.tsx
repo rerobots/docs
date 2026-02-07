@@ -120,7 +120,7 @@ export default function App({ Component, pageProps }: AppProps<MarkdocNextJsPage
             </div>
             </div>
             <footer>
-                Copyright &copy; 2025 rerobots, Inc.<br />
+                Copyright &copy; 2026 rerobots, Inc.<br />
                 <a href="https://rerobots.net/site/terms-of-service">Terms of Service</a>
                 <a href="https://rerobots.net/site/privacy">Privacy</a>
                 <a href="https://rerobots.net/contact">Contact</a>
