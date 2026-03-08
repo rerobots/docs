@@ -27,6 +27,21 @@ For example, to build for Linux on Raspberry Pi,
 cross build --target armv7-unknown-linux-musleabihf --release --locked
 ```
 
+### Dependencies
+
+To build with versions of CMake 4.1.1 or newer, first
+
+    export CMAKE_POLICY_VERSION_MINIMUM=3.5
+
+then `cargo build`.
+
+On Linux,
+[udev](https://www.kernel.org/pub/linux/utils/kernel/hotplug/udev/udev.html) is
+used by `rrserial`, so to build from source, development files for libudev may
+be required. On Debian or similar (Ubuntu), try
+
+    sudo apt install libudev-dev
+
 
 ## Internals
 
