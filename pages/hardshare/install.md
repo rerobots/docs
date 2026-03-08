@@ -16,7 +16,6 @@ Please open a ticket at <https://github.com/rerobots/hardshare/issues>
 
 Installation instructions are provided for macOS and modern GNU/Linux distributions, such
 as [Ubuntu](https://ubuntu.com/download/desktop). We are working to support other kinds of hosts, including Windows and FreeBSD.
-If your host is not supported well, [please tell us](https://rerobots.net/contact).
 
 
 ## Main Aspects
