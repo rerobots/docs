@@ -8,7 +8,7 @@ This tutorial begins where [Quickstart](/hardshare/quickstart) ended. Using [ESP
 example, this tutorial provides typical preparation for sharing a
 [PlatformIO](https://docs.platformio.org/en/latest/what-is-platformio.html)-compatible board via hardshare:
 
-1. pull or create Docker image with required toolchains,
+1. pull or create images with required toolchains,
 2. find the device files corresponding to the board interface,
 3. decide how to erase or reset the device after each user,
 4. attach a camera to the workspace,
@@ -49,7 +49,7 @@ serial line is broken), then you must debug it before proceeding with this
 hardshare tutorial.
 
 
-## Prepare Docker image
+## Prepare images
 
 In the context of terms from the [Introduction](/hardshare/intro), ESP32 is presented as part of a
 workspace deployment that you have registered (`hardshare register` in the
@@ -58,6 +58,11 @@ container. To facilitate efficient reproducibility, we want to prepare a Docker
 image that has requirements already installed so the user can simply
 "build-and-flash" without having to wait for additional toolchains to be
 downloaded, built, etc.
+
+For each instance, there are two containers required:
+
+1. one in which the untrusted user's code is built;
+2. another from which the real hardware is accessed.
 
 With this in mind, we will begin with a base image that already has [PlatformIO](https://docs.platformio.org/en/latest/what-is-platformio.html)
 installed. Then, we will build example code in a process that will automatically
