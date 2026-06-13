@@ -59,6 +59,12 @@ image that has requirements already installed so the user can simply
 "build-and-flash" without having to wait for additional toolchains to be
 downloaded, built, etc.
 
+In the instructions below, `podman` can be used instead of `docker`:
+
+```bash
+hardshare config --cprovider podman
+```
+
 For each instance, there are two containers required:
 
 1. one in which the untrusted user's code is built;
