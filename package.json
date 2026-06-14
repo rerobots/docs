@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "./tools/collect-wtypes.py && next dev",
-    "build": "./tools/collect-wtypes.py && next build && next export",
+    "build": "./tools/collect-wtypes.py && next build",
     "start": "next start",
     "lint": "./tools/collect-wtypes.py && next lint",
     "clean": "rm -r -f pages/workspaces public/workspaces/figures out"
