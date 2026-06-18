@@ -14,7 +14,7 @@ typical preparation for sharing a [Misty](https://www.mistyrobotics.com/) robot 
 ![screenshot](figures/screenshot-misty2sandbox-20201124.png)
 
 
-## Declare the add-on mistyproxy
+## Option 1: Declare the add-on mistyproxy
 
 For example, if the Misty robot is available on the local network at IP address
 192.168.0.144, then
@@ -29,6 +29,15 @@ To get the address of the Misty robot as known to hardshare,
 ```bash
 hardshare config-addon -a mistyproxy -l
 ```
+
+
+## Option 2: cprovider proxy and filter
+
+If the code for controlling Misty will primarily run remotely, outside of the
+instance hosts, then the `proxy` cprovider can be used. This option does not
+provide a host for running code locally to the Misty robot because HTTP traffic
+is sent directly to Misty via [rrhttp filter](/hardshare/filters). The advantage
+of only proxying is that instances start more quickly.
 
 
 ## Check details via the rerobots CLI
