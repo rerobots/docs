@@ -201,7 +201,7 @@ deployments. This process corresponds to creating or destroying a unique ID.
 Here, "destroying a unique ID" means that the corresponding workspace deployment
 is marked as permanently unavailable.
 
-When some part of robot or the surrounding environment changes significantly,
+When some part of a robot or the surrounding environment changes significantly,
 the unique ID should be changed.  What is "significant" or not depends on the
 context. For example, removing a LiDAR sensor is likely significant, but small
 changes to overhead lighting might not be.
